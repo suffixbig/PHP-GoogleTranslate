@@ -2,6 +2,7 @@
 PHP使用Google Translate API來做自動化檔案翻譯
 
 test_googlefree.php 這支是免費的 測試可以使用 測試日期 2017/12/03
+
 index5.php 這支已經可以讀取01a 目錄下的所有檔案 然後做出 不翻譯  翻譯前 翻譯後 的陣列 
 
 翻譯成功Array
