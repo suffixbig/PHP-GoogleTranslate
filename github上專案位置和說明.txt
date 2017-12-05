@@ -1,21 +1,30 @@
-github上專案位置
+-----------------------------
+#本工具github上專案位置
+-----------------------------
 https://github.com/suffixbig/PHP-GoogleTranslate/
--------------
-目錄
--------------
+
+-----------------------------
+#本工具設定使用方式
+-----------------------------
+1. 把config-dist.php =>改名成config.php
+2. google翻譯Api key 這要自己去申請
+	申請好後再config.php 這個檔裡面改 define('googleApiKEY','AIzaSyBTp7v4su_bk55Gxw9khit2RNdRLWldwuw');//googleApiKEY 
+3. /README/t_translation_googleapi.sql	資料庫匯入後
+4. /_inc/mysql.inc.php			在這個檔裡面設定資料庫帳密
+    $dbuser = "sincethemachine";
+    $dbpass = "1234567890";
+5. 程式預設英翻中，要改在程式中改 例如:index10.php
+-----------------------------
+語言代碼參考
+-----------------------------
+en
+zh-TW
+-----------------------------
+目錄檔案說明
+-----------------------------
 01a		來源目錄 英文
 01b		目標目錄 繁體中文
 01zh-TW   	來源目錄要刪除現有翻譯過的中文檔案 01tw_del_01a.php
 
 
-
-語言代碼
-en
-zh-TW
-
 -----------------------------
-#資料庫帳密直接改檔案
------------------------------
-_inc\mysql.inc.php
-    $dbuser = "sincethemachine";
-    $dbpass = "1234567890";

@@ -3,6 +3,7 @@
 AUTO translation file googleapi
 功能:把目錄下的檔案全翻譯完
 2017/12/5 完工會用資料庫比對查
+2017/12/6 多做沒翻完的提醒
  */
 $thisDir = "."; //config.inc.php檔的相對路徑
 $_file = basename(__FILE__); //自行取得本程式名稱
@@ -65,7 +66,7 @@ function curl_post($url, $fields)
     curl_setopt($ch, CURLOPT_ENCODING, 'UTF-8');
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-    curl_setopt($ch, CURLOPT_USERAGENT, 'AndroidTranslate/5.3.0.RC02.130475354-53000263 5.1 phone TRANSLATE_OPM5_TEST_1');
+    //curl_setopt($ch, CURLOPT_USERAGENT, 'AndroidTranslate/5.3.0.RC02.130475354-53000263 5.1 phone TRANSLATE_OPM5_TEST_1');
     // Execute post
     $result = curl_exec($ch);
     // Close connection
@@ -315,6 +316,12 @@ function ai_translated($ap, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms)
                 $sms .= $ss . "筆";
             }
 
+            $not_finished=count($need_s2)-count($text_array);
+            if($not_finished){
+            //數量有差表示沒翻譯完要紅字提醒
+            $sms .="<span style=\"color:red\"> 因GOOGLE翻譯字數上限本次尚有 ".$not_finished."筆未翻譯. </span>";
+            }
+
             //挑回內容
             $cc1 = $yourself_translated; //查過自己翻譯後剩下
             //只挑要送出去的行數取代
@@ -322,6 +329,7 @@ function ai_translated($ap, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms)
             for ($i = 0; $i < count($text_array); $i++) {
                 $cc1[$need_s2[$i]] = $text_array[$i];
             }
+
             /*
             echo $sms;
             print_r($cc1);
@@ -335,6 +343,13 @@ function ai_translated($ap, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms)
             $a['error'] = 0; //此次沒問題
             return $a;
         }
+    }else{
+    //全部翻譯資料庫都有自建好
+        $ap['c'] = $yourself_translated; //查過自己翻譯過的就好
+        $a['sms'] = $sms;
+        $a['ai_result'] = $ap;
+        $a['error'] = 0; //此次沒問題
+        return $a;
     }
 }
 /*********************************************************************************************/
@@ -384,7 +399,7 @@ foreach ($filenamesA as $value) {
     $value2 = str_replace($dir1, $dir2, $value); //要找的檔名
     $value2 = str_replace('/', '\\', $value2); //要找的檔名
     $value2 = str_replace($sourcelanguage, $targetlanguage, $value2); //要找的檔名
-    $sms .= "目標檔案可寫入檢查" . $value2;
+    $sms .= "目標檔案可寫入檢查";
     $sms .= " |結果:";
     if (is_file($value2)) {
         $sms .= "找到檔案" . $br;
@@ -422,8 +437,11 @@ foreach ($filenamesA as $value) {
                 }
 
             }
+            //有內容才寫檔案
+            if(trim($context)){
             $sms .= " 寫入檔案";
             file_put_contents($value2, $context); //寫入檔案
+            }
         }
 
         echo $sms . $br;
@@ -436,4 +454,4 @@ foreach ($filenamesA as $value) {
 }
 cmysql($linkID); //關資料庫==============================================================
 echo "<hr>" . $br;
-echo "以處理" . $z['y1'] . "個檔案" . $br;
+echo "處理" . $z['y1'] . "個檔案" . $br;
