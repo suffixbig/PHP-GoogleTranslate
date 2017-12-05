@@ -1,0 +1,20 @@
+en-gb.php 這不能翻 因為 裡面有設定值例如
+$_['code']						= 'zh-TW';
+>$_['direction']					= 'ltr';
+>$_['date_format_short']			= 'Y-m-d';
+>$_['date_format_long']			= 'Y F dS l';
+>$_['time_format']				= 'h:i:s A';
+>$_['datetime_format']			= 'Y-m-d H:i:s';
+>$_['decimal_point']				= '.';
+>$_['thousand_point']			= ',';
+
+翻譯之後 空格都不見了
+
+超過30K大小的檔翻譯有問題
+
+大小 50K 內容超過500行 GOOGLE API 除了error 還有 無回應的可能
+1.250行 沒問題
+2.301行 error {"code":400,"message":"Too many text segments","errors":[{"message":"Too many text segments","domain":"global","reason":"invalid"}]}
+3 450 行 您的客戶發出格式不正確或非法的請求。
+4.500行 您的客戶發出的請求太大Error 413 That’s all we know
+5.600行 無回應

@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="zh_TW" dir="ltr" class="chrome chrome62">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="icon" href="http://test.com/P4211/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://test.com/P4211/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui-1.11.4.css">
+    <link rel="stylesheet" type="text/css" href="./css/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="./css/show-hint.css">
+    <link rel="stylesheet" type="text/css" href="./css/lint.css">
+    <link rel="stylesheet" type="text/css" href="./css/phpmyadmin.css.php">
+    <link rel="stylesheet" type="text/css" href="./css/printview.css" media="all" id="printcss">
+    <title>test.com / localhost / t_translation_googleapi / oc_t | phpMyAdmin 4.6.4</title>
+    </head>
+<body style="margin-bottom: 0px; padding-top: 61px;">
+ 
+    <table id="tablestructure" class="data topmargin">
+        <!-- table header -->
+        <thead>
+            <tr>
+                <th class="print_ignore"></th>
+                <th>#</th>
+                <th>
+                    名稱</th>
+                <th>型態</th>
+                <th>編碼與排序</th>
+                <th>屬性</th>
+                <th>空值</th>
+                <th>預設值</th>
+                <th>備註</th>
+                <th>額外資訊</th>
+                <!-- see tbl_structure.js, function moreOptsMenuResize() -->
+                <th colspan="8" class="action print_ignore">動作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- table body -->
+            <tr class="odd">
+                <td class="center print_ignore" style="">
+                    <input type="checkbox" class="checkall" name="selected_fld[]" value="t_id" id="checkbox_row_1">
+                </td>
+                <td class="right">1</td>
+                <th class="nowrap">
+                    <label for="checkbox_row_1">
+<span class="commented_column" title="主鍵">t_id</span><img src="./css/dot.gif" title="主鍵" alt="主鍵" class="icon ic_b_primary">    </label>
+                </th>
+                <td class="nowrap">
+                    <bdo dir="ltr" lang="en">int(10)            </bdo>
+                </td>
+                <td>
+                </td>
+                <td class="column_attribute nowrap">UNSIGNED</td>
+                <td>否</td>
+                <td class="nowrap">
+                    <i>無</i>
+                </td>
+                <td>
+                    主鍵 </td>
+                <td class="nowrap">AUTO_INCREMENT</td>
+                <td class="edit center print_ignore" style="">
+                    <a class="change_column_anchor ajax" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=t_id&amp;change_column=1">
+                        <span class="nowrap"><img src="./css/dot.gif" title="修改" alt="修改" class="icon ic_b_edit">&nbsp;修改</span> </a>
+                </td>
+                <td class="drop center print_ignore" style="">
+                    <a class="drop_column_anchor ajax" href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+%60t_id%60%3B&amp;dropped_column=t_id&amp;purge=1&amp;message_to_show=%E5%B7%B2%E5%88%AA%E9%99%A4%E6%AC%84%E4%BD%8D+t_id%E3%80%82">
+                        <span class="nowrap"><img src="./css/dot.gif" title="刪除" alt="刪除" class="icon ic_b_drop">&nbsp;刪除</span> </a>
+                </td>
+                <td class="print_ignore" style="">
+                    <ul class="table-structure-actions resizable-menu">
+                        <!-- Add primary -->
+
+                        <li class="primary nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="主鍵" alt="主鍵" class="icon ic_bd_primary">&nbsp;主鍵</span></li>
+                        <!-- Add unique -->
+                        <li class="add_unique unique nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_unique_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+UNIQUE%28%60t_id%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+t_id+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique">&nbsp;唯一</span> </a>
+                        </li>
+                        <!-- Add index -->
+                        <li class="add_index nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_index_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+INDEX%28%60t_id%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+t_id+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="索引" alt="索引" class="icon ic_b_index">&nbsp;索引</span> </a>
+                        </li>
+                        <!-- Add spatial -->
+                        <li class="spatial nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="空間" alt="空間" class="icon ic_bd_spatial">&nbsp;空間</span></li>
+                        <!-- FULLTEXT is possible on TEXT, CHAR and VARCHAR -->
+                        <li class="fulltext nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="全文搜尋" alt="全文搜尋" class="icon ic_bd_ftext">&nbsp;全文搜尋</span> </li>
+                        <!-- Distinct value action -->
+                        <li class="browse nowrap">
+                            <a href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%B3%87%E6%96%99%E5%88%97%E6%95%B8%60%2C+%60t_id%60+FROM+%60oc_t%60+GROUP+BY+%60t_id%60+ORDER+BY+%60t_id%60&amp;is_browse_distinct=1">
+                                <span class="nowrap"><img src="./css/dot.gif" title="顯示相異值" alt="顯示相異值" class="icon ic_b_browse">&nbsp;顯示相異值</span> </a>
+                        </li>
+                        <li class="submenu" style="">
+                            <a href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=db_structure.php&amp;table=oc_t#" class="tab nowrap"><img alt="" title="" src="./css/dot.gif" class="icon ic_b_more">更多</a>
+                            <ul class="notonly"></ul>
+                        </li>
+                        <div class="clearfloat"></div>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="even">
+                <td class="center print_ignore">
+                    <input type="checkbox" class="checkall" name="selected_fld[]" value="project_name" id="checkbox_row_2">
+                </td>
+                <td class="right">2</td>
+                <th class="nowrap">
+                    <label for="checkbox_row_2">
+<span class="commented_column" title="專案名">project_name</span>    </label>
+                </th>
+                <td class="nowrap">
+                    <bdo dir="ltr" lang="en">varchar(30)            </bdo>
+                </td>
+                <td>
+                    <dfn title="Unicode (多語言), 不區分大小寫">utf8_general_ci</dfn>
+                </td>
+                <td class="column_attribute nowrap"> </td>
+                <td>是</td>
+                <td class="nowrap">
+                    <i>NULL</i> </td>
+                <td>
+                    專案名 </td>
+                <td class="nowrap"></td>
+                <td class="edit center print_ignore">
+                    <a class="change_column_anchor ajax" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=project_name&amp;change_column=1">
+                        <span class="nowrap"><img src="./css/dot.gif" title="修改" alt="修改" class="icon ic_b_edit">&nbsp;修改</span> </a>
+                </td>
+                <td class="drop center print_ignore">
+                    <a class="drop_column_anchor ajax" href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+%60project_name%60%3B&amp;dropped_column=project_name&amp;purge=1&amp;message_to_show=%E5%B7%B2%E5%88%AA%E9%99%A4%E6%AC%84%E4%BD%8D+project_name%E3%80%82">
+                        <span class="nowrap"><img src="./css/dot.gif" title="刪除" alt="刪除" class="icon ic_b_drop">&nbsp;刪除</span> </a>
+                </td>
+                <td class="print_ignore">
+                    <ul class="table-structure-actions resizable-menu">
+                        <!-- Add primary -->
+
+                        <li class="primary nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_primary_key_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60project_name%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+project_name+%E8%A8%AD%E7%88%B2%E4%B8%BB%E9%8D%B5%28Primary+key%29%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="主鍵" alt="主鍵" class="icon ic_b_primary">&nbsp;主鍵</span> </a>
+                        </li>
+                        <!-- Add unique -->
+                        <li class="add_unique unique nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_unique_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+UNIQUE%28%60project_name%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+project_name+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique">&nbsp;唯一</span> </a>
+                        </li>
+                        <!-- Add index -->
+                        <li class="add_index nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_index_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+INDEX%28%60project_name%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+project_name+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="索引" alt="索引" class="icon ic_b_index">&nbsp;索引</span> </a>
+                        </li>
+                        <!-- Add spatial -->
+                        <li class="spatial nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="空間" alt="空間" class="icon ic_bd_spatial">&nbsp;空間</span></li>
+                        <!-- FULLTEXT is possible on TEXT, CHAR and VARCHAR -->
+                        <li class="fulltext nowrap">
+                            <a rel="samepage" class="ajax add_key add_fulltext_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+FULLTEXT%28%60project_name%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+project_name+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="全文搜尋" alt="全文搜尋" class="icon ic_b_ftext">&nbsp;全文搜尋</span> </a>
+                        </li>
+                        <!-- Distinct value action -->
+                        <li class="browse nowrap">
+                            <a href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%B3%87%E6%96%99%E5%88%97%E6%95%B8%60%2C+%60project_name%60+FROM+%60oc_t%60+GROUP+BY+%60project_name%60+ORDER+BY+%60project_name%60&amp;is_browse_distinct=1">
+                                <span class="nowrap"><img src="./css/dot.gif" title="顯示相異值" alt="顯示相異值" class="icon ic_b_browse">&nbsp;顯示相異值</span> </a>
+                        </li>
+                        <li class="submenu" style="">
+                            <a href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=db_structure.php&amp;table=oc_t#" class="tab nowrap"><img alt="" title="" src="./css/dot.gif" class="icon ic_b_more">更多</a>
+                            <ul class="notonly"></ul>
+                        </li>
+                        <div class="clearfloat"></div>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td class="center print_ignore">
+                    <input type="checkbox" class="checkall" name="selected_fld[]" value="version" id="checkbox_row_3">
+                </td>
+                <td class="right">3</td>
+                <th class="nowrap">
+                    <label for="checkbox_row_3">
+<span class="commented_column" title="版本號">version</span>    </label>
+                </th>
+                <td class="nowrap">
+                    <bdo dir="ltr" lang="en">varchar(10)            </bdo>
+                </td>
+                <td>
+                    <dfn title="Unicode (多語言), 不區分大小寫">utf8_general_ci</dfn>
+                </td>
+                <td class="column_attribute nowrap"> </td>
+                <td>是</td>
+                <td class="nowrap">
+                    <i>NULL</i> </td>
+                <td>
+                    版本號 </td>
+                <td class="nowrap"></td>
+                <td class="edit center print_ignore">
+                    <a class="change_column_anchor ajax" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=version&amp;change_column=1">
+                        <span class="nowrap"><img src="./css/dot.gif" title="修改" alt="修改" class="icon ic_b_edit">&nbsp;修改</span> </a>
+                </td>
+                <td class="drop center print_ignore">
+                    <a class="drop_column_anchor ajax" href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+%60version%60%3B&amp;dropped_column=version&amp;purge=1&amp;message_to_show=%E5%B7%B2%E5%88%AA%E9%99%A4%E6%AC%84%E4%BD%8D+version%E3%80%82">
+                        <span class="nowrap"><img src="./css/dot.gif" title="刪除" alt="刪除" class="icon ic_b_drop">&nbsp;刪除</span> </a>
+                </td>
+                <td class="print_ignore">
+                    <ul class="table-structure-actions resizable-menu">
+                        <!-- Add primary -->
+
+                        <li class="primary nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_primary_key_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60version%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+version+%E8%A8%AD%E7%88%B2%E4%B8%BB%E9%8D%B5%28Primary+key%29%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="主鍵" alt="主鍵" class="icon ic_b_primary">&nbsp;主鍵</span> </a>
+                        </li>
+                        <!-- Add unique -->
+                        <li class="add_unique unique nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_unique_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+UNIQUE%28%60version%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+version+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique">&nbsp;唯一</span> </a>
+                        </li>
+                        <!-- Add index -->
+                        <li class="add_index nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_index_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+INDEX%28%60version%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+version+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="索引" alt="索引" class="icon ic_b_index">&nbsp;索引</span> </a>
+                        </li>
+                        <!-- Add spatial -->
+                        <li class="spatial nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="空間" alt="空間" class="icon ic_bd_spatial">&nbsp;空間</span></li>
+                        <!-- FULLTEXT is possible on TEXT, CHAR and VARCHAR -->
+                        <li class="fulltext nowrap">
+                            <a rel="samepage" class="ajax add_key add_fulltext_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+FULLTEXT%28%60version%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+version+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="全文搜尋" alt="全文搜尋" class="icon ic_b_ftext">&nbsp;全文搜尋</span> </a>
+                        </li>
+                        <!-- Distinct value action -->
+                        <li class="browse nowrap">
+                            <a href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%B3%87%E6%96%99%E5%88%97%E6%95%B8%60%2C+%60version%60+FROM+%60oc_t%60+GROUP+BY+%60version%60+ORDER+BY+%60version%60&amp;is_browse_distinct=1">
+                                <span class="nowrap"><img src="./css/dot.gif" title="顯示相異值" alt="顯示相異值" class="icon ic_b_browse">&nbsp;顯示相異值</span> </a>
+                        </li>
+                        <li class="submenu" style="">
+                            <a href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=db_structure.php&amp;table=oc_t#" class="tab nowrap"><img alt="" title="" src="./css/dot.gif" class="icon ic_b_more">更多</a>
+                            <ul class="notonly"></ul>
+                        </li>
+                        <div class="clearfloat"></div>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="even">
+                <td class="center print_ignore">
+                    <input type="checkbox" class="checkall" name="selected_fld[]" value="dirname" id="checkbox_row_4">
+                </td>
+                <td class="right">4</td>
+                <th class="nowrap">
+                    <label for="checkbox_row_4">
+<span class="commented_column" title="路徑名稱">dirname</span>    </label>
+                </th>
+                <td class="nowrap">
+                    <bdo dir="ltr" lang="en">varchar(100)            </bdo>
+                </td>
+                <td>
+                    <dfn title="Unicode (多語言), 不區分大小寫">utf8_general_ci</dfn>
+                </td>
+                <td class="column_attribute nowrap"> </td>
+                <td>否</td>
+                <td class="nowrap">
+                    <i>無</i>
+                </td>
+                <td>
+                    路徑名稱 </td>
+                <td class="nowrap"></td>
+                <td class="edit center print_ignore">
+                    <a class="change_column_anchor ajax" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=dirname&amp;change_column=1">
+                        <span class="nowrap"><img src="./css/dot.gif" title="修改" alt="修改" class="icon ic_b_edit">&nbsp;修改</span> </a>
+                </td>
+                <td class="drop center print_ignore">
+                    <a class="drop_column_anchor ajax" href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+%60dirname%60%3B&amp;dropped_column=dirname&amp;purge=1&amp;message_to_show=%E5%B7%B2%E5%88%AA%E9%99%A4%E6%AC%84%E4%BD%8D+dirname%E3%80%82">
+                        <span class="nowrap"><img src="./css/dot.gif" title="刪除" alt="刪除" class="icon ic_b_drop">&nbsp;刪除</span> </a>
+                </td>
+                <td class="print_ignore">
+                    <ul class="table-structure-actions resizable-menu">
+                        <!-- Add primary -->
+
+                        <li class="primary nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_primary_key_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60dirname%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+dirname+%E8%A8%AD%E7%88%B2%E4%B8%BB%E9%8D%B5%28Primary+key%29%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="主鍵" alt="主鍵" class="icon ic_b_primary">&nbsp;主鍵</span> </a>
+                        </li>
+                        <!-- Add unique -->
+                        <li class="add_unique unique nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_unique_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+UNIQUE%28%60dirname%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+dirname+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique">&nbsp;唯一</span> </a>
+                        </li>
+                        <!-- Add index -->
+                        <li class="add_index nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_index_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+INDEX%28%60dirname%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+dirname+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="索引" alt="索引" class="icon ic_b_index">&nbsp;索引</span> </a>
+                        </li>
+                        <!-- Add spatial -->
+                        <li class="spatial nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="空間" alt="空間" class="icon ic_bd_spatial">&nbsp;空間</span></li>
+                        <!-- FULLTEXT is possible on TEXT, CHAR and VARCHAR -->
+                        <li class="fulltext nowrap">
+                            <a rel="samepage" class="ajax add_key add_fulltext_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+FULLTEXT%28%60dirname%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+dirname+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="全文搜尋" alt="全文搜尋" class="icon ic_b_ftext">&nbsp;全文搜尋</span> </a>
+                        </li>
+                        <!-- Distinct value action -->
+                        <li class="browse nowrap">
+                            <a href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%B3%87%E6%96%99%E5%88%97%E6%95%B8%60%2C+%60dirname%60+FROM+%60oc_t%60+GROUP+BY+%60dirname%60+ORDER+BY+%60dirname%60&amp;is_browse_distinct=1">
+                                <span class="nowrap"><img src="./css/dot.gif" title="顯示相異值" alt="顯示相異值" class="icon ic_b_browse">&nbsp;顯示相異值</span> </a>
+                        </li>
+                        <li class="submenu" style="">
+                            <a href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=db_structure.php&amp;table=oc_t#" class="tab nowrap"><img alt="" title="" src="./css/dot.gif" class="icon ic_b_more">更多</a>
+                            <ul class="notonly"></ul>
+                        </li>
+                        <div class="clearfloat"></div>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td class="center print_ignore">
+                    <input type="checkbox" class="checkall" name="selected_fld[]" value="basename" id="checkbox_row_5">
+                </td>
+                <td class="right">5</td>
+                <th class="nowrap">
+                    <label for="checkbox_row_5">
+<span class="commented_column" title="檔案名稱">basename</span>    </label>
+                </th>
+                <td class="nowrap">
+                    <bdo dir="ltr" lang="en">varchar(30)            </bdo>
+                </td>
+                <td>
+                    <dfn title="Unicode (多語言), 不區分大小寫">utf8_general_ci</dfn>
+                </td>
+                <td class="column_attribute nowrap"> </td>
+                <td>否</td>
+                <td class="nowrap">
+                    <i>無</i>
+                </td>
+                <td>
+                    檔案名稱 </td>
+                <td class="nowrap"></td>
+                <td class="edit center print_ignore">
+                    <a class="change_column_anchor ajax" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=basename&amp;change_column=1">
+                        <span class="nowrap"><img src="./css/dot.gif" title="修改" alt="修改" class="icon ic_b_edit">&nbsp;修改</span> </a>
+                </td>
+                <td class="drop center print_ignore">
+                    <a class="drop_column_anchor ajax" href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+%60basename%60%3B&amp;dropped_column=basename&amp;purge=1&amp;message_to_show=%E5%B7%B2%E5%88%AA%E9%99%A4%E6%AC%84%E4%BD%8D+basename%E3%80%82">
+                        <span class="nowrap"><img src="./css/dot.gif" title="刪除" alt="刪除" class="icon ic_b_drop">&nbsp;刪除</span> </a>
+                </td>
+                <td class="print_ignore">
+                    <ul class="table-structure-actions resizable-menu">
+                        <!-- Add primary -->
+
+                        <li class="primary nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_primary_key_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60basename%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+basename+%E8%A8%AD%E7%88%B2%E4%B8%BB%E9%8D%B5%28Primary+key%29%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="主鍵" alt="主鍵" class="icon ic_b_primary">&nbsp;主鍵</span> </a>
+                        </li>
+                        <!-- Add unique -->
+                        <li class="add_unique unique nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_unique_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+UNIQUE%28%60basename%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+basename+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique">&nbsp;唯一</span> </a>
+                        </li>
+                        <!-- Add index -->
+                        <li class="add_index nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_index_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+INDEX%28%60basename%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+basename+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="索引" alt="索引" class="icon ic_b_index">&nbsp;索引</span> </a>
+                        </li>
+                        <!-- Add spatial -->
+                        <li class="spatial nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="空間" alt="空間" class="icon ic_bd_spatial">&nbsp;空間</span></li>
+                        <!-- FULLTEXT is possible on TEXT, CHAR and VARCHAR -->
+                        <li class="fulltext nowrap">
+                            <a rel="samepage" class="ajax add_key add_fulltext_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+FULLTEXT%28%60basename%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+basename+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="全文搜尋" alt="全文搜尋" class="icon ic_b_ftext">&nbsp;全文搜尋</span> </a>
+                        </li>
+                        <!-- Distinct value action -->
+                        <li class="browse nowrap">
+                            <a href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%B3%87%E6%96%99%E5%88%97%E6%95%B8%60%2C+%60basename%60+FROM+%60oc_t%60+GROUP+BY+%60basename%60+ORDER+BY+%60basename%60&amp;is_browse_distinct=1">
+                                <span class="nowrap"><img src="./css/dot.gif" title="顯示相異值" alt="顯示相異值" class="icon ic_b_browse">&nbsp;顯示相異值</span> </a>
+                        </li>
+                        <li class="submenu" style="">
+                            <a href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=db_structure.php&amp;table=oc_t#" class="tab nowrap"><img alt="" title="" src="./css/dot.gif" class="icon ic_b_more">更多</a>
+                            <ul class="notonly"></ul>
+                        </li>
+                        <div class="clearfloat"></div>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="even">
+                <td class="center print_ignore">
+                    <input type="checkbox" class="checkall" name="selected_fld[]" value="sourcelanguage" id="checkbox_row_6">
+                </td>
+                <td class="right">6</td>
+                <th class="nowrap">
+                    <label for="checkbox_row_6">
+<span class="commented_column" title="來源語言">sourcelanguage</span>    </label>
+                </th>
+                <td class="nowrap">
+                    <bdo dir="ltr" lang="en">varchar(5)            </bdo>
+                </td>
+                <td>
+                    <dfn title="Unicode (多語言), 不區分大小寫">utf8_general_ci</dfn>
+                </td>
+                <td class="column_attribute nowrap"> </td>
+                <td>否</td>
+                <td class="nowrap">
+                    <i>無</i>
+                </td>
+                <td>
+                    來源語言 </td>
+                <td class="nowrap"></td>
+                <td class="edit center print_ignore">
+                    <a class="change_column_anchor ajax" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=sourcelanguage&amp;change_column=1">
+                        <span class="nowrap"><img src="./css/dot.gif" title="修改" alt="修改" class="icon ic_b_edit">&nbsp;修改</span> </a>
+                </td>
+                <td class="drop center print_ignore">
+                    <a class="drop_column_anchor ajax" href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+%60sourcelanguage%60%3B&amp;dropped_column=sourcelanguage&amp;purge=1&amp;message_to_show=%E5%B7%B2%E5%88%AA%E9%99%A4%E6%AC%84%E4%BD%8D+sourcelanguage%E3%80%82">
+                        <span class="nowrap"><img src="./css/dot.gif" title="刪除" alt="刪除" class="icon ic_b_drop">&nbsp;刪除</span> </a>
+                </td>
+                <td class="print_ignore">
+                    <ul class="table-structure-actions resizable-menu">
+                        <!-- Add primary -->
+
+                        <li class="primary nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_primary_key_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60sourcelanguage%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+sourcelanguage+%E8%A8%AD%E7%88%B2%E4%B8%BB%E9%8D%B5%28Primary+key%29%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="主鍵" alt="主鍵" class="icon ic_b_primary">&nbsp;主鍵</span> </a>
+                        </li>
+                        <!-- Add unique -->
+                        <li class="add_unique unique nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_unique_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+UNIQUE%28%60sourcelanguage%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+sourcelanguage+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique">&nbsp;唯一</span> </a>
+                        </li>
+                        <!-- Add index -->
+                        <li class="add_index nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_index_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+INDEX%28%60sourcelanguage%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+sourcelanguage+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="索引" alt="索引" class="icon ic_b_index">&nbsp;索引</span> </a>
+                        </li>
+                        <!-- Add spatial -->
+                        <li class="spatial nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="空間" alt="空間" class="icon ic_bd_spatial">&nbsp;空間</span></li>
+                        <!-- FULLTEXT is possible on TEXT, CHAR and VARCHAR -->
+                        <li class="fulltext nowrap">
+                            <a rel="samepage" class="ajax add_key add_fulltext_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+FULLTEXT%28%60sourcelanguage%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+sourcelanguage+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="全文搜尋" alt="全文搜尋" class="icon ic_b_ftext">&nbsp;全文搜尋</span> </a>
+                        </li>
+                        <!-- Distinct value action -->
+                        <li class="browse nowrap">
+                            <a href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%B3%87%E6%96%99%E5%88%97%E6%95%B8%60%2C+%60sourcelanguage%60+FROM+%60oc_t%60+GROUP+BY+%60sourcelanguage%60+ORDER+BY+%60sourcelanguage%60&amp;is_browse_distinct=1">
+                                <span class="nowrap"><img src="./css/dot.gif" title="顯示相異值" alt="顯示相異值" class="icon ic_b_browse">&nbsp;顯示相異值</span> </a>
+                        </li>
+                        <li class="submenu" style="">
+                            <a href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=db_structure.php&amp;table=oc_t#" class="tab nowrap"><img alt="" title="" src="./css/dot.gif" class="icon ic_b_more">更多</a>
+                            <ul class="notonly"></ul>
+                        </li>
+                        <div class="clearfloat"></div>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td class="center print_ignore">
+                    <input type="checkbox" class="checkall" name="selected_fld[]" value="sourcetext" id="checkbox_row_7">
+                </td>
+                <td class="right">7</td>
+                <th class="nowrap">
+                    <label for="checkbox_row_7">
+<span class="commented_column" title="來源內容">sourcetext</span>    </label>
+                </th>
+                <td class="nowrap">
+                    <bdo dir="ltr" lang="en">text            </bdo>
+                </td>
+                <td>
+                    <dfn title="Unicode (多語言), 不區分大小寫">utf8_general_ci</dfn>
+                </td>
+                <td class="column_attribute nowrap"> </td>
+                <td>是</td>
+                <td class="nowrap">
+                    <i>NULL</i> </td>
+                <td>
+                    來源內容 </td>
+                <td class="nowrap"></td>
+                <td class="edit center print_ignore">
+                    <a class="change_column_anchor ajax" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=sourcetext&amp;change_column=1">
+                        <span class="nowrap"><img src="./css/dot.gif" title="修改" alt="修改" class="icon ic_b_edit">&nbsp;修改</span> </a>
+                </td>
+                <td class="drop center print_ignore">
+                    <a class="drop_column_anchor ajax" href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+%60sourcetext%60%3B&amp;dropped_column=sourcetext&amp;purge=1&amp;message_to_show=%E5%B7%B2%E5%88%AA%E9%99%A4%E6%AC%84%E4%BD%8D+sourcetext%E3%80%82">
+                        <span class="nowrap"><img src="./css/dot.gif" title="刪除" alt="刪除" class="icon ic_b_drop">&nbsp;刪除</span> </a>
+                </td>
+                <td class="print_ignore">
+                    <ul class="table-structure-actions resizable-menu">
+                        <!-- Add primary -->
+
+                        <li class="primary nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="主鍵" alt="主鍵" class="icon ic_bd_primary">&nbsp;主鍵</span></li>
+                        <!-- Add unique -->
+                        <li class="add_unique unique nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="唯一" alt="唯一" class="icon ic_bd_unique">&nbsp;唯一</span></li>
+                        <!-- Add index -->
+                        <li class="add_index nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="索引" alt="索引" class="icon ic_bd_index">&nbsp;索引</span></li>
+                        <!-- Add spatial -->
+                        <li class="spatial nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="空間" alt="空間" class="icon ic_bd_spatial">&nbsp;空間</span></li>
+                        <!-- FULLTEXT is possible on TEXT, CHAR and VARCHAR -->
+                        <li class="fulltext nowrap">
+                            <a rel="samepage" class="ajax add_key add_fulltext_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+FULLTEXT%28%60sourcetext%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+sourcetext+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="全文搜尋" alt="全文搜尋" class="icon ic_b_ftext">&nbsp;全文搜尋</span> </a>
+                        </li>
+                        <!-- Distinct value action -->
+                        <li class="browse nowrap">
+                            <a href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%B3%87%E6%96%99%E5%88%97%E6%95%B8%60%2C+%60sourcetext%60+FROM+%60oc_t%60+GROUP+BY+%60sourcetext%60+ORDER+BY+%60sourcetext%60&amp;is_browse_distinct=1">
+                                <span class="nowrap"><img src="./css/dot.gif" title="顯示相異值" alt="顯示相異值" class="icon ic_b_browse">&nbsp;顯示相異值</span> </a>
+                        </li>
+                        <li class="submenu" style="">
+                            <a href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=db_structure.php&amp;table=oc_t#" class="tab nowrap"><img alt="" title="" src="./css/dot.gif" class="icon ic_b_more">更多</a>
+                            <ul class="notonly"></ul>
+                        </li>
+                        <div class="clearfloat"></div>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="even">
+                <td class="center print_ignore">
+                    <input type="checkbox" class="checkall" name="selected_fld[]" value="targetlanguage" id="checkbox_row_8">
+                </td>
+                <td class="right">8</td>
+                <th class="nowrap">
+                    <label for="checkbox_row_8">
+<span class="commented_column" title="目標語言">targetlanguage</span>    </label>
+                </th>
+                <td class="nowrap">
+                    <bdo dir="ltr" lang="en">varchar(5)            </bdo>
+                </td>
+                <td>
+                    <dfn title="Unicode (多語言), 不區分大小寫">utf8_general_ci</dfn>
+                </td>
+                <td class="column_attribute nowrap"> </td>
+                <td>否</td>
+                <td class="nowrap">
+                    <i>無</i>
+                </td>
+                <td>
+                    目標語言 </td>
+                <td class="nowrap"></td>
+                <td class="edit center print_ignore">
+                    <a class="change_column_anchor ajax" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=targetlanguage&amp;change_column=1">
+                        <span class="nowrap"><img src="./css/dot.gif" title="修改" alt="修改" class="icon ic_b_edit">&nbsp;修改</span> </a>
+                </td>
+                <td class="drop center print_ignore">
+                    <a class="drop_column_anchor ajax" href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+%60targetlanguage%60%3B&amp;dropped_column=targetlanguage&amp;purge=1&amp;message_to_show=%E5%B7%B2%E5%88%AA%E9%99%A4%E6%AC%84%E4%BD%8D+targetlanguage%E3%80%82">
+                        <span class="nowrap"><img src="./css/dot.gif" title="刪除" alt="刪除" class="icon ic_b_drop">&nbsp;刪除</span> </a>
+                </td>
+                <td class="print_ignore">
+                    <ul class="table-structure-actions resizable-menu">
+                        <!-- Add primary -->
+
+                        <li class="primary nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_primary_key_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60targetlanguage%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+targetlanguage+%E8%A8%AD%E7%88%B2%E4%B8%BB%E9%8D%B5%28Primary+key%29%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="主鍵" alt="主鍵" class="icon ic_b_primary">&nbsp;主鍵</span> </a>
+                        </li>
+                        <!-- Add unique -->
+                        <li class="add_unique unique nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_unique_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+UNIQUE%28%60targetlanguage%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+targetlanguage+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique">&nbsp;唯一</span> </a>
+                        </li>
+                        <!-- Add index -->
+                        <li class="add_index nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_index_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+INDEX%28%60targetlanguage%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+targetlanguage+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="索引" alt="索引" class="icon ic_b_index">&nbsp;索引</span> </a>
+                        </li>
+                        <!-- Add spatial -->
+                        <li class="spatial nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="空間" alt="空間" class="icon ic_bd_spatial">&nbsp;空間</span></li>
+                        <!-- FULLTEXT is possible on TEXT, CHAR and VARCHAR -->
+                        <li class="fulltext nowrap">
+                            <a rel="samepage" class="ajax add_key add_fulltext_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+FULLTEXT%28%60targetlanguage%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+targetlanguage+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="全文搜尋" alt="全文搜尋" class="icon ic_b_ftext">&nbsp;全文搜尋</span> </a>
+                        </li>
+                        <!-- Distinct value action -->
+                        <li class="browse nowrap">
+                            <a href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%B3%87%E6%96%99%E5%88%97%E6%95%B8%60%2C+%60targetlanguage%60+FROM+%60oc_t%60+GROUP+BY+%60targetlanguage%60+ORDER+BY+%60targetlanguage%60&amp;is_browse_distinct=1">
+                                <span class="nowrap"><img src="./css/dot.gif" title="顯示相異值" alt="顯示相異值" class="icon ic_b_browse">&nbsp;顯示相異值</span> </a>
+                        </li>
+                        <li class="submenu" style="">
+                            <a href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=db_structure.php&amp;table=oc_t#" class="tab nowrap"><img alt="" title="" src="./css/dot.gif" class="icon ic_b_more">更多</a>
+                            <ul class="notonly"></ul>
+                        </li>
+                        <div class="clearfloat"></div>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td class="center print_ignore">
+                    <input type="checkbox" class="checkall" name="selected_fld[]" value="targettext" id="checkbox_row_9">
+                </td>
+                <td class="right">9</td>
+                <th class="nowrap">
+                    <label for="checkbox_row_9">
+<span class="commented_column" title="目標內容">targettext</span>    </label>
+                </th>
+                <td class="nowrap">
+                    <bdo dir="ltr" lang="en">text            </bdo>
+                </td>
+                <td>
+                    <dfn title="Unicode (多語言), 不區分大小寫">utf8_general_ci</dfn>
+                </td>
+                <td class="column_attribute nowrap"> </td>
+                <td>是</td>
+                <td class="nowrap">
+                    <i>NULL</i> </td>
+                <td>
+                    目標內容 </td>
+                <td class="nowrap"></td>
+                <td class="edit center print_ignore">
+                    <a class="change_column_anchor ajax" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=targettext&amp;change_column=1">
+                        <span class="nowrap"><img src="./css/dot.gif" title="修改" alt="修改" class="icon ic_b_edit">&nbsp;修改</span> </a>
+                </td>
+                <td class="drop center print_ignore">
+                    <a class="drop_column_anchor ajax" href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+%60targettext%60%3B&amp;dropped_column=targettext&amp;purge=1&amp;message_to_show=%E5%B7%B2%E5%88%AA%E9%99%A4%E6%AC%84%E4%BD%8D+targettext%E3%80%82">
+                        <span class="nowrap"><img src="./css/dot.gif" title="刪除" alt="刪除" class="icon ic_b_drop">&nbsp;刪除</span> </a>
+                </td>
+                <td class="print_ignore">
+                    <ul class="table-structure-actions resizable-menu">
+                        <!-- Add primary -->
+
+                        <li class="primary nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="主鍵" alt="主鍵" class="icon ic_bd_primary">&nbsp;主鍵</span></li>
+                        <!-- Add unique -->
+                        <li class="add_unique unique nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="唯一" alt="唯一" class="icon ic_bd_unique">&nbsp;唯一</span></li>
+                        <!-- Add index -->
+                        <li class="add_index nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="索引" alt="索引" class="icon ic_bd_index">&nbsp;索引</span></li>
+                        <!-- Add spatial -->
+                        <li class="spatial nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="空間" alt="空間" class="icon ic_bd_spatial">&nbsp;空間</span></li>
+                        <!-- FULLTEXT is possible on TEXT, CHAR and VARCHAR -->
+                        <li class="fulltext nowrap">
+                            <a rel="samepage" class="ajax add_key add_fulltext_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+FULLTEXT%28%60targettext%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+targettext+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="全文搜尋" alt="全文搜尋" class="icon ic_b_ftext">&nbsp;全文搜尋</span> </a>
+                        </li>
+                        <!-- Distinct value action -->
+                        <li class="browse nowrap">
+                            <a href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%B3%87%E6%96%99%E5%88%97%E6%95%B8%60%2C+%60targettext%60+FROM+%60oc_t%60+GROUP+BY+%60targettext%60+ORDER+BY+%60targettext%60&amp;is_browse_distinct=1">
+                                <span class="nowrap"><img src="./css/dot.gif" title="顯示相異值" alt="顯示相異值" class="icon ic_b_browse">&nbsp;顯示相異值</span> </a>
+                        </li>
+                        <li class="submenu" style="">
+                            <a href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=db_structure.php&amp;table=oc_t#" class="tab nowrap"><img alt="" title="" src="./css/dot.gif" class="icon ic_b_more">更多</a>
+                            <ul class="notonly"></ul>
+                        </li>
+                        <div class="clearfloat"></div>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="even">
+                <td class="center print_ignore">
+                    <input type="checkbox" class="checkall" name="selected_fld[]" value="priority" id="checkbox_row_10">
+                </td>
+                <td class="right">10</td>
+                <th class="nowrap">
+                    <label for="checkbox_row_10">
+<span class="commented_column" title="優先度數字越小越大為1的話不可複寫">priority</span>    </label>
+                </th>
+                <td class="nowrap">
+                    <bdo dir="ltr" lang="en">int(2)            </bdo>
+                </td>
+                <td>
+                </td>
+                <td class="column_attribute nowrap">UNSIGNED</td>
+                <td>否</td>
+                <td class="nowrap">
+                    20 </td>
+                <td>
+                    優先度數字越小越大為1的話不可複寫 </td>
+                <td class="nowrap"></td>
+                <td class="edit center print_ignore">
+                    <a class="change_column_anchor ajax" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=priority&amp;change_column=1">
+                        <span class="nowrap"><img src="./css/dot.gif" title="修改" alt="修改" class="icon ic_b_edit">&nbsp;修改</span> </a>
+                </td>
+                <td class="drop center print_ignore">
+                    <a class="drop_column_anchor ajax" href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+%60priority%60%3B&amp;dropped_column=priority&amp;purge=1&amp;message_to_show=%E5%B7%B2%E5%88%AA%E9%99%A4%E6%AC%84%E4%BD%8D+priority%E3%80%82">
+                        <span class="nowrap"><img src="./css/dot.gif" title="刪除" alt="刪除" class="icon ic_b_drop">&nbsp;刪除</span> </a>
+                </td>
+                <td class="print_ignore">
+                    <ul class="table-structure-actions resizable-menu">
+                        <!-- Add primary -->
+
+                        <li class="primary nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_primary_key_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60priority%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+priority+%E8%A8%AD%E7%88%B2%E4%B8%BB%E9%8D%B5%28Primary+key%29%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="主鍵" alt="主鍵" class="icon ic_b_primary">&nbsp;主鍵</span> </a>
+                        </li>
+                        <!-- Add unique -->
+                        <li class="add_unique unique nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_unique_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+UNIQUE%28%60priority%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+priority+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique">&nbsp;唯一</span> </a>
+                        </li>
+                        <!-- Add index -->
+                        <li class="add_index nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_index_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+INDEX%28%60priority%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+priority+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="索引" alt="索引" class="icon ic_b_index">&nbsp;索引</span> </a>
+                        </li>
+                        <!-- Add spatial -->
+                        <li class="spatial nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="空間" alt="空間" class="icon ic_bd_spatial">&nbsp;空間</span></li>
+                        <!-- FULLTEXT is possible on TEXT, CHAR and VARCHAR -->
+                        <li class="fulltext nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="全文搜尋" alt="全文搜尋" class="icon ic_bd_ftext">&nbsp;全文搜尋</span> </li>
+                        <!-- Distinct value action -->
+                        <li class="browse nowrap">
+                            <a href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%B3%87%E6%96%99%E5%88%97%E6%95%B8%60%2C+%60priority%60+FROM+%60oc_t%60+GROUP+BY+%60priority%60+ORDER+BY+%60priority%60&amp;is_browse_distinct=1">
+                                <span class="nowrap"><img src="./css/dot.gif" title="顯示相異值" alt="顯示相異值" class="icon ic_b_browse">&nbsp;顯示相異值</span> </a>
+                        </li>
+                        <li class="submenu" style="">
+                            <a href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=db_structure.php&amp;table=oc_t#" class="tab nowrap"><img alt="" title="" src="./css/dot.gif" class="icon ic_b_more">更多</a>
+                            <ul class="notonly"></ul>
+                        </li>
+                        <div class="clearfloat"></div>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td class="center print_ignore">
+                    <input type="checkbox" class="checkall" name="selected_fld[]" value="add_date" id="checkbox_row_11">
+                </td>
+                <td class="right">11</td>
+                <th class="nowrap">
+                    <label for="checkbox_row_11">
+<span class="commented_column" title="資料建立日期">add_date</span>    </label>
+                </th>
+                <td class="nowrap">
+                    <bdo dir="ltr" lang="en">date            </bdo>
+                </td>
+                <td>
+                </td>
+                <td class="column_attribute nowrap"> </td>
+                <td>否</td>
+                <td class="nowrap">
+                    <i>無</i>
+                </td>
+                <td>
+                    資料建立日期 </td>
+                <td class="nowrap"></td>
+                <td class="edit center print_ignore">
+                    <a class="change_column_anchor ajax" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=add_date&amp;change_column=1">
+                        <span class="nowrap"><img src="./css/dot.gif" title="修改" alt="修改" class="icon ic_b_edit">&nbsp;修改</span> </a>
+                </td>
+                <td class="drop center print_ignore">
+                    <a class="drop_column_anchor ajax" href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+%60add_date%60%3B&amp;dropped_column=add_date&amp;purge=1&amp;message_to_show=%E5%B7%B2%E5%88%AA%E9%99%A4%E6%AC%84%E4%BD%8D+add_date%E3%80%82">
+                        <span class="nowrap"><img src="./css/dot.gif" title="刪除" alt="刪除" class="icon ic_b_drop">&nbsp;刪除</span> </a>
+                </td>
+                <td class="print_ignore">
+                    <ul class="table-structure-actions resizable-menu">
+                        <!-- Add primary -->
+
+                        <li class="primary nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_primary_key_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60add_date%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+add_date+%E8%A8%AD%E7%88%B2%E4%B8%BB%E9%8D%B5%28Primary+key%29%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="主鍵" alt="主鍵" class="icon ic_b_primary">&nbsp;主鍵</span> </a>
+                        </li>
+                        <!-- Add unique -->
+                        <li class="add_unique unique nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_unique_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+UNIQUE%28%60add_date%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+add_date+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique">&nbsp;唯一</span> </a>
+                        </li>
+                        <!-- Add index -->
+                        <li class="add_index nowrap">
+                            <a rel="samepage" class="ajax add_key print_ignore
+     add_index_anchor" href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;add_key=1&amp;sql_query=ALTER+TABLE+%60oc_t%60+ADD+INDEX%28%60add_date%60%29%3B&amp;message_to_show=%E5%B7%B2%E5%B0%87+add_date+%E8%A8%AD%E7%88%B2%E7%B4%A2%E5%BC%95%E3%80%82">
+                                <span class="nowrap"><img src="./css/dot.gif" title="索引" alt="索引" class="icon ic_b_index">&nbsp;索引</span> </a>
+                        </li>
+                        <!-- Add spatial -->
+                        <li class="spatial nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="空間" alt="空間" class="icon ic_bd_spatial">&nbsp;空間</span></li>
+                        <!-- FULLTEXT is possible on TEXT, CHAR and VARCHAR -->
+                        <li class="fulltext nowrap">
+                            <span class="nowrap"><img src="./css/dot.gif" title="全文搜尋" alt="全文搜尋" class="icon ic_bd_ftext">&nbsp;全文搜尋</span> </li>
+                        <!-- Distinct value action -->
+                        <li class="browse nowrap">
+                            <a href="http://test.com/P4211/sql.php?db=t_translation_googleapi&amp;table=oc_t&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%B3%87%E6%96%99%E5%88%97%E6%95%B8%60%2C+%60add_date%60+FROM+%60oc_t%60+GROUP+BY+%60add_date%60+ORDER+BY+%60add_date%60&amp;is_browse_distinct=1">
+                                <span class="nowrap"><img src="./css/dot.gif" title="顯示相異值" alt="顯示相異值" class="icon ic_b_browse">&nbsp;顯示相異值</span> </a>
+                        </li>
+                        <li class="submenu" style="">
+                            <a href="http://test.com/P4211/tbl_structure.php?db=t_translation_googleapi&amp;token=b3adcd52cec0a048ae531b6307745599&amp;goto=db_structure.php&amp;table=oc_t#" class="tab nowrap"><img alt="" title="" src="./css/dot.gif" class="icon ic_b_more">更多</a>
+                            <ul class="notonly"></ul>
+                        </li>
+                        <div class="clearfloat"></div>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

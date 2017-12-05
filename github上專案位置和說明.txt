@@ -1,0 +1,21 @@
+github上專案位置
+https://github.com/suffixbig/PHP-GoogleTranslate/
+-------------
+目錄
+-------------
+01a		來源目錄 英文
+01b		目標目錄 繁體中文
+01zh-TW   	來源目錄要刪除現有翻譯過的中文檔案 01tw_del_01a.php
+
+
+
+語言代碼
+en
+zh-TW
+
+-----------------------------
+#資料庫帳密直接改檔案
+-----------------------------
+_inc\mysql.inc.php
+    $dbuser = "sincethemachine";
+    $dbpass = "1234567890";

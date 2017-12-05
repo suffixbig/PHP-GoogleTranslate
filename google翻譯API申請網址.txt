@@ -1,0 +1,49 @@
+-----------------------------------------------------------------------------
+利用 Google 的 API 來做一個翻譯與發音的網頁
+https://dotblogs.com.tw/topcat/archive/2011/08/04/32582.aspx
+
+[PHP]使用Google Translate API做自動化翻譯
+http://finalevil-blog.logdown.com/posts/64185-google-translate-apirequest-uri
+-----------------------------------------------------------------------------
+
+官方說明
+https://cloud.google.com/translate/?hl=zh-tw
+
+
+
+設置你的項目
+
+	如果你還沒有這樣做：
+
+	在雲平台控制台中，轉至管理資源頁面並選擇或創建新項目。
+	轉到管理資源頁面
+	為您的項目啟用結算。
+	啟用結算
+	啟用雲翻譯API。
+	啟用API
+	啟用Google雲翻譯API後，點擊 轉到憑據按鈕以設置雲翻譯API憑據：
+
+請通過訪問https://console.developers.google.com/apis/api/translate.googleapis來啟用它  這個 AIP名字叫 Google Cloud Translation API
+
+/*
+超簡單使用
+如果你有申請過該API-網址直打就會有返回值
+https://translation.googleapis.com/language/translate/v2?key=sdfdfdsfdsfdsvxcvvsdfdvvsdfdvcdd&q=fuck&target=zh-TW
+*/
+
+https://console.cloud.google.com/flows/enableapi?apiid=translation.googleapis.com&hl=zh-tw&_ga=2.158430649.-249162779.1512192311&_gac=1.19802826.1512192987.Cj0KCQiAmITRBRCSARIsAEOZmr6C4wgzgtAGzAavgZPOmSQxXvJZv5ju4vygc9T6hIm2RMeJSeffi4MaAmxPEALw_wcB
+https://github.com/GoogleCloudPlatform/php-docs-samples/tree/master/translate	PHP 範例下載
+-----------------------------------------------------------------------------
+[PHP]使用Google Translate API做自動化翻譯
+-----------------------------------------------------------------------------
+語言代碼
+en
+zh-TW
+
+
+Google Translate PHP 別人的專案名子
+https://github.com/Stichoza/google-translate-php	這支不好
+
+https://github.com/statickidz/php-google-translate-free 這支不錯
+
+PHP使用Google Translate API來做自動化檔案翻譯
