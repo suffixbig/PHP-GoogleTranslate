@@ -35,7 +35,7 @@ https://github.com/suffixbig/PHP-GoogleTranslate/
 -----------------------------
 1. 把config-dist.php =>改名成config.php
 2. google翻譯Api key 這要自己去申請
-	申請好後再config.php 這個檔裡面改 define('googleApiKEY','AIzaSyBTp7v4su_bk55Gxw9khit2RNdRLWldwuw');//googleApiKEY 
+	申請好後再config.php 這個檔裡面改 define('googleApiKEY','自己申請到的KEY');//googleApiKEY 
 3. /README/t_translation_googleapi.sql	資料庫匯入後
 4. /_inc/mysql.inc.php			在這個檔裡面設定資料庫帳密
     $dbuser = "sincethemachine";
