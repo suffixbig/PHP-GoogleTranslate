@@ -46,12 +46,15 @@ https://github.com/suffixbig/PHP-GoogleTranslate/
 # google翻譯API申請網址
 -----------------------------
 https://cloud.google.com/translate/?hl=zh-tw
+
+
 -----------------------------
 # 語言代碼參考
 -----------------------------
 en-gb 英文
 zh-TW 正體中文
 zh-CN 簡體中文
+
 -----------------------------
 # 如果你要產生正體中文以外的翻譯檔
 -----------------------------
@@ -62,4 +65,5 @@ zh-CN 簡體中文
 另外在index11.php 中這2行要改
 	$sourcelanguage = 'en-gb'; //來源語言
 	$targetlanguage = 'zh-TW'; //目標語言
+	
 -----------------------------
