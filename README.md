@@ -1,80 +1,65 @@
 # PHP-GoogleTranslate
-PHP使用Google Translate API來做自動化檔案翻譯
+# PHP使用Google Translate API來做自動化檔案翻譯工具
 
-test_googlefree.php 這支是免費的 測試可以使用 測試日期 2017/12/03
+-----------------------------
+# 本工具github上專案位置
+-----------------------------
+https://github.com/suffixbig/PHP-GoogleTranslate/
+-----------------------------
+# 本自動翻譯工具功能
+-----------------------------
+	如果我到全球最大的2個國外網站，模板森林或是模板怪客去購買 一份商業購物車系統OPENCART的模板，或是插件
+	原本的翻譯檔一定是只有英文的，本工具可以不改動英文語言檔，但用這份英文語言檔送去GOOGLE 翻譯 API 用機器翻譯 製造出1份 正體中文的語言檔
+	然後OPENCART這套購物車系統，它本身就是支援多國語言的，他會依照你後台的語系設定順序先找正體中文的語言檔，找不到才使用預設的英文語系檔
+	所以你只要將產生的正體中文的語言檔拷貝至OPENCART這套購物車系統的語言目錄，你就能將你的英文版插件或模板變為機器翻譯的中文版。
+-----------------------------
+# 目錄檔案說明
+-----------------------------
+	01a		來源目錄 英文
+	01b		目標目錄 繁體中文
+-----------------------------
+# 前置作業
+-----------------------------
+	OPENCART是一套可以多語並存的系統
 
-index5.php 這支已經可以讀取01a 目錄下的所有檔案 然後做出 不翻譯  翻譯前 翻譯後 的陣列 
+		例如我在01a目錄下 我有一份檔案 他的放置位置是
+		\01a\admin\language\en-gb\extension\module\so_category_slider.php
 
-翻譯成功Array
-(
-    [a] => Array
-        (
-            [0] => <?php
+		我們把01a目錄整個拷貝一份成01b，然後進去language這個目錄 將en-gb改成zh-TW
+		改好後檔案路徑會變成這樣
+		\01b\admin\language\zh-TW\extension\module\so_category_slider.php
 
-            [1] => $_['heading_title']
-            [2] => 
+	沒錯目前這份語言檔還是英文版的，但是我們執行我的工具後就能把這份檔案變成正體中文版
+-----------------------------
+# 本工具使用前-設定方式
+-----------------------------
+1. 把config-dist.php =>改名成config.php
+2. google翻譯Api key 這要自己去申請
+	申請好後再config.php 這個檔裡面改 define('googleApiKEY','AIzaSyBTp7v4su_bk55Gxw9khit2RNdRLWldwuw');//googleApiKEY 
+3. /README/t_translation_googleapi.sql	資料庫匯入後
+4. /_inc/mysql.inc.php			在這個檔裡面設定資料庫帳密
+    $dbuser = "sincethemachine";
+    $dbpass = "1234567890";
+5. 程式預設英翻中，要改在程式中改 例如:index10.php
 
-            [3] => // Text
-
-            [4] => $_['text_extension']
-            [5] => $_['text_success']
-            [6] => $_['text_signup']
-            [7] => $_['text_default']
-            [8] => 
-
-            [9] => // Entry
-
-            [10] => $_['entry_code']
-            [11] => $_['entry_status']
-            [12] => 
-
-            [13] => // Error
-
-            [14] => $_['error_permission']
-            [15] => $_['error_code']
-            [16] => 
-        )
-
-    [b] => Array
-        (
-            [0] => 
-            [1] => Google Analytics
-            [2] => 
-            [3] => 
-            [4] => Extensions
-            [5] => Success: You have modified Google Analytics!
-            [6] => Login to your <a href="http://www.google.com/analytics/" target="_blank"><u>Google Analytics</u></a> account and after creating your website profile copy and paste the analytics code into this field.
-            [7] => Default
-            [8] => 
-            [9] => 
-            [10] => Google Analytics Code
-            [11] => Status
-            [12] => 
-            [13] => 
-            [14] => Warning: You do not have permission to modify Google Analytics!
-            [15] => Code required!
-            [16] => 
-        )
-
-    [c] => Array
-        (
-            [0] => 
-            [1] => 谷歌分析
-            [2] => 
-            [3] => 
-            [4] => 擴展
-            [5] => 成功：您已修改Google Analytics（分析）！
-            [6] => 登錄到您的<a href="http://www.google.com/analytics/" target="_blank"><u>Google Analytics</u></a>帳戶，創建您的網站配置文件後，將分析代碼複製並粘貼到該字段中。
-            [7] => 默認
-            [8] => 
-            [9] => 
-            [10] => Google Analytics代碼
-            [11] => 狀態
-            [12] => 
-            [13] => 
-            [14] => 警告：您無權修改Google Analytics（分析）！
-            [15] => 需要的代碼！
-            [16] => 
-        )
-
-)
+-----------------------------
+# google翻譯API申請網址
+-----------------------------
+https://cloud.google.com/translate/?hl=zh-tw
+-----------------------------
+# 語言代碼參考
+-----------------------------
+en-gb 英文
+zh-TW 正體中文
+zh-CN 簡體中文
+-----------------------------
+# 如果你要產生正體中文以外的翻譯檔
+-----------------------------
+例如用 繁體去翻譯成 簡體的話 zh-TW=>zh-CN
+那你目錄下要先放好檔案
+\01a\admin\language\zh-TW\
+\01b\admin\language\zh-CN\
+另外在index11.php 中這2行要改
+	$sourcelanguage = 'en-gb'; //來源語言
+	$targetlanguage = 'zh-TW'; //目標語言
+-----------------------------
