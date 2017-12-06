@@ -68,3 +68,54 @@ https://cloud.google.com/translate/?hl=zh-tw
 	$targetlanguage = 'zh-TW'; //目標語言
 
 -----------------------------
+# 是不是 任何原檔都可以丟進去翻意
+-----------------------------
+
+當然不行，每總格式的文件都需要去專門開發
+
+這是針對例如OPENCART 這種 MVC+L系統
+ 
+語言檔 是把把陣列 寫成文字檔案這種
+= 號左邊的字一定不能翻譯，所以就 一行一行 切割 = 號右邊的字送去翻譯
+然後再用程式組合回來
+
+
+// Text
+$_['text_module']                = '模塊';
+$_['text_success']               = '成功: 您修改了特色模塊!';
+$_['text_success_import_data']   = '成功: 你有導入主題!';
+$_['text_success_duplicate']  	 = '成功: 你有重複的模塊!';
+$_['text_success_delete']  		 = '成功: 你有刪除模塊!';
+$_['text_edit']                  = '編輯頁面生成器模塊';
+$_['text_create_new_module']	 = '創建一個新的模塊';
+$_['text_layout']      			 = '您已經安裝並配置了模塊後，您可以將其添加到佈局<a href="%s" class="alert-link">在這裡</a> !';
+
+// button
+$_['entry_button_save']       		 = '保存';
+$_['entry_button_save_and_edit']     = '保存並編輯';
+$_['entry_button_save_and_new']    	 = '保存並創建新的';
+$_['entry_button_cancel']       	 = '取消';
+$_['button_add_module'] 			 = '添加模塊';
+$_['entry_button_preview']       	 = '預覽這個';
+$_['entry_button_duplicate']       	 = '重複這個';
+$_['entry_button_delete']       	 = '刪除這個';
+$_['text_module_class']	   			 = '模塊類';
+$_['entry_class_suffix']  			 = '模塊類後綴';
+
+// Text
+$_['text_show_number_col'] 				 = '格';
+$_['text_show_number_col_desc'] 		 = '顯示編號列';
+$_['text_design_in'] 					 = '屏幕';
+$_['text_design_in_desc'] 				 = '更改屏幕.';
+$_['text_import_data'] 					 = '進口';
+$_['text_import_data_desc'] 			 = '導入簡單數據';
+$_['text_config_row'] 					 = '行設置';
+$_['text_config_col'] 					 = '列設置';
+$_['text_col_num'] 						 = '設置號碼項目';
+$_['text_row_style'] 					 = '行樣式';
+$_['text_css_class'] 					 = '類後綴';
+$_['text_bg_color'] 					 = '背景顏色';
+$_['text_bg_opacity'] 					 = '不透明度';
+$_['text_bg_image'] 					 = '背景圖';
+$_['text_margin'] 						 = '餘量';
+$_['text_padding'] 						 = '填充';
