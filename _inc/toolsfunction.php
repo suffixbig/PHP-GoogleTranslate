@@ -23,8 +23,8 @@ function curl_get($url)
     curl_close($ch);
     return $page;
 }
-//送出訊息
-function curl_post($url, $fields)
+//送出訊息-參數3字串長度上限
+function curl_post($url, $fields, $s = 2600)
 {
     //將$post 組成要送過去的字
     $fields_string = "";
@@ -32,7 +32,7 @@ function curl_post($url, $fields)
         $fields_string .= 'q=' . urlencode($value) . '&';
         //不做urlencode處理也會自動有處理
         //長度超過5000字元就中斷 經過測試只能2600
-        if (strlen($fields_string) >= 2600) {
+        if (strlen($fields_string) >= $s) {
             break;
         }
 
@@ -278,10 +278,34 @@ function ai_translated($ap, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms)
         } else {
             $data = json_decode($response, true); //接收;
             if (isset($data['error'])) {
-                $sms .= "。 | 翻譯參數有問題" . json_encode($data['error']);
-                $a['sms'] = $sms;
-                $a['error'] = 1;
-                return $a;
+                if ($data['error']['code'] == 400) {
+                    //再送1次翻譯
+                    echo "再送1次翻譯";
+                    $response = curl_post($iurl, $before_translation, 1000); //送翻譯
+                    $data = json_decode($response, true); //接收;
+
+                    if ($data['error']['code'] == 400) {
+                        $sms .= "。 | 翻譯參數有問題" . json_encode($data['error']);
+                        $a['sms'] = $sms;
+                        $a['error'] = 1;
+                        return $a;
+                    } else {
+                        $sms .= "翻譯成功";
+                        //把翻譯內容處理一遍
+                        for ($i = 0; $i < count($data['data']['translations']); $i++) {
+                            $text_array[] = translated_and_replaced($data['data']['translations'][$i]['translatedText']); //翻譯後的取代工作
+                        }
+
+                        $sms .= " 新增資料紀錄";
+                        $apend = array();
+                        $apend['f'] = $ap['f'];
+                        $apend['b'] = $before_translation; //翻譯前的
+                        $apend['c'] = $text_array; //翻譯後的 入資料庫的字要是處理過的
+                        $ss = add_mysqltranslation($apend, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms); //新增資料紀錄
+                        $sms .= $ss . "筆";
+
+                    }
+                }
             } else {
                 //翻譯成功
                 $sms .= "翻譯成功";
