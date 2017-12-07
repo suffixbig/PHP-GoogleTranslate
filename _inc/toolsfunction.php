@@ -99,7 +99,7 @@ function translated_and_replaced($str)
     $str = str_replace('&gt; =', ' >= ', $str);
     $str = str_replace('&lt; =', ' <= ', $str);
     $str = str_replace('&lt;', ' < ', $str);
-    
+
     return $str;
 }
 //去除換行字元
@@ -299,10 +299,10 @@ function ai_translated($ap, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms)
                 $sms .= $ss . "筆";
             }
 
-            $not_finished=count($need_s2)-count($text_array);
-            if($not_finished){
-            //數量有差表示沒翻譯完要紅字提醒
-            $sms .="<span style=\"color:red\"> 因GOOGLE翻譯字數上限本次尚有 ".$not_finished."筆未翻譯. </span>";
+            $not_finished = count($need_s2) - count($text_array);
+            if ($not_finished) {
+                //數量有差表示沒翻譯完要紅字提醒
+                $sms .= "<span style=\"color:red\"> 因GOOGLE翻譯字數上限本次尚有 " . $not_finished . "筆未翻譯. </span>";
             }
 
             //挑回內容
@@ -326,8 +326,8 @@ function ai_translated($ap, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms)
             $a['error'] = 0; //此次沒問題
             return $a;
         }
-    }else{
-    //全部翻譯資料庫都有自建好
+    } else {
+        //全部翻譯資料庫都有自建好
         $ap['c'] = $yourself_translated; //查過自己翻譯過的就好
         $a['sms'] = $sms;
         $a['ai_result'] = $ap;
@@ -336,19 +336,29 @@ function ai_translated($ap, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms)
     }
 }
 
-
-
-//一層一層	建目錄
-function ai_translated($directories,$image_new)
+//查路徑目錄在不在，不在就建立目錄
+//一層一層    建好目錄
+function auto_mkdir($file)
 {
-    $path = '';    
-    $directories = explode('/', dirname($image_new));
-
-    foreach ($directories as $directory) {
-        $path = $path . '/' . $directory;
-
-        if (!is_dir(DIR_IMAGE . $path)) {
-            @mkdir(DIR_IMAGE . $path, 0777);
+    $path = '';
+    $dir = dirname($file);
+    if (is_dir($dir)) {
+        //echo "目錄在";
+    } else {
+        //echo "目錄不在";
+        $file = str_replace('\\', '/', $file);
+        $directories = explode('/', dirname($file));
+        $s = 0;
+        foreach ($directories as $directory) {
+            if ($s == 0) {
+                $path = $directory;
+            } else {
+                $path .= '/' . $directory;
+                if (!is_dir($path)) {
+                    @mkdir($path, 0777);
+                }
+            }
+            $s++;
         }
     }
 }
