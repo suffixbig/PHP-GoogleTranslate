@@ -79,7 +79,7 @@ https://cloud.google.com/translate/?hl=zh-tw
 = 號左邊的字一定不能翻譯，所以就 一行一行 切割 = 號右邊的字送去翻譯
 然後再用程式組合回來
 
-‵‵‵
+```php
 // Text
 $_['text_module']                = '模塊';
 $_['text_success']               = '成功: 您修改了特色模塊!';
@@ -235,9 +235,10 @@ $_['text_padding'] 						 = '填充';
 
 
 # 翻譯資料表
-<a href="README/SQLREADME2.html" target="_blank"> 翻譯資料表結構說明 </a>
-<a href="README/t_translation_googleapi.sql" target="_blank"> 翻譯資料表SQL </a>
-```
+[翻譯資料表結構說明]:README/SQLREADME2.html
+[翻譯資料表SQL]:README/t_translation_googleapi.sql
+
+```php
 --
 -- 資料表結構 `oc_t`
 --
