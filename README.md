@@ -309,13 +309,14 @@ https://cloud.google.com/translate/?hl=zh-tw
   </tbody>
 </table>
 
----
 
+--------------------------------
 # 翻譯資料表
 
 [翻譯資料表結構說明]:https://github.com/suffixbig/PHP-GoogleTranslate/tree/master/README/SQLREADME2.html
 
 [翻譯資料表SQL]:https://github.com/suffixbig/PHP-GoogleTranslate/tree/master/README/t_translation_googleapi.sql
+--------------------------------
 
 ```php
 --
