@@ -16,9 +16,9 @@
 MVC+L多語系架構
 
 >Model – 數據和組件處理
-View – 外觀處理
-Controller – 主控制程式
-Language – 語言處理
+ View – 外觀處理
+ Controller – 主控制程式
+ Language – 語言處理
 
 了解歸了解，請問你要怎樣實作呢，首先我要請問大家一個問題，多語系共存你要把語言資料放在資料表中還是檔案中，
 
@@ -309,10 +309,13 @@ https://cloud.google.com/translate/?hl=zh-tw
   </tbody>
 </table>
 
+---
 
 # 翻譯資料表
-[翻譯資料表結構說明]:README/SQLREADME2.html
-[翻譯資料表SQL]:README/t_translation_googleapi.sql
+
+[翻譯資料表結構說明]:https://github.com/suffixbig/PHP-GoogleTranslate/tree/master/README/SQLREADME2.html
+
+[翻譯資料表SQL]:https://github.com/suffixbig/PHP-GoogleTranslate/tree/master/README/t_translation_googleapi.sql
 
 ```php
 --
