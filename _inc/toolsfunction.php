@@ -165,6 +165,7 @@ function add_mysqltranslation($apend, $sourcelanguage, $targetlanguage, $CT_CONF
     $linkID = $CT_CONFIG['linkID'];
     $project_name = $CT_CONFIG['project_name']; //專案名稱
     $version = $CT_CONFIG['project_name']; //版本號
+    $priority = 20;//優先權
 
     for ($i = 0; $i < count($apend['b']); $i++) {
         if ($apend['b'][$i]) {
@@ -179,8 +180,11 @@ function add_mysqltranslation($apend, $sourcelanguage, $targetlanguage, $CT_CONF
                 $sms .= "發生GOOGLE翻譯無回傳:" . $sourcetext . "\n";
             } else {
                 $targettext = $apend['c'][$i];
+
+                $var2 = trim($apend['a'][$i]); //比對一定要去除空格
+                $var = substr($var2, 4, strlen($var2) - 6); //變數名//以目標版為準
                 //新增資料紀錄
-                $sql = "INSERT INTO $db_name (`t_id`, `project_name`, `version`, `dirname`, `basename`, `sourcelanguage`, `sourcetext`, `targetlanguage`, `targettext`, `priority`, `add_date`) VALUES (NULL, '$project_name', '$version','$dirname','$basename','$sourcelanguage','$sourcetext','$targetlanguage','$targettext','20', NOW());";
+                $sql = "INSERT INTO $db_name (`t_id`, `project_name`, `version`, `dirname`, `basename`, `var` ,`sourcelanguage`, `sourcetext`, `targetlanguage`, `targettext`, `priority`, `add_date`) VALUES (NULL, '$project_name', '$version','$dirname','$basename','$var','$sourcelanguage','$sourcetext','$targetlanguage','$targettext','$priority', NOW());";
                 $ok = mysql_insert_i($sql, $linkID);
                 $oki = ($ok == 1) ? "成功" : "失敗!";
                 //$sms.="新增資料:".$oki;
@@ -212,6 +216,7 @@ function ai_translated($ap, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms)
 {
     $need_s = array(); //紀錄要翻譯的行數由0開始
     $before_translation = array(); //送去GOOGLE翻譯前的
+    $aa = array(); //原本變數名稱
     $text_array = array(); //翻譯後的
     for ($i = 0; $i < count($ap['b']); $i++) {
         if (trim($ap['b'][$i])) {
@@ -222,7 +227,7 @@ function ai_translated($ap, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms)
         }
 
     }
-
+    //print_r($ap);exit;
     //查資料庫-看是否翻譯過
     $rs = array();
     $yourself_translated = $ap['b'];
@@ -261,6 +266,7 @@ function ai_translated($ap, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms)
             //只挑要送出去的行數
             $text = $ap['b'][$need_s2[$i]];
             $before_translation[] = $text; //這個下面要用
+            $aa[]= $ap['a'][$need_s2[$i]]; //這個下面要用原本變數名稱
         }
         $iurl = googleapi_url . $iurlq;
         $response = curl_post($iurl, $before_translation); //送翻譯
@@ -295,9 +301,10 @@ function ai_translated($ap, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms)
                         for ($i = 0; $i < count($data['data']['translations']); $i++) {
                             $text_array[] = translated_and_replaced($data['data']['translations'][$i]['translatedText']); //翻譯後的取代工作
                         }
-
+                        //注意這相同有2段
                         $sms .= " 新增資料紀錄";
                         $apend = array();
+                        $apend['a'] = $aa;//變數名稱
                         $apend['f'] = $ap['f'];
                         $apend['b'] = $before_translation; //翻譯前的
                         $apend['c'] = $text_array; //翻譯後的 入資料庫的字要是處理過的
@@ -316,6 +323,7 @@ function ai_translated($ap, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms)
 
                 $sms .= " 新增資料紀錄";
                 $apend = array();
+                $apend['a'] = $aa;//變數名稱
                 $apend['f'] = $ap['f'];
                 $apend['b'] = $before_translation; //翻譯前的
                 $apend['c'] = $text_array; //翻譯後的 入資料庫的字要是處理過的

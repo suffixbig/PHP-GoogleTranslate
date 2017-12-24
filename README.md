@@ -79,7 +79,7 @@ https://cloud.google.com/translate/?hl=zh-tw
 = 號左邊的字一定不能翻譯，所以就 一行一行 切割 = 號右邊的字送去翻譯
 然後再用程式組合回來
 
-
+‵‵‵
 // Text
 $_['text_module']                = '模塊';
 $_['text_success']               = '成功: 您修改了特色模塊!';
@@ -119,3 +119,142 @@ $_['text_bg_opacity'] 					 = '不透明度';
 $_['text_bg_image'] 					 = '背景圖';
 $_['text_margin'] 						 = '餘量';
 $_['text_padding'] 						 = '填充';
+
+‵‵‵
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <tbody>
+    <tr>
+      <th scope="col">檔案名稱</th>
+      <th scope="col">作用</th>
+      <th scope="col">作用目錄</th>
+      <th scope="col">重要度</th>
+    </tr>
+    <tr>
+      <th scope="row">01_test_googlefree.php</th>
+      <td>測試 GOOGLE 翻譯 API 寫法的第一支程式</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">01_test_post_googleapi.php</th>
+      <td>測試 GOOGLE 翻譯 API 寫法POST</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">02_tw_del_01a.php</th>
+      <td>來源目錄要刪除現有翻譯過的中文檔案<br>
+        以01a目錄和01zh-TW這2個目錄做比對</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">en-gb_com_zh-TW.php</th>
+      <td><br>
+        如果我有一份翻譯好的英文原版和中文版，比對2個目錄下的檔案，然後將翻譯對照表寫入資料庫，優先權設為1，以後翻譯會先以這分為準</td>
+      <td>比對01en-gb和01zh-TW這2個目錄</td>
+      <td>重要</td>
+    </tr>
+    <tr>
+      <th scope="row">index13.php</th>
+      <td>AUTO translation file googleapi<br>
+        功能把01a目錄下的檔案全翻譯完<br>
+        2017/12/5 會先比對資料庫，已有資料的就不會呼叫GOOGLEAPI去查<br>
+        2017/12/6 多做沒翻完的提醒<br>
+      2017/12/8 目標目錄不用自己建立了程式會自己建立-不論幾層</td>
+      <td>把01a目錄下的檔案自動翻譯完複製到01b目錄下</td>
+      <td>重要</td>
+    </tr>
+    <tr>
+      <th scope="row">&nbsp;</th>
+      <td>以下為舊版</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">index5.php</th>
+      <td><div>
+        <div>
+          <div>
+            <div>功能:把目錄下的檔案全翻譯完</div>
+          </div>
+        </div>
+      </div></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">index6.php</th>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">index7.php</th>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">index8.php</th>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">index9.php</th>
+      <td><div>
+        <div>2017/12/5 完工會用資料庫比對查</div>
+      </div></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">index10.php</th>
+      <td>資料庫的翻譯也有優先權-以數字小的為優先</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">index11.php</th>
+      <td><div>
+        <div>2017/12/6 多做沒翻完的提醒</div>
+      </div></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">index12.php</th>
+      <td>2017/12/8 目標目錄不用自己建立了程式會自己建立-不論幾層</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+
+# 翻譯資料表
+<a href="README/SQLREADME2.html" target="_blank"> 翻譯資料表結構說明 </a>
+<a href="README/t_translation_googleapi.sql" target="_blank"> 翻譯資料表SQL </a>
+```
+--
+-- 資料表結構 `oc_t`
+--
+
+CREATE TABLE IF NOT EXISTS `oc_t` (
+  `t_id` int(10) unsigned NOT NULL COMMENT '主鍵',
+  `project_name` varchar(30) DEFAULT NULL COMMENT '專案名',
+  `version` varchar(10) DEFAULT NULL COMMENT '版本號',
+  `dirname` varchar(100) NOT NULL COMMENT '路徑名稱',
+  `basename` varchar(30) NOT NULL COMMENT '檔案名稱',
+  `var` varchar(200) DEFAULT NULL COMMENT '變數名',
+  `sourcelanguage` varchar(5) NOT NULL COMMENT '來源語言',
+  `sourcetext` text COMMENT '來源內容',
+  `targetlanguage` varchar(5) NOT NULL COMMENT '目標語言',
+  `targettext` text COMMENT '目標內容',
+  `priority` int(2) unsigned NOT NULL DEFAULT '20' COMMENT '優先度數字越小越大為1的話不可複寫',
+  `add_date` date NOT NULL COMMENT '資料建立日期'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='翻譯資料表';
+```
+
