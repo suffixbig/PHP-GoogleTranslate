@@ -119,8 +119,7 @@ $_['text_bg_opacity'] 					 = '不透明度';
 $_['text_bg_image'] 					 = '背景圖';
 $_['text_margin'] 						 = '餘量';
 $_['text_padding'] 						 = '填充';
-
-‵‵‵
+```
 
 <table border="1" cellpadding="5" cellspacing="0">
   <tbody>
