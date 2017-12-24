@@ -1,10 +1,129 @@
 # PHP-GoogleTranslate
 # PHP使用Google Translate API來做自動化檔案翻譯工具
+-----------------------------
+# 前言
+-----------------------------
+擁抱全球市場：網站內容多語化一個多國語言平台該怎麼寫
+---
+作者台灣碼農10號工程師
 
------------------------------
-# 本工具github上專案位置
------------------------------
-https://github.com/suffixbig/PHP-GoogleTranslate/
+我的職業是在台灣當一位碼農，名子不能公開，所以你知道我的代號就好，我的代號是『10號工程師』
+
+我不知道各位你們在面試時遇過要真正開發過多語系平台的工程師嗎，有人想找開發過多語系有經驗工程師找了2年還遇不到，等到人就出現在他面前時，還是認為我只是一位普通碼農，
+
+好吧，開始說說我編的故事，多語系平台通常都是你先有了一個平台之後，然後你開始想說要擁抱全球市場國際化，然後你在打算將網站改成支援2總語系，然後3總，以此類推到8總以上，可是呢?多語系平台，是一開始沒規劃好後來就很難改的一種架構，如果你是工程師你一定聽過mvc架構優缺點，那麼有多語系支援的平台那就是
+
+MVC+L多語系架構
+
+>Model – 數據和組件處理
+View – 外觀處理
+Controller – 主控制程式
+Language – 語言處理
+
+了解歸了解，請問你要怎樣實作呢，首先我要請問大家一個問題，多語系共存你要把語言資料放在資料表中還是檔案中，
+
+回答用資料庫就可以搞定的是錯誤答案
+
+資料表，那麼請問你要增加幾個欄位，答案是1個，你只要用原本的資料表多建1個欄位語系代號，這樣就解決了，但是也有絕對不能放在資料表的東西，選單上面的按鈕文字，可以放在資料庫裡嗎，答案是不應該，應該放在檔案中，也就是商品資料的多語系放在資料表中，選單上面的按鈕文字，應該無論如何放在檔案。
+
+我說的有依據嗎?有OPENCART的語言系統就是是這樣幹的
+
+OPENCART這套購物車系統，它本身就是支援多國語言的，他會依照你後台的語系設定順序先找正體中文的語言檔，找不到才使用預設的英文語系檔
+所以你只要將產生的正體中文的語言檔拷貝至OPENCART這套購物車系統的語言目錄，你就能將你的英文版插件或模板變為機器翻譯的中文版。
+
+我們來隨便打開它的一個語言檔來看看
+例如
+\admin\language\en-gb\user\user.php 英文語言
+\admin\language\ez-TW\user\user.php 繁體中文
+```
+<?php
+// Heading
+$_['heading_title']         = 'Users';
+
+// Text
+$_['text_success']          = 'Success: You have modified users!';
+$_['text_list']             = 'User List';
+$_['text_add']              = 'Add User';
+$_['text_edit']             = 'Edit User';
+
+// Column
+$_['column_username']       = 'Username';
+$_['column_status']         = 'Status';
+$_['column_date_added']     = 'Date Added';
+$_['column_action']         = 'Action';
+
+// Entry
+$_['entry_username']        = 'Username';
+$_['entry_user_group']      = 'User Group';
+$_['entry_password']        = 'Password';
+$_['entry_confirm']         = 'Confirm';
+$_['entry_firstname']       = 'First Name';
+$_['entry_lastname']        = 'Last Name';
+$_['entry_email']           = 'E-Mail';
+$_['entry_image']           = 'Image';
+$_['entry_status']          = 'Status';
+
+// Error
+$_['error_permission']      = 'Warning: You do not have permission to modify users!';
+$_['error_account']         = 'Warning: You can not delete your own account!';
+$_['error_exists_username'] = 'Warning: Username is already in use!';
+$_['error_username']        = 'Username must be between 3 and 20 characters!';
+$_['error_password']        = 'Password must be between 4 and 20 characters!';
+$_['error_confirm']         = 'Password and password confirmation do not match!';
+$_['error_firstname']       = 'First Name must be between 1 and 32 characters!';
+$_['error_lastname']        = 'Last Name must be between 1 and 32 characters!';
+$_['error_email']           = 'E-Mail Address does not appear to be valid!';
+$_['error_exists_email']    = 'Warning: E-Mail Address is already registered!';
+```
+
+```
+<?php
+// Heading
+$_['heading_title']     = '使用者管理';
+
+// Text
+$_['text_success']      = '成功：您已更新使用者帳號！';
+$_['text_list']         = '使用者帳號清單';
+$_['text_add']          = '新增使用者帳號';
+$_['text_edit']         = '編輯使用者帳號';
+
+// Column
+$_['column_username']   = '使用者帳號';
+$_['column_status']     = '狀態';
+$_['column_date_added'] = '新增日期';
+$_['column_action']     = '管理';
+
+// Entry
+$_['entry_username']    = '使用者帳號';
+$_['entry_user_group']  = '帳號群組';
+$_['entry_password']    = '密碼';
+$_['entry_confirm']     = '確認密碼';
+$_['entry_firstname']   = '名字';
+$_['entry_lastname']    = '姓氏';
+$_['entry_email']       = '信箱';
+$_['entry_image']      	= '圖片';
+$_['entry_status']      = '狀態';
+
+// Error
+$_['error_permission']  = '警告： 您沒有權限更改使用者帳號！';
+$_['error_account']     = '警告： 您不能刪除自己的帳號！';
+$_['error_exists']      = '警告： 使用者帳號已經存在！';
+$_['error_username']    = '使用者帳號必須在 3 至 20 個字之間！';
+$_['error_password']    = '密碼長度必須在 4 至 20 個字之間！';
+$_['error_confirm']     = '密碼和確認密碼不一致！';
+$_['error_firstname']   = '名字必須在 1 至 32 個字之間！';
+$_['error_lastname']    = '姓氏必須在 1 至 32 個字之間！';
+$_['error_email']           = 'E-Mail 帳號無效!';
+$_['error_exists_email']    = '警告: E-Mail 帳號已經註冊過!';
+```
+
+## 靠北原來就用『陣列』文字檔就解決多語系問題那麼簡單啊
+## 原理簡單-那你有沒有想過，為什麼OPENCART要用這種文字檔格式，然後這種格式的文字檔，有沒有辦法直接拿去給Google翻譯系統翻譯。
+
+# 答案是可以的-透過我寫的程式就辦的到
+
+本程式，就是自動把檔案丟給Google翻譯系統，很多人都知道有Google Cloud Translation 翻譯API 但一般人只會手工貼和全網站翻譯，進階的應用一般工程師都沒做過，我現在有100個檔案目錄分散好幾個，翻譯完之後我要照原來的目錄結構建好，講到這你應該也不覺得這會難，沒錯難的地方-你串Google Cloud Translation 翻譯API後才會發現，我要翻譯的語句有幾萬行，難道我要發送一萬次的請求，於是想法1 我把幾千行拼成一篇文章發出去這樣1萬行發送10次請求就行了........好了!反正當你動手實作，你自然就會遇到很多問題要解決了。
+
 -----------------------------
 # 本自動翻譯工具功能
 -----------------------------
@@ -78,48 +197,6 @@ https://cloud.google.com/translate/?hl=zh-tw
 語言檔 是把把陣列 寫成文字檔案這種
 = 號左邊的字一定不能翻譯，所以就 一行一行 切割 = 號右邊的字送去翻譯
 然後再用程式組合回來
-
-```php
-// Text
-$_['text_module']                = '模塊';
-$_['text_success']               = '成功: 您修改了特色模塊!';
-$_['text_success_import_data']   = '成功: 你有導入主題!';
-$_['text_success_duplicate']  	 = '成功: 你有重複的模塊!';
-$_['text_success_delete']  		 = '成功: 你有刪除模塊!';
-$_['text_edit']                  = '編輯頁面生成器模塊';
-$_['text_create_new_module']	 = '創建一個新的模塊';
-$_['text_layout']      			 = '您已經安裝並配置了模塊後，您可以將其添加到佈局<a href="%s" class="alert-link">在這裡</a> !';
-
-// button
-$_['entry_button_save']       		 = '保存';
-$_['entry_button_save_and_edit']     = '保存並編輯';
-$_['entry_button_save_and_new']    	 = '保存並創建新的';
-$_['entry_button_cancel']       	 = '取消';
-$_['button_add_module'] 			 = '添加模塊';
-$_['entry_button_preview']       	 = '預覽這個';
-$_['entry_button_duplicate']       	 = '重複這個';
-$_['entry_button_delete']       	 = '刪除這個';
-$_['text_module_class']	   			 = '模塊類';
-$_['entry_class_suffix']  			 = '模塊類後綴';
-
-// Text
-$_['text_show_number_col'] 				 = '格';
-$_['text_show_number_col_desc'] 		 = '顯示編號列';
-$_['text_design_in'] 					 = '屏幕';
-$_['text_design_in_desc'] 				 = '更改屏幕.';
-$_['text_import_data'] 					 = '進口';
-$_['text_import_data_desc'] 			 = '導入簡單數據';
-$_['text_config_row'] 					 = '行設置';
-$_['text_config_col'] 					 = '列設置';
-$_['text_col_num'] 						 = '設置號碼項目';
-$_['text_row_style'] 					 = '行樣式';
-$_['text_css_class'] 					 = '類後綴';
-$_['text_bg_color'] 					 = '背景顏色';
-$_['text_bg_opacity'] 					 = '不透明度';
-$_['text_bg_image'] 					 = '背景圖';
-$_['text_margin'] 						 = '餘量';
-$_['text_padding'] 						 = '填充';
-```
 
 <table border="1" cellpadding="5" cellspacing="0">
   <tbody>
@@ -257,4 +334,7 @@ CREATE TABLE IF NOT EXISTS `oc_t` (
   `add_date` date NOT NULL COMMENT '資料建立日期'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='翻譯資料表';
 ```
-
+-----------------------------
+# 本工具github上專案位置
+-----------------------------
+https://github.com/suffixbig/PHP-GoogleTranslate/
