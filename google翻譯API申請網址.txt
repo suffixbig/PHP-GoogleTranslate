@@ -47,3 +47,9 @@ https://github.com/Stichoza/google-translate-php	這支不好
 https://github.com/statickidz/php-google-translate-free 這支不錯
 
 PHP使用Google Translate API來做自動化檔案翻譯
+
+
+===
+#每月帳單
+===
+https://console.developers.google.com/billing?project=api-project-907339265437

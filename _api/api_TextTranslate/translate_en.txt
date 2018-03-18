@@ -1,0 +1,84 @@
+How much last produt show for as new icon in product box
+You can show or hide mini product slider   for home page 3
+You can Choose 4 type  header style for your shop
+Category module product show or hide
+Home middle free Money Back content
+Home middle free Money Back content
+Home   News From Blogs
+Home  News From Blogs content
+Home bottom  Testimonials Slider
+Home bottom Testimonials Slider content
+You can choose 3 type home page
+Category Page Sidebar
+Category left sidebar banner
+Category left sidebar banner content
+Product  page  3 types layout
+Header container Bg color
+Menu BG color
+Menu box shadow color
+Menu  border color
+Menu hover bg color
+Primary  Color 1
+Primary color 2
+Primary color 3
+Primary color 4
+Secendary Color 1
+Footer Bg color
+Footer Headers color
+Footer links color
+Footer links hover color
+Footer bottom bg color
+Footer powered by text color
+Background-images
+Choose a pattern number
+Baackground Attachment
+Baackground Repeat
+Backgorund Position
+Home big  slider
+Home big  slider content
+Home big slider bottom  promo banner
+Home big slider bottom  promo banner content
+Home  Child Fashion (0-5 Years) banner
+Home  Child Fashion (0-5 Years) Banner Content
+Home   Kids Fashion (6-12 Years) Banner
+Home Kids Fashion (6-12 Years) content
+Home   Toys & Books (0-12 Years)  banner content
+Home  Toys & Books (0-12 Years)  banner content
+Home  Special Offers banners
+Home  Special Offers banners content
+Home big slider with   mini banner
+Home big slider bottom  mini banner content
+Select font source
+Body Font to system
+Body Font to google
+Font size
+Select font source
+Heading Font to system
+Heading Font to google
+Text transform
+Product headers Font size
+Page headers Font size
+Left/Right sidebar block headers Font size
+Footer headers Font size
+Header custom banner 1
+Header custom banner 1
+Header custom banner 2
+Header custom banner 2
+Contact information page
+Linkedin url
+Maestro url
+American Express url
+New text for produt  box
+Sale text for produt  box
+Sale text for compare  box
+Twitter text for footer
+Footer fllow us text
+Top Brands Name
+Latest category tab all text
+Featured Products title home page
+Latest Products title home page
+Best Sales text for mini Best Sales product title
+Special text for home mini Special product title
+Top rate product title
+Category sidebar title
+footer payment accept text
