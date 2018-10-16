@@ -394,3 +394,50 @@ function auto_mkdir($file)
         }
     }
 }
+
+
+//====
+//txt檔翻譯用
+//===
+
+//空格取代為沒有-變數名稱中不要有空格()號\號
+function t_($text)
+{
+    $text2=trim($text);
+    $text2=str_replace(' ', '',$text2);
+    $text2=str_replace('&', '',$text2);
+    $text2=str_replace('?', '',$text2);
+    $text2=str_replace('^', '',$text2);
+    $text2=str_replace('*', '',$text2);
+    $text2=str_replace('#', '',$text2);
+    $text2=str_replace('~', '',$text2);
+    $text2=str_replace('-', '',$text2);
+    $text2=str_replace('!', '',$text2);
+    $text2=str_replace('/', '',$text2);
+    $text2=str_replace('+', '',$text2);
+    $text2=str_replace('%', '',$text2);
+    $text2=str_replace('\\', '',$text2);
+    $text2=str_replace("(","",$text2);
+    $text2=str_replace(")","",$text2);
+    $text2=str_replace(".","",$text2);
+    $text2=str_replace("。","",$text2);
+    $text2=str_replace(",","",$text2);
+    $text2=str_replace(":","",$text2);
+    $text2=str_replace(";","",$text2);
+    return $text2;
+}
+
+//讓空格變整齊以變數長度決定空格數目 參數1變數，參數2最大長度
+function tt_($v,$s=53)
+{
+    $text=" ";
+    $s=53;//預設最常空格多少個;
+    $s2=strlen(t_($v));//以去除後的字數做計算
+    //print_r($s2);echo "\n";
+    $td=$s-($s2+6);
+    
+    for($i=0;$i<$td;$i++){
+        $text.=" ";
+    }
+    return $text;
+}

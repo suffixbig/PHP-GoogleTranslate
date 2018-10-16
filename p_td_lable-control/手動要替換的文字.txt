@@ -1,0 +1,17 @@
+頁腳=>頁尾
+菜單=>選單
+滑塊=>輪播
+文本=>文字
+
+
+Enable => <?php echo $lang['Enable']?>
+Disable => <?php echo $lang['Disable']?>
+
+改完後取代
+<?php echo $lang['<?php echo $lang['Header'] ?>
+<?php echo $lang['Header
+
+
+
+Quick brown fox jumps over the lazy dog
+測試字體顯示效果

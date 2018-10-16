@@ -1208,9 +1208,7 @@ if(empty($wg24themeoptionpanel_linking_url)) $wg24themeoptionpanel_linking_url='
 if(empty($wg24themeoptionpanel_twitter_id)) $wg24themeoptionpanel_twitter_id='24webgroup'; 
 if(empty($wg24themeoptionpanel_tweets_tshow)) $wg24themeoptionpanel_tweets_tshow='6'; 
 /***  copyright   ***/
-if(empty($wg24themeoptionpanel_copyr_text)) $wg24themeoptionpanel_copyr_text='
-<P> © Copyright 2015 by <a href="#" class="blue-color"> baby&amp;kidsstore.com </a> -  Made with <span class="green-color"> 24webgroup. </span></P>
-';
+if(empty($wg24themeoptionpanel_copyr_text)) $wg24themeoptionpanel_copyr_text='<P> © Copyright 2015 by <a href="#" class="blue-color"> baby&amp;kidsstore.com </a> -  Made with <span class="green-color"> 24webgroup. </span></P>';
 /***** payment icon  ******/
 
 if(empty($wg24themeoptionpanel_paypal_url)) $wg24themeoptionpanel_paypal_url='http://www.paypal.com/'; 
@@ -1223,8 +1221,8 @@ if(empty($wg24themeoptionpanel_americanexpress_url)) $wg24themeoptionpanel_ameri
 
 ?>
 
-         <?php
-    $wg24show_all_googl_fonts = array("ABeeZee" => "ABeeZee",
+<?php
+$wg24show_all_googl_fonts = array("ABeeZee" => "ABeeZee",
 "Abel" => "Abel",
 "Abril Fatface" => "Abril Fatface",
 "Aclonica" => "Aclonica",
@@ -1872,15 +1870,13 @@ if(empty($wg24themeoptionpanel_americanexpress_url)) $wg24themeoptionpanel_ameri
 );
  $wg24localfonts= array('Arizonia'=>'Arizonia', 'Lato' => 'Lato','Open Sans' => 'Open Sans','Arial,Helvetica' => 'Arial, Helvetica','Geneva' => 'Geneva','Helvetica,sans-serif' => 'Helvetica, sans-serif','Times New Roman' => 'Times New Roman',  'Times,serif' => 'Times, serif','PT+Sans' => 'PT Sans','monospace' => 'monospace','Georgia,serif' => 'Georgia,Times, serif','Verdana' => 'Verdana','Oswald' => 'Oswald','Telex'=>'Telex','Iceberg' => 'Iceberg','Yanone Kaffeesatz' => 'Yanone Kaffeesatz ExtraLight','tahoma'=>'Tahoma, Geneva','Amethysta' => 'Amethysta','Courier New,Courier' => 'Courier New, Courier','Gudea'=> 'Gudea','Duru Sans' => 'Duru Sans','Germania One' => 'Germania One','Macondo Swash Caps'=>'Macondo Swash Caps');
     ?>
- <style type="text/css">
-    .tabs-left > .nav-tabs {
-    border-right: 1px solid #ddd;
-    float: left;
-    margin-right: 19px;
+<style type="text/css">
+.tabs-left > .nav-tabs {
+border-right: 1px solid #ddd;
+float: left;
+margin-right: 19px;
 }
-.tab-content img {
-    width: 100%;
-}
+
 .tabs-left > .nav-tabs > li, .tabs-right > .nav-tabs > li {
     float: none;
 }
@@ -1910,12 +1906,7 @@ table.form tr td div b{  color: #ff7cb0;
  }
 
 table{ width: 80%;  margin-left: 21px;}
-.tab-content {
-  overflow: hidden;
-  width: 100%;
-}
-
-    input.color{ width:88px  !important}
+input.color{width:88px  !important}
 </style>
  <?php echo $column_left;  ?>
 <div id="content">
@@ -1946,7 +1937,7 @@ table{ width: 80%;  margin-left: 21px;}
             <form action="<?php echo $action; ?>" method="POST" enctype="multipart/form-data" id="form" class="form-horizontal">
                    <div class="form-group">
                 <div id="settings_tabs" >
-                    <ul id="wg24tab_menu" class="nav nav-tabs ">   
+                    <ul id="wg24tab_menu" class="nav nav-tabs">   
                     <?php foreach ($languages as $language) { ?>
                      <li <?php if($language['language_id']==1) echo 'class="active"';?>> <a data-toggle="tab" href=".tablanguage<?php echo $language['language_id']; ?>"><img src="language/<?php echo $language['code']; ?>/<?php echo $language['code']; ?>.png" title="<?php echo $language['name']; ?>" /> <?php echo $language['name']; ?></a></li>
                     <?php } ?>
@@ -1959,7 +1950,7 @@ table{ width: 80%;  margin-left: 21px;}
                           <li><a href="#wg24themeoptionpanel_theme_background" data-toggle="tab"><?php echo $wg24themeoptionpanel_tab_background; ?></a></li>
                           <li><a href="#wg24themeoptionpanel_theme_slider" data-toggle="tab"><?php echo $wg24themeoptionpanel_tab_slider; ?></a></li>
                           <li><a href="#wg24themeoptionpanel_theme_font" data-toggle="tab"><?php echo $wg24themeoptionpanel_tab_font; ?></a></li>
-                         <li> <a href="#wg24themeoptionpanel_theme_menu" data-toggle="tab"><?php echo $wg24themeoptionpanel_tab_menu; ?></a></li>
+                          <li><a href="#wg24themeoptionpanel_theme_menu" data-toggle="tab"><?php echo $wg24themeoptionpanel_tab_menu; ?></a></li>
                           <li><a href="#wg24themeoptionpanel_theme_footer" data-toggle="tab"><?php echo $wg24themeoptionpanel_tab_footer; ?></a></li>
                           <li><a href="#wg24themeoptionpanel_theme_texttranlat" data-toggle="tab"><?php echo $wg24themeoptionpanel_Theme_text_Translate;?></a></li>
                           <li><a href="#wg24themeoptionpanel_theme_custom_code" data-toggle="tab"><?php echo $wg24themeoptionpanel_tab_custom; ?></a></li>
@@ -1969,10 +1960,10 @@ table{ width: 80%;  margin-left: 21px;}
                     <div id="wg24themeoptionpanel_theme_setting"  class="tab-pane active" >
                         <div class="tabbable tabs-left">
                             <ul class="nav nav-tabs">
-                              <li class="active"><a href="#wg24themeoptionpanel_sub_layout" data-toggle="tab">Layout</a></li>
-                               <li><a href="#wg24themeoptionpanel_sub_home_page" data-toggle="tab">Home Page</a></li>
-                              <li><a href="#wg24themeoptionpanel_sub_category_page" data-toggle="tab">Category Page</a></li>
-                             <li> <a href="#wg24themeoptionpanel_sub_product_page" data-toggle="tab">Product page</a></li>
+                              <li class="active"><a href="#wg24themeoptionpanel_sub_layout" data-toggle="tab"><?php echo $lang['Layout'] ?></a></li>
+                              <li><a href="#wg24themeoptionpanel_sub_home_page" data-toggle="tab"><?php echo $lang['HomePage'] ?></a></li>
+                              <li><a href="#wg24themeoptionpanel_sub_category_page" data-toggle="tab"><?php echo $lang['CategoryPage'] ?></a></li>
+                              <li><a href="#wg24themeoptionpanel_sub_product_page" data-toggle="tab"><?php echo $lang['Productpage'] ?></a></li>
                             </ul>
                         <div class="tab-content">
                         <div id="wg24themeoptionpanel_sub_layout" class="tab-pane active">  
@@ -1982,7 +1973,7 @@ table{ width: 80%;  margin-left: 21px;}
                                     <td colspan="2"><div><b><?php echo $wg24themeoptionpanel_layout ?></b></div></td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">產品盒中最後一個產品顯示為新圖標的數量</td>
+                                    <td class="lable-control"><?php echo $lang['Howmuchlastprodutshowforasnewiconinproductbox'] ?> </td>
                                     <td>
                                        <select class="form-control" name="wg24themeoptionpanel_shownewproduct">
                                             <?php  for($i=10;$i<=50;$i++){ 
@@ -1995,23 +1986,23 @@ table{ width: 80%;  margin-left: 21px;}
 
                                             }?>
                                         </select> 
-                                        <p>you can show new item limit for new icon</p>
+                                        <p><?php echo $lang['youcanshownewitemlimitfornewicon'] ?></p>
                                     </td>
                                 </tr>
                                 
                                <tr>
-                                    <td class="lable-control">您可以顯示或隱藏主頁3的迷你產品滑塊</td>
+                                    <td class="lable-control"><?php echo $lang['Youcanshoworhideminiproductsliderforhomepage3'] ?></td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_boxfullwidht">
                                             <option value="enable" <?php if($wg24themeoptionpanel_boxfullwidht == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_boxfullwidht == '') echo ' selected="selected"';?>>Show</option>
                                             <option value="disable"  <?php if($wg24themeoptionpanel_boxfullwidht == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_boxfullwidht == '') echo ' selected="selected"';?>>Hide</option>
                                         </select>
-                                        <p>You can show or hide show scroll to top button</p>
+                                        <p><?php echo $lang['Youcanshoworhideshowscrolltotopbutton'] ?></p>
                                     </td>
                                 </tr>
                                 
                                 <tr>
-                                    <td class="lable-control">你可以選擇4種類型的店頭風格</td>
+                                    <td class="lable-control"><?php echo $lang['YoucanChoose4typeheaderstyleforyourshop'] ?></td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_header2type">
                                             <option value="headersty1" <?php if($wg24themeoptionpanel_header2type== 'headersty1') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_header2type== '') echo ' selected="selected"';?>>Header style-1</option>
@@ -2019,7 +2010,7 @@ table{ width: 80%;  margin-left: 21px;}
                                             <option value="headersty3"  <?php if($wg24themeoptionpanel_header2type== 'headersty3') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_header2type== '') echo ' selected="selected"';?>>Header style-3</option>
                                             <option value="headersty4"  <?php if($wg24themeoptionpanel_header2type== 'headersty4') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_header2type== '') echo ' selected="selected"';?>>Header style-4</option>
                                         </select>
-                                        <p>You can show or hide header style for your shop</p>
+                                        <p><?php echo $lang['Youcanshoworhideheaderstyleforyourshop'] ?></p>
                                     </td>
                                 </tr> 
      
@@ -2027,88 +2018,88 @@ table{ width: 80%;  margin-left: 21px;}
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_show_scroll ?></td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_scrol_to_top">
-                                            <option value="enable" <?php if($wg24themeoptionpanel_scrol_to_top == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_scrol_to_top == '') echo ' selected="selected"';?>>Enable</option>
-                                            <option value="disable"  <?php if($wg24themeoptionpanel_scrol_to_top == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_scrol_to_top == '') echo ' selected="selected"';?>>Disable</option>
+                                            <option value="enable" <?php if($wg24themeoptionpanel_scrol_to_top == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_scrol_to_top == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                            <option value="disable"  <?php if($wg24themeoptionpanel_scrol_to_top == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_scrol_to_top == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                         </select>
-                                        <p>You can show or hide show scroll to top button</p>
+                                        <p><?php echo $lang['Youcanshoworhideshowscrolltotopbutton'] ?></p>
                                     </td>
                                 </tr>
 
                                 <tr>
-                                    <td class="lable-control">類別模塊產品顯示或隱藏</td>
+                                    <td class="lable-control"> <?php echo $lang['Categorymoduleproductshoworhide'] ?></td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_catproductsonoff">
-                                            <option value="enable" <?php if($wg24themeoptionpanel_catproductsonoff == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_catproductsonoff == '') echo ' selected="selected"';?>>Enable</option>
-                                            <option value="disable"  <?php if($wg24themeoptionpanel_catproductsonoff== 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_catproductsonoff == '') echo ' selected="selected"';?>>Disable</option>
+                                            <option value="enable" <?php if($wg24themeoptionpanel_catproductsonoff == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_catproductsonoff == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                            <option value="disable"  <?php if($wg24themeoptionpanel_catproductsonoff== 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_catproductsonoff == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                         </select>
-                                        <p>You can show or hide  Category module product </p>
+                                        <p><?php echo $lang['YoucanshoworhideCategorymoduleproduct'] ?> </p>
                                     </td>
                                 </tr>
                                  <tr>
-                                    <td class="lable-control">首頁中免費退款內容</td>
+                                    <td class="lable-control"><?php echo $lang['HomemiddlefreeMoneyBackcontent'] ?></td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_bigsliderbottom_shippinonof">
-                                            <option value="enable" <?php if($wg24themeoptionpanel_bigsliderbottom_shippinonof == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_bigsliderbottom_shippinonof == '') echo ' selected="selected"';?>>Enable</option>
-                                            <option value="disable"  <?php if($wg24themeoptionpanel_bigsliderbottom_shippinonof == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_l_sale_icon_style == '') echo ' selected="selected"';?>>Disable</option>
+                                            <option value="enable" <?php if($wg24themeoptionpanel_bigsliderbottom_shippinonof == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_bigsliderbottom_shippinonof == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                            <option value="disable"  <?php if($wg24themeoptionpanel_bigsliderbottom_shippinonof == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_l_sale_icon_style == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                         </select>
-                                        <p>Home middle free Money Back content</p>
+                                        <p><?php echo $lang['HomemiddlefreeMoneyBackcontent'] ?></p>
                                     </td>
                                 </tr>
                                     <tr>
-                                    <td class="lable-control">首頁中免費退款內容</td>
+                                    <td class="lable-control"><?php echo $lang['HomemiddlefreeMoneyBackcontent'] ?></td>
                                     <td>
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                    <textarea class="form-control summernote" name="wg24themeoptionpanel_bigsliderbottom_shippin[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_bigsliderbottom_shippin-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_bigsliderbottom_shippin)){  echo $wg24themeoptionpanel_bigsliderbottom_shippin[$language['language_id']]; }else { echo $wg24themeoptionpanel_bigsliderbottom_shippin; } ?></textarea>
-                                        <p>Home middle free Money Back content</p>
+                                    <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_bigsliderbottom_shippin[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_bigsliderbottom_shippin-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_bigsliderbottom_shippin)){  echo $wg24themeoptionpanel_bigsliderbottom_shippin[$language['language_id']]; }else { echo $wg24themeoptionpanel_bigsliderbottom_shippin; } ?></textarea>
+                                        <p><?php echo $lang['HomemiddlefreeMoneyBackcontent'] ?></p>
                                </div> 
                                <?php } ?>
                               </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                <td class="lable-control">主頁來自博客的新聞</td>
+                                <td class="lable-control"><?php echo $lang['HomeNewsFromBlogs'] ?> </td>
                                 <td>
                                     <select class="form-control" name="wg24themeoptionpanel_homemiddlesessionsaletonoff">
-                                        <option value="enable" <?php if($wg24themeoptionpanel_homemiddlesessionsaletonoff == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homemiddlesessionsaletonoff == '') echo ' selected="selected"';?>>Enable</option>
-                                        <option value="disable"  <?php if($wg24themeoptionpanel_homemiddlesessionsaletonoff == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homemiddlesessionsaletonoff == '') echo ' selected="selected"';?>>Disable</option>
+                                        <option value="enable" <?php if($wg24themeoptionpanel_homemiddlesessionsaletonoff == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homemiddlesessionsaletonoff == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                        <option value="disable"  <?php if($wg24themeoptionpanel_homemiddlesessionsaletonoff == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homemiddlesessionsaletonoff == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                     </select>
-                                    <p>If you want to show or hide   News From Blogs  </p>
+                                    <p><?php echo $lang['IfyouwanttoshoworhideNewsFromBlogs'] ?>  </p>
                                 </td>
                             </tr>
                                  <tr>
-                                    <td class="lable-control">主頁新聞從博客內容</td>
+                                    <td class="lable-control"><?php echo $lang['HomeNewsFromBlogscontent'] ?></td>
                                     <td>
                                 <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                     <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                        <textarea class="form-control summernote" name="wg24themeoptionpanel_homemiddlesessionsaletext[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homemiddlesessionsaletext-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homemiddlesessionsaletext)){  echo $wg24themeoptionpanel_homemiddlesessionsaletext[$language['language_id']]; }else { echo $wg24themeoptionpanel_homemiddlesessionsaletext; } ?></textarea>
-                                            <p>Custom text  under home  News From Blogs </p>
+                                        <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homemiddlesessionsaletext[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homemiddlesessionsaletext-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homemiddlesessionsaletext)){  echo $wg24themeoptionpanel_homemiddlesessionsaletext[$language['language_id']]; }else { echo $wg24themeoptionpanel_homemiddlesessionsaletext; } ?></textarea>
+                                            <p><?php echo $lang['CustomtextunderhomeNewsFromBlogs'] ?> </p>
                                    </div> 
                                <?php } ?>
                               </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                <td class="lable-control">主頁底部褒獎滑塊</td>
+                                <td class="lable-control"><?php echo $lang['HomebottomTestimonialsSlider'] ?></td>
                                 <td>
                                     <select class="form-control" name="wg24themeoptionpanel_homemiddleshopinfobannersonoff">
-                                        <option value="enable" <?php if($wg24themeoptionpanel_homemiddleshopinfobannersonoff == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homemiddleshopinfobannersonoff == '') echo ' selected="selected"';?>>Enable</option>
-                                        <option value="disable"  <?php if($wg24themeoptionpanel_homemiddleshopinfobannersonoff == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homemiddleshopinfobannersonoff == '') echo ' selected="selected"';?>>Disable</option>
+                                        <option value="enable" <?php if($wg24themeoptionpanel_homemiddleshopinfobannersonoff == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homemiddleshopinfobannersonoff == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                        <option value="disable"  <?php if($wg24themeoptionpanel_homemiddleshopinfobannersonoff == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homemiddleshopinfobannersonoff == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                     </select>
-                                    <p>If you want to show or hide   Home bottom Testimonials Slider </p>
+                                    <p><?php echo $lang['IfyouwanttoshoworhideHomebottomTestimonialsSlider'] ?> </p>
                                 </td>
                             </tr>
                                  <tr>
-                                    <td class="lable-control">主頁底部推薦滑塊內容</td>
+                                    <td class="lable-control"><?php echo $lang['HomebottomTestimonialsSlidercontent'] ?> </td>
                                     <td>
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                    <textarea class="form-control summernote" name="wg24themeoptionpanel_homemiddleshopinfobanners[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homemiddleshopinfobanners-<?php echo $language['language_id']; ?>">
+                                    <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homemiddleshopinfobanners[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homemiddleshopinfobanners-<?php echo $language['language_id']; ?>">
                                         <?php   if(is_array($wg24themeoptionpanel_homemiddleshopinfobanners)){  echo $wg24themeoptionpanel_homemiddleshopinfobanners[$language['language_id']]; }else { echo $wg24themeoptionpanel_homemiddleshopinfobanners; } ?></textarea>
-                                        <p>Custom text  under home Testimonials Slider content </p>
+                                        <p><?php echo $lang['CustomtextunderhomeTestimonialsSlidercontent'] ?> </p>
                                </div> 
                                <?php } ?>
                               </div>
@@ -2120,17 +2111,17 @@ table{ width: 80%;  margin-left: 21px;}
 
                             <table class="form">
                                 <tr>
-                                    <td colspan="2"><div><b>Home Page</b></div></td>
+                                    <td colspan="2"><div><b><?php echo $lang['HomePage'] ?></b></div></td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">你可以選擇3種類型的主頁</td>
+                                    <td class="lable-control"><?php echo $lang['Youcanchoose3typehomepage'] ?></td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_homepage12">
-                                            <option value="homepage1" <?php if($wg24themeoptionpanel_homepage12 == 'homepage1') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homepage12 == '') echo ' selected="selected"';?>>Home page 1</option>
-                                            <option value="homepage2"  <?php if($wg24themeoptionpanel_homepage12 == 'homepage2') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homepage12 == '') echo ' selected="selected"';?>>Home page 2</option>
-                                            <option value="homepage3" <?php if($wg24themeoptionpanel_homepage12 == 'homepage3') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homepage12 == '') echo ' selected="selected"';?>>Home page 3</option>
+                                            <option value="homepage1" <?php if($wg24themeoptionpanel_homepage12 == 'homepage1') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homepage12 == '') echo ' selected="selected"';?>><?php echo $lang['Homepage1'] ?></option>
+                                            <option value="homepage2"  <?php if($wg24themeoptionpanel_homepage12 == 'homepage2') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homepage12 == '') echo ' selected="selected"';?>><?php echo $lang['Homepage2'] ?></option>
+                                            <option value="homepage3" <?php if($wg24themeoptionpanel_homepage12 == 'homepage3') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homepage12 == '') echo ' selected="selected"';?>><?php echo $lang['Homepage3'] ?></option>
                                         </select>
-                                        <p>You can select home page 1.....3</p>
+                                        <p><?php echo $lang['Youcanselecthomepage13'] ?></p>
                                     </td>
                                 </tr>
                             </table>
@@ -2142,16 +2133,16 @@ table{ width: 80%;  margin-left: 21px;}
                         <div id="wg24themeoptionpanel_sub_category_page" class="tab-pane">
                             <table class="form">
                                 <tr>
-                                    <td colspan="2"><div><b>Category Page</b></div></td>
+                                    <td colspan="2"><div><b><?php echo $lang['CategoryPage'] ?></b></div></td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_c_psub ?></td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_l_c_psub">
-                                            <option value="enable" <?php if($wg24themeoptionpanel_l_c_psub == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_l_c_psub == '') echo ' selected="selected"';?>>Enable</option>
-                                            <option value="disable"  <?php if($wg24themeoptionpanel_l_c_psub == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_l_c_psub == '') echo ' selected="selected"';?>>Disable</option>
+                                            <option value="enable" <?php if($wg24themeoptionpanel_l_c_psub == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_l_c_psub == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                            <option value="disable"  <?php if($wg24themeoptionpanel_l_c_psub == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_l_c_psub == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                         </select>
-                                        <p>You can show or hide category page subcategory</p>
+                                        <p><?php echo $lang['Youcanshoworhidecategorypagesubcategory'] ?></p>
                                     </td>
                                 </tr>
                                    <tr>
@@ -2161,38 +2152,38 @@ table{ width: 80%;  margin-left: 21px;}
                                             <option value="grid_view" <?php if($wg24themeoptionpanel_cate_list_grid == 'grid_view') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_cate_list_grid == '') echo ' selected="selected"';?>>Grid View</option>
                                             <option value="list_view"  <?php if($wg24themeoptionpanel_cate_list_grid == 'list_view') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_cate_list_grid == '') echo ' selected="selected"';?>>List View</option>
                                         </select>
-                                        <p>if you want to changr catalog page  default  view style</p>
+                                        <p><?php echo $lang['ifyouwanttochangrcatalogpagedefaultviewstyle'] ?></p>
                                     </td>
                                 </tr>
                                  <tr>
-                                    <td class="lable-control">類別頁面側欄</td>
+                                    <td class="lable-control"><?php echo $lang['CategoryPageSidebar'] ?></td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_p_pag_sidebar">
                                             <option value="enable" <?php if($wg24themeoptionpanel_p_pag_sidebar == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_p_pag_sidebar == '') echo ' selected="selected"';?>>Left sidebar</option>
                                             <option value="disable"  <?php if($wg24themeoptionpanel_p_pag_sidebar == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_p_pag_sidebar == '') echo ' selected="selected"';?>>Full width</option>
                                         </select>
-                                        <p>You can show sidebar or without sidebar</p>
+                                        <p><?php echo $lang['Youcanshowsidebarorwithoutsidebar'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">類別左邊欄橫幅</td>
+                                    <td class="lable-control"><?php echo $lang['Categoryleftsidebarbanner'] ?></td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_category_left_sidebar_banneronof">
-                                            <option value="enable" <?php if($wg24themeoptionpanel_category_left_sidebar_banneronof == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_category_left_sidebar_banneronof == '') echo ' selected="selected"';?>>Enable</option>
-                                            <option value="disable"  <?php if($wg24themeoptionpanel_category_left_sidebar_banneronof == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_category_left_sidebar_banneronof == '') echo ' selected="selected"';?>>Disable</option>
+                                            <option value="enable" <?php if($wg24themeoptionpanel_category_left_sidebar_banneronof == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_category_left_sidebar_banneronof == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                            <option value="disable"  <?php if($wg24themeoptionpanel_category_left_sidebar_banneronof == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_category_left_sidebar_banneronof == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                         </select>
-                                        <p>You can show Category left sidebar banner</p>
+                                        <p>You can show <?php echo $lang['Categoryleftsidebarbanner'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">類別左側欄橫幅內容</td>
+                                    <td class="lable-control"><?php echo $lang['Categoryleftsidebarbannercontent'] ?></td>
                                     <td>
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                <textarea class="form-control summernote" name="wg24themeoptionpanel_category_left_sidebar_banner[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_category_left_sidebar_banner-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_category_left_sidebar_banner)){  echo $wg24themeoptionpanel_category_left_sidebar_banner[$language['language_id']]; }else { echo $wg24themeoptionpanel_category_left_sidebar_banner; } ?></textarea>
+                                <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_category_left_sidebar_banner[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_category_left_sidebar_banner-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_category_left_sidebar_banner)){  echo $wg24themeoptionpanel_category_left_sidebar_banner[$language['language_id']]; }else { echo $wg24themeoptionpanel_category_left_sidebar_banner; } ?></textarea>
 
-                                 <p>Please put your  Category left sidebar banner content</p>
+                                 <p>Please put your  <?php echo $lang['Categoryleftsidebarbannercontent'] ?></p>
                                </div> 
                                <?php } ?>
                               </div>
@@ -2208,14 +2199,14 @@ table{ width: 80%;  margin-left: 21px;}
                             
                                 
                                 <tr>
-                                    <td class="lable-control">產品頁面3種類型的佈局</td>
+                                    <td class="lable-control"><?php echo $lang['Productpage3typeslayout'] ?> </td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_productlayout">
                                             <option value="fullwidth" <?php if($wg24themeoptionpanel_productlayout == 'fullwidth') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_productlayout == '') echo ' selected="selected"';?>>Full width</option>
                                             <option value="leftsidebar"  <?php if($wg24themeoptionpanel_productlayout == 'leftsidebar') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_productlayout == '') echo ' selected="selected"';?>>Left sidebar</option>
                                             <option value="rightsidebar"  <?php if($wg24themeoptionpanel_productlayout == 'rightsidebar') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_productlayout == '') echo ' selected="selected"';?>>Right sidebar</option>
                                         </select>
-                                        <p>You can choose 3 type product page</p>
+                                        <p><?php echo $lang['Youcanchoose3typeproductpage'] ?></p>
                                     </td>
                                 </tr> 
                              
@@ -2223,10 +2214,10 @@ table{ width: 80%;  margin-left: 21px;}
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_custom_tab ?></td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_l_custom_tab">
-                                            <option value="enable" <?php if($wg24themeoptionpanel_l_custom_tab == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_l_custom_tab == '') echo ' selected="selected"';?>>Enable</option>
-                                            <option value="disable"  <?php if($wg24themeoptionpanel_l_custom_tab == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_l_custom_tab == '') echo ' selected="selected"';?>>Disable</option>
+                                            <option value="enable" <?php if($wg24themeoptionpanel_l_custom_tab == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_l_custom_tab == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                            <option value="disable"  <?php if($wg24themeoptionpanel_l_custom_tab == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_l_custom_tab == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                         </select>
-                                        <p>You can show  or hide custom tab page on product</p>
+                                        <p><?php echo $lang['Youcanshoworhidecustomtabpageonproduct'] ?></p>
                                     </td>
                                 </tr>
                                  <tr>
@@ -2236,7 +2227,7 @@ table{ width: 80%;  margin-left: 21px;}
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
                                          <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_l_tab_title)){  echo $wg24themeoptionpanel_l_tab_title[$language['language_id']]; }else { echo $wg24themeoptionpanel_l_tab_title; } ?>" name="wg24themeoptionpanel_l_tab_title[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_l_tab_title-<?php echo $language['language_id']; ?>">
-                                        <p>custom html tab title design to show on product page</p>
+                                        <p><?php echo $lang['customhtmltabtitledesigntoshowonproductpage'] ?></p>
                                </div> 
                                <?php } ?>
                               </div>
@@ -2249,8 +2240,8 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                    <textarea class="form-control summernote" name="wg24themeoptionpanel_l_tabc[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_l_tabc-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_l_tabc)){  echo $wg24themeoptionpanel_l_tabc[$language['language_id']]; }else { echo $wg24themeoptionpanel_l_tabc; } ?></textarea>
-                                        <p>custom Html design to show on product page </p>
+                                    <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_l_tabc[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_l_tabc-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_l_tabc)){  echo $wg24themeoptionpanel_l_tabc[$language['language_id']]; }else { echo $wg24themeoptionpanel_l_tabc; } ?></textarea>
+                                        <p><?php echo $lang['customHtmldesigntoshowonproductpage'] ?> </p>
                                </div> 
                                <?php } ?>
                               </div>
@@ -2272,12 +2263,12 @@ table{ width: 80%;  margin-left: 21px;}
                      <div id="wg24themeoptionpanel_theme_color"   class="tab-pane" >  
                           <div class="tabbable tabs-left">
                             <ul class="nav nav-tabs">
-                              <li class="active"><a data-toggle="tab" href="#wg24themeoptionpanel_sub_load_color_skin">Load color skin</a></li>
-                              <li> <a href="#wg24themeoptionpanel_sub_main_color" data-toggle="tab">Main</a></li>
-                              <li> <a href="#wg24themeoptionpanel_sub_header_color" data-toggle="tab">Header</a></li>
-                              <li> <a href="#wg24themeoptionpanel_sub_main_menu_color" data-toggle="tab">Main Menu</a></li>
-                              <li>  <a href="#wg24themeoptionpanel_sub_button_color" data-toggle="tab"> Global Color</a></li> 
-                              <li> <a href="#wg24themeoptionpanel_sub_footer_color" data-toggle="tab"> Footer</a> </li> 
+                              <li class="active"><a data-toggle="tab" href="#wg24themeoptionpanel_sub_load_color_skin"><?php echo $lang['Loadcolorskin'] ?></a></li>
+                              <li><a href="#wg24themeoptionpanel_sub_main_color" data-toggle="tab"><?php echo $lang['Main'] ?></a></li>
+                              <li><a href="#wg24themeoptionpanel_sub_header_color" data-toggle="tab">Header</a></li>
+                              <li><a href="#wg24themeoptionpanel_sub_main_menu_color" data-toggle="tab"><?php echo $lang['Main'] ?> Menu</a></li>
+                              <li><a href="#wg24themeoptionpanel_sub_button_color" data-toggle="tab"> <?php echo $lang['GlobalColor'] ?></a></li> 
+                              <li><a href="#wg24themeoptionpanel_sub_footer_color" data-toggle="tab"> Footer</a></li> 
                        </ul>
                           <div class="tab-content">       
                         <div id="wg24themeoptionpanel_sub_load_color_skin" class="tab-pane active">
@@ -2292,7 +2283,7 @@ table{ width: 80%;  margin-left: 21px;}
                                             <option value="theme-blue-1" <?php if($wg24themeoptionpanel_l_load_color == 'theme-blue-1') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_l_load_color == '') echo ' selected="selected"';?>>Default Skin</option>
                                             <option value="customeskin" <?php if($wg24themeoptionpanel_l_load_color == 'customeskin') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_l_load_color == '') echo ' selected="selected"';?>>Custom Skin</option>
                                         </select>
-                                        <p>You can load color scheme</p>
+                                        <p><?php echo $lang['Youcanloadcolorscheme'] ?></p>
                                     </td>
                                 </tr>
                             </table>
@@ -2302,56 +2293,56 @@ table{ width: 80%;  margin-left: 21px;}
                         <div id="wg24themeoptionpanel_sub_main_color" class="tab-pane">
                             <table class="form">
                                 <tr>
-                                    <td colspan="2"><div><b>Main</b></div></td>
+                                    <td colspan="2"><div><b><?php echo $lang['Main'] ?></b></div></td>
                                 </tr>
 
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_body_background ?></td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_l_bodyb" value="<?php  echo $wg24themeoptionpanel_l_bodyb; ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#FFFFFF . if you want to change this color</p>
+                                        <p><?php echo $lang['DefaultcolorFFFFFFifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_body_fc ?></td>
                                     <td class="lable-control">
                                         <input  type="text" name="wg24themeoptionpanel_l_body_fc" value="<?php  echo $wg24themeoptionpanel_l_body_fc; ?>" class="color {required:false,hash:true} form-control" size="3" />
-                                        <p>Default color:#666666 . if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolor666666ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_link_color ?></td>
                                     <td class="lable-control">
                                         <input type="text" name="wg24themeoptionpanel_l_linkc" value="<?php  echo $wg24themeoptionpanel_l_linkc; ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#666666 . if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolor666666ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_link_hcolor ?></td>
                                     <td class="lable-control">
                                         <input type="text" name="wg24themeoptionpanel_l_hcolor" value="<?php  echo $wg24themeoptionpanel_l_hcolor; ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#000000 . if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolor000000ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_fld_bg ?></td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_l_fld_bg" value="<?php  echo $wg24themeoptionpanel_l_fld_bg; ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#FFFFFF . if you want to change this color</p>
+                                        <p><?php echo $lang['DefaultcolorFFFFFFifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_fld_tx ?> </td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_l_fld_tx" value="<?php  echo $wg24themeoptionpanel_l_fld_tx; ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#595959 . if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolor595959ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_fld_bdr ?> </td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_l_fld_bdr" value="<?php  echo $wg24themeoptionpanel_l_fld_bdr; ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#dcdcdc. if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolordcdcdcifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 
@@ -2364,10 +2355,10 @@ table{ width: 80%;  margin-left: 21px;}
                                     <td colspan="2"><div><b><?php echo $wg24themeoptionpanel_l_header ?> </b></div></td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">標題容器Bg顏色</td>
+                                    <td class="lable-control"><?php echo $lang['HeadercontainerBgcolor'] ?> </td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_header_bgcolor" value="<?php  echo $wg24themeoptionpanel_header_bgcolor ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#FFFFFF . if you want to change this color</p>
+                                        <p><?php echo $lang['DefaultcolorFFFFFFifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                             </table>
@@ -2379,45 +2370,45 @@ table{ width: 80%;  margin-left: 21px;}
                                     <td colspan="2"><div><b><?php echo $wg24themeoptionpanel_l_main_menu ?></b></div></td>
                                 </tr>
                                  <tr>
-                                    <td class="lable-control">菜單BG顏色</td>
+                                    <td class="lable-control"><?php echo $lang['MenuBGcolor'] ?></td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_menum_1bgcolor" value="<?php  echo $wg24themeoptionpanel_menum_1bgcolor ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#FFFFFF . if you want to change this color</p>
+                                        <p><?php echo $lang['DefaultcolorFFFFFFifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">菜單框陰影顏色</td>
+                                    <td class="lable-control"><?php echo $lang['Menuboxshadowcolor'] ?> </td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_menum_1sdocolor" value="<?php  echo $wg24themeoptionpanel_menum_1sdocolor ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#eee. if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcoloreeeifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">菜單邊框顏色</td>
+                                    <td class="lable-control"> <?php echo $lang['Menubordercolor'] ?> </td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_mainm_bottombordercolor" value="<?php  echo $wg24themeoptionpanel_mainm_bottombordercolor?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#E7E7E7 . if you want to change this color</p>
+                                        <p><?php echo $lang['DefaultcolorE7E7E7ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_menum_lcolor?> </td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_menum_lcolor" value="<?php  echo $wg24themeoptionpanel_menum_lcolor ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#000000 . if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolor000000ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_mainm_lhcolor?> </td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_mainm_lhcolor" value="<?php  echo $wg24themeoptionpanel_mainm_lhcolor?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#333333  . if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolor333333ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">菜單懸停bg顏色</td>
+                                    <td class="lable-control"><?php echo $lang['Menuhoverbgcolor'] ?>  </td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_mainm_lhbgcolor" value="<?php  echo $wg24themeoptionpanel_mainm_lhbgcolor?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#FBFBFB  . if you want to change this color</p>
+                                        <p><?php echo $lang['DefaultcolorFBFBFBifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr> 
                                 
@@ -2425,21 +2416,21 @@ table{ width: 80%;  margin-left: 21px;}
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_mainm_2lbgcolor ?> </td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_mainm_2lbgcolor" value="<?php  echo $wg24themeoptionpanel_mainm_2lbgcolor?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#FCEFF1 . if you want to change this color</p>
+                                        <p><?php echo $lang['DefaultcolorFCEFF1ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_mainm_scolor?> </td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_mainm_scolor" value="<?php  echo $wg24themeoptionpanel_mainm_scolor; ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#333333. if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolor333333ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_mainm_shcolor?> </td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_mainm_shcolor" value="<?php  echo $wg24themeoptionpanel_mainm_shcolor?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#333333 . if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolor333333ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                             </table>
@@ -2451,39 +2442,39 @@ table{ width: 80%;  margin-left: 21px;}
                                     <td colspan="2"><div><b>Global</b></div></td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">原色1</td>
+                                    <td class="lable-control"><?php echo $lang['PrimaryColor1'] ?></td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_btn_1bg_col" value="<?php  echo $wg24themeoptionpanel_btn_1bg_col ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#6fc191 . if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolor6fc191ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 
                                 <tr>
-                                    <td class="lable-control">原色2</td>
+                                    <td class="lable-control"><?php echo $lang['Primarycolor2'] ?></td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_btn_hbg_col" value="<?php  echo $wg24themeoptionpanel_btn_hbg_col ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#f37d8a . if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolorf37d8aifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">原色3</td>
+                                    <td class="lable-control"><?php echo $lang['Primarycolor3'] ?></td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_btn_text_col" value="<?php  echo $wg24themeoptionpanel_btn_text_col ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#77d0e4. if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolor77d0e4ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">原色4</td>
+                                    <td class="lable-control"><?php echo $lang['Primarycolor4'] ?></td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_btn_htext_col" value="<?php  echo $wg24themeoptionpanel_btn_htext_col ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#e5b856. if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolore5b856ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">Secendary顏色1</td>
+                                    <td class="lable-control"><?php echo $lang['SecendaryColor1'] ?></td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_btn_secondayr_col" value="<?php  echo $wg24themeoptionpanel_btn_secondayr_col ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#000000. if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolor000000ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                             </table>
@@ -2492,49 +2483,49 @@ table{ width: 80%;  margin-left: 21px;}
                         <div id="wg24themeoptionpanel_sub_footer_color" class="tab-pane">
                                 <table class="form">
                                 <tr>
-                                    <td colspan="2"><div><b>FOOTER</b></div></td>
+                                    <td colspan="2"><div><b><?php echo $lang['FOOTER'] ?></b></div></td>
                                 </tr>
                                  <tr>
-                                    <td class="lable-control">頁腳Bg顏色</td>
+                                    <td class="lable-control"><?php echo $lang['FooterBgcolor'] ?></td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_footer_bg_col" value="<?php  echo $wg24themeoptionpanel_footer_bg_col ?>" class="form-control" size="7" />
-                                        <p>Default color:rgba(51, 51, 51, 0.98). if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolorrgba515151098ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">頁腳標題顏色</td>
+                                    <td class="lable-control"><?php echo $lang['FooterHeaderscolor'] ?></td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_fotheadin_col" value="<?php  echo $wg24themeoptionpanel_fotheadin_col ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#FFFFFF     . if you want to change this color</p>
+                                        <p><?php echo $lang['DefaultcolorFFFFFFifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">頁腳鍊接顏色</td>
+                                    <td class="lable-control"><?php echo $lang['Footerlinkscolor'] ?>  </td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_fotlin_col" value="<?php  echo $wg24themeoptionpanel_fotlin_col ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#8e8e8e. if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolor8e8e8eifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">頁腳鍊接懸停顏色</td>
+                                    <td class="lable-control"><?php echo $lang['Footerlinkshovercolor'] ?>   </td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_fotlin_h_col" value="<?php  echo $wg24themeoptionpanel_fotlin_h_col ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#fff. if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolorfffifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                               
                                    <tr>
-                                    <td class="lable-control">頁腳底部bg顏色</td>
+                                    <td class="lable-control"><?php echo $lang['Footerbottombgcolor'] ?></td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_fot_bbg_col" value="<?php  echo $wg24themeoptionpanel_fot_bbg_col ?>" class=" form-control" size="7" />
-                                        <p>Default color:#rgba(44, 44, 44, 0.98). if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolorrgba444444098ifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">頁腳支持文本顏色</td>
+                                    <td class="lable-control"><?php echo $lang['Footerpoweredbytextcolor'] ?></td>
                                     <td>
                                         <input type="text" name="wg24themeoptionpanel_fot_powerred_col" value="<?php  echo $wg24themeoptionpanel_fot_powerred_col ?>" class="color {required:false,hash:true} form-control" size="7" />
-                                        <p>Default color:#8e8e8e. if you want to change this color</p>
+                                        <p><?php echo $lang['Defaultcolor8e8e8eifyouwanttochangethiscolor'] ?></p>
                                     </td>
                                 </tr>
                             </table>
@@ -2552,13 +2543,13 @@ table{ width: 80%;  margin-left: 21px;}
                                 <td colspan="2"><div><b><?php echo $wg24themeoptionpanel_tab_background; ?></b></div></td>
                             </tr>
                             <tr>
-                                <td class="lable-control">背景圖像</td>
+                                <td class="lable-control"><?php echo $lang['Backgroundimages'] ?></td>
                                 <td>
                                     <select class="form-control" name="wg24themeoptionpanel_backgroun_image_show">
-                                        <option value="enable" <?php if($wg24themeoptionpanel_backgroun_image_show == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_backgroun_image_show == '') echo ' selected="selected"';?>>Enable</option>
-                                        <option value="disable"  <?php if($wg24themeoptionpanel_backgroun_image_show == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_backgroun_image_show == '') echo ' selected="selected"';?>>Disable</option>
+                                        <option value="enable" <?php if($wg24themeoptionpanel_backgroun_image_show == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_backgroun_image_show == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                        <option value="disable"  <?php if($wg24themeoptionpanel_backgroun_image_show == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_backgroun_image_show == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                     </select>
-                                    <p>If you want to show or hide main body background imags</p>
+                                    <p><?php echo $lang['Ifyouwanttoshoworhidemainbodybackgroundimags'] ?></p>
                                 </td>
                             </tr>
                             <tr>
@@ -2581,7 +2572,7 @@ table{ width: 80%;  margin-left: 21px;}
                                 </td>
                             </tr>
                             <tr>  
-                                <td class="lable-control">選擇一個模式編號</td>
+                                <td class="lable-control"><?php echo $lang['Chooseapatternnumber'] ?> </td>
                                 <td>
                                     <select class="form-control" name="we24_default_parttern" id="we24_default_parttern">
                                         <option value="">none</option>
@@ -2592,13 +2583,13 @@ table{ width: 80%;  margin-left: 21px;}
                                         <?php } 
                                         ?>   
                                     </select>
-                                    <p>First upload your pattern catalog/view/theme/babystore/image/theme_patterns/</p>
+                                    <p><?php echo $lang['Firstuploadyourpatterncatalogviewthemebabystoreimagetheme_patterns'] ?></p>
                                 </td>
                             </tr> 
 
 
                             <tr>
-                                <td class="lable-control">背景附件</td>
+                                <td class="lable-control"><?php echo $lang['BaackgroundAttachment'] ?></td>
                                 <td>                        
                                     <select class="form-control" name="wg24themeoptionpanel_bg_attachment">
                                         <option value="scroll"<?php if($wg24themeoptionpanel_bg_attachment == 'scroll') echo ' selected="selected"';?>>Scroll</option>
@@ -2608,7 +2599,7 @@ table{ width: 80%;  margin-left: 21px;}
                                 </td>
                             </tr> 
                             <tr>
-                                <td class="lable-control">Baackground重複</td>
+                                <td class="lable-control"><?php echo $lang['BaackgroundRepeat'] ?></td>
                                 <td>                        
                                     <select class="form-control" name="wg24themeoptionpanel_bg_repeat">
                                         <option value="repeat"<?php if($wg24themeoptionpanel_bg_repeat == 'repeat') echo ' selected="selected"';?>>Repeat</option>
@@ -2620,7 +2611,7 @@ table{ width: 80%;  margin-left: 21px;}
                                 </td> 
                             </tr> 
                             <tr>
-                                <td class="lable-control">Backgorund位置</td>
+                                <td class="lable-control"><?php echo $lang['BackgorundPosition'] ?></td>
                                 <td>                        
                                     <select class="form-control"  name="wg24themeoptionpanel_bg_positin" >
                                         <option  value="left top" <?php if($wg24themeoptionpanel_bg_positin == 'left top') echo ' selected="selected"';?> >Left top</option>
@@ -2644,33 +2635,33 @@ table{ width: 80%;  margin-left: 21px;}
                      <div id="wg24themeoptionpanel_theme_slider"   class="tab-pane" >
                          <div class="tabbable tabs-left">
                             <ul class="nav nav-tabs"> 
-                            <li class="active"><a data-toggle="tab" href="#wg24themeoptionpanel_home_page1">Home page 1</a></li>
-                            <li><a data-toggle="tab" a href="#wg24themeoptionpanel_home_page3">Home page 3</a></li>
+                            <li class="active"><a data-toggle="tab" href="#wg24themeoptionpanel_home_page1"><?php echo $lang['Homepage1'] ?></a></li>
+                            <li><a data-toggle="tab" a href="#wg24themeoptionpanel_home_page3"><?php echo $lang['Homepage3'] ?></a></li>
                         </ul>
                          <div class="tab-content">    
                               <div id="wg24themeoptionpanel_home_page1" class="tab-pane active">  
                                     <table class="form">
                                 <tr>
-                                    <td colspan="2"><div><b>Home  slider </b></div></td>
+                                    <td colspan="2"><div><b><?php echo $lang['Homeslider'] ?> </b></div></td>
                                 </tr>
                                    <tr>
-                                <td class="lable-control">首頁大滑塊</td>
+                                <td class="lable-control"><?php echo $lang['Homebigslider'] ?></td>
                                 <td>
                                     <select class="form-control" name="wg24themeoptionpanel_homebigslideronoff1">
-                                        <option value="enable" <?php if($wg24themeoptionpanel_homebigslideronoff1 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigslideronoff1 == '') echo ' selected="selected"';?>>Enable</option>
-                                        <option value="disable"  <?php if($wg24themeoptionpanel_homebigslideronoff1 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigslideronoff1 == '') echo ' selected="selected"';?>>Disable</option>
+                                        <option value="enable" <?php if($wg24themeoptionpanel_homebigslideronoff1 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigslideronoff1 == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                        <option value="disable"  <?php if($wg24themeoptionpanel_homebigslideronoff1 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigslideronoff1 == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                     </select>
-                                    <p>If you want to show or hide main body background imags</p>
+                                    <p><?php echo $lang['Ifyouwanttoshoworhidemainbodybackgroundimags'] ?></p>
                                 </td>
                             </tr>
                              <tr>
-                                    <td class="lable-control">首頁大滑塊內容</td>
+                                    <td class="lable-control"><?php echo $lang['Homebigslidercontent'] ?></td>
                                     <td>
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                <textarea class="form-control summernote" name="wg24themeoptionpanel_homebigslider1[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigslider1-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigslider1)){  echo $wg24themeoptionpanel_homebigslider1[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigslider1; } ?></textarea>
-                                 <p>Please put your  home slider content</p>
+                                <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homebigslider1[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigslider1-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigslider1)){  echo $wg24themeoptionpanel_homebigslider1[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigslider1; } ?></textarea>
+                                 <p><?php echo $lang['Pleaseputyourhomeslidercontent'] ?></p>
                                </div> 
                                <?php } ?>
                               </div>
@@ -2678,23 +2669,23 @@ table{ width: 80%;  margin-left: 21px;}
                                 </tr> 
 
                             <tr>
-                                <td class="lable-control">首頁大滑塊底部促銷橫幅</td>
+                                <td class="lable-control"><?php echo $lang['Homebigsliderbottompromobanner'] ?></td>
                                 <td>
                                     <select class="form-control" name="wg24themeoptionpanel_homebigsliderbanneronoff1">
-                                        <option value="enable" <?php if($wg24themeoptionpanel_homebigsliderbanneronoff1 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigsliderbanneronoff1 == '') echo ' selected="selected"';?>>Enable</option>
-                                        <option value="disable"  <?php if($wg24themeoptionpanel_homebigsliderbanneronoff1 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigsliderbanneronoff1 == '') echo ' selected="selected"';?>>Disable</option>
+                                        <option value="enable" <?php if($wg24themeoptionpanel_homebigsliderbanneronoff1 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigsliderbanneronoff1 == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                        <option value="disable"  <?php if($wg24themeoptionpanel_homebigsliderbanneronoff1 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigsliderbanneronoff1 == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                     </select>
-                                    <p>If you want to show or hide Home big slider bottom  promo banner</p>
+                                    <p>If you want to show or hide <?php echo $lang['Homebigsliderbottompromobanner'] ?></p>
                                 </td>
                             </tr>
                              <tr>
-                                    <td class="lable-control">首頁大滑塊底部促銷橫幅內容</td>
+                                    <td class="lable-control"><?php echo $lang['Homebigsliderbottompromobannercontent'] ?></td>
                                     <td>
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                        <textarea class="form-control summernote" name="wg24themeoptionpanel_homebigsliderbottombanner1[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigsliderbottombanner1-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigsliderbottombanner1)){  echo $wg24themeoptionpanel_homebigsliderbottombanner1[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigsliderbottombanner1; } ?></textarea>
-                                        <p>Please put your  Home big slider bottom  promo banner
+                                        <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homebigsliderbottombanner1[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigsliderbottombanner1-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigsliderbottombanner1)){  echo $wg24themeoptionpanel_homebigsliderbottombanner1[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigsliderbottombanner1; } ?></textarea>
+                                        <p>Please put your  <?php echo $lang['Homebigsliderbottompromobanner'] ?>
                                         </p>
                                </div> 
                                <?php } ?>
@@ -2702,92 +2693,92 @@ table{ width: 80%;  margin-left: 21px;}
                                     </td>
                                 </tr>
                                 <tr>
-                                <td class="lable-control">家庭兒童時裝（0-5歲）的旗幟</td>
+                                <td class="lable-control"><?php echo $lang['HomeChildFashion05Yearsbanner'] ?> </td>
                                 <td>
                                     <select class="form-control" name="wg24themeoptionpanel_homebigsliderbanneronoff2">
-                                        <option value="enable" <?php if($wg24themeoptionpanel_homebigsliderbanneronoff2 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigsliderbanneronoff2 == '') echo ' selected="selected"';?>>Enable</option>
-                                        <option value="disable"  <?php if($wg24themeoptionpanel_homebigsliderbanneronoff2 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigsliderbanneronoff2 == '') echo ' selected="selected"';?>>Disable</option>
+                                        <option value="enable" <?php if($wg24themeoptionpanel_homebigsliderbanneronoff2 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigsliderbanneronoff2 == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                        <option value="disable"  <?php if($wg24themeoptionpanel_homebigsliderbanneronoff2 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigsliderbanneronoff2 == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                     </select>
-                                    <p>If you want to show or hide Child Fashion (0-5 Years) banner </p>
+                                    <p><?php echo $lang['IfyouwanttoshoworhideChildFashion05Yearsbanner'] ?> </p>
                                 </td>
                             </tr>
                              <tr>
-                                    <td class="lable-control">家庭兒童時裝（0 - 5年）橫幅內容</td>
+                                    <td class="lable-control"><?php echo $lang['HomeChildFashion05YearsBannerContent'] ?> </td>
                                     <td>
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                        <textarea class="form-control summernote" name="wg24themeoptionpanel_homebigsliderbottombanner2[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigsliderbottombanner2-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigsliderbottombanner2)){  echo $wg24themeoptionpanel_homebigsliderbottombanner2[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigsliderbottombanner2; } ?></textarea>
-                                        <p>Please put your  home slider bottom features content</p>
+                                        <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homebigsliderbottombanner2[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigsliderbottombanner2-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigsliderbottombanner2)){  echo $wg24themeoptionpanel_homebigsliderbottombanner2[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigsliderbottombanner2; } ?></textarea>
+                                        <p><?php echo $lang['Pleaseputyourhomesliderbottomfeaturescontent'] ?></p>
                                </div> 
                                <?php } ?>
                               </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                <td class="lable-control">家庭兒童時裝（6-12歲）橫幅</td>
+                                <td class="lable-control"><?php echo $lang['HomeKidsFashion612YearsBanner'] ?></td>
                                 <td>
                                     <select class="form-control" name="wg24themeoptionpanel_homemessageboxonoff1">
-                                        <option value="enable" <?php if($wg24themeoptionpanel_homemessageboxonoff1 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homemessageboxonoff1 == '') echo ' selected="selected"';?>>Enable</option>
-                                        <option value="disable"  <?php if($wg24themeoptionpanel_homemessageboxonoff1 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homemessageboxonoff1 == '') echo ' selected="selected"';?>>Disable</option>
+                                        <option value="enable" <?php if($wg24themeoptionpanel_homemessageboxonoff1 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homemessageboxonoff1 == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                        <option value="disable"  <?php if($wg24themeoptionpanel_homemessageboxonoff1 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homemessageboxonoff1 == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                     </select>
-                                    <p>If you want to show or hide Home Kids Fashion (6-12 Years) Banner</p>
+                                    <p><?php echo $lang['IfyouwanttoshoworhideHomeKidsFashion612YearsBanner'] ?></p>
                                 </td>
                             </tr>
                                   <tr>
-                                    <td class="lable-control">首頁兒童時裝（6-12歲）內容</td>
+                                    <td class="lable-control"><?php echo $lang['HomeKidsFashion612Yearscontent'] ?></td>
                                     <td>
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                        <textarea class="form-control summernote" name="wg24themeoptionpanel_homemessagebox[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homemessagebox-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homemessagebox)){  echo $wg24themeoptionpanel_homemessagebox[$language['language_id']]; }else { echo $wg24themeoptionpanel_homemessagebox; } ?></textarea>
-                                        <p>Please put your  Home  Kids Fashion 6-12 Years content</p>
+                                        <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homemessagebox[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homemessagebox-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homemessagebox)){  echo $wg24themeoptionpanel_homemessagebox[$language['language_id']]; }else { echo $wg24themeoptionpanel_homemessagebox; } ?></textarea>
+                                        <p><?php echo $lang['PleaseputyourHomeKidsFashion612Yearscontent'] ?></p>
                                </div> 
                                <?php } ?>
                               </div>
                                     </td>
                                 </tr>
                                    <tr>
-                                <td class="lable-control">家庭玩具和書籍（0-12 Years）橫幅內容</td>
+                                <td class="lable-control"><?php echo $lang['HomeToysBooks012Yearsbannercontent'] ?> </td>
                                 <td>
                                     <select class="form-control" name="wg24themeoptionpanel_latestdealhotproductsonoff">
-                                        <option value="enable" <?php if($wg24themeoptionpanel_latestdealhotproductsonoff == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_latestdealhotproductsonoff == '') echo ' selected="selected"';?>>Enable</option>
-                                        <option value="disable"  <?php if($wg24themeoptionpanel_latestdealhotproductsonoff == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_latestdealhotproductsonoff == '') echo ' selected="selected"';?>>Disable</option>
+                                        <option value="enable" <?php if($wg24themeoptionpanel_latestdealhotproductsonoff == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_latestdealhotproductsonoff == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                        <option value="disable"  <?php if($wg24themeoptionpanel_latestdealhotproductsonoff == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_latestdealhotproductsonoff == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                     </select>
-                                    <p>If you want to show or hide Home  Kids Fashion (0-12 Years) banner</p>
+                                    <p><?php echo $lang['IfyouwanttoshoworhideHomeKidsFashion012Yearsbanner'] ?></p>
                                 </td>
                             </tr>
                                 <tr>
-                                    <td class="lable-control">家庭玩具和書籍（0-12 Years）橫幅內容</td>
+                                    <td class="lable-control"><?php echo $lang['HomeToysBooks012Yearsbannercontent'] ?></td>
                                     <td>
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                        <textarea class="form-control summernote" name="wg24themeoptionpanel_latestdealhotproducts[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_latestdealhotproducts-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_latestdealhotproducts)){  echo $wg24themeoptionpanel_latestdealhotproducts[$language['language_id']]; }else { echo $wg24themeoptionpanel_latestdealhotproducts; } ?></textarea>
-                                        <p>Please put your  Home  Kids Fashion (0-12 Years) banner</p>
+                                        <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_latestdealhotproducts[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_latestdealhotproducts-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_latestdealhotproducts)){  echo $wg24themeoptionpanel_latestdealhotproducts[$language['language_id']]; }else { echo $wg24themeoptionpanel_latestdealhotproducts; } ?></textarea>
+                                        <p><?php echo $lang['PleaseputyourHomeKidsFashion012Yearsbanner'] ?></p>
                                </div> 
                                <?php } ?>
                               </div>
                                     </td>
                                 </tr> 
                                  <tr>
-                                <td class="lable-control">家特別優惠橫幅</td>
+                                <td class="lable-control"><?php echo $lang['HomeSpecialOffersbanners'] ?>  </td>
                                 <td>
                                     <select class="form-control" name="wg24themeoptionpanel_homePromotionsslideronoff">
-                                        <option value="enable" <?php if($wg24themeoptionpanel_homePromotionsslideronoff == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homePromotionsslideronoff == '') echo ' selected="selected"';?>>Enable</option>
-                                        <option value="disable"  <?php if($wg24themeoptionpanel_homePromotionsslideronoff == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homePromotionsslideronoff == '') echo ' selected="selected"';?>>Disable</option>
+                                        <option value="enable" <?php if($wg24themeoptionpanel_homePromotionsslideronoff == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homePromotionsslideronoff == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                        <option value="disable"  <?php if($wg24themeoptionpanel_homePromotionsslideronoff == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homePromotionsslideronoff == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                     </select>
-                                    <p>If you want to show or hide Home  Special Offers banners </p>
+                                    <p>If you want to show or hide <?php echo $lang['HomeSpecialOffersbanners'] ?> </p>
                                 </td>
                             </tr>
                                 <tr>
-                                    <td class="lable-control">家特別優惠橫幅內容</td>
+                                    <td class="lable-control"><?php echo $lang['HomeSpecialOffersbannerscontent'] ?></td>
                                     <td>
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                        <textarea class="form-control summernote" name="wg24themeoptionpanel_homePromotionsslider[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homePromotionsslider-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homePromotionsslider)){  echo $wg24themeoptionpanel_homePromotionsslider[$language['language_id']]; }else { echo $wg24themeoptionpanel_homePromotionsslider; } ?></textarea>
-                                        <p>Please put your  Home  Special Offers banners content</p>
+                                        <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homePromotionsslider[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homePromotionsslider-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homePromotionsslider)){  echo $wg24themeoptionpanel_homePromotionsslider[$language['language_id']]; }else { echo $wg24themeoptionpanel_homePromotionsslider; } ?></textarea>
+                                        <p>Please put your  <?php echo $lang['HomeSpecialOffersbannerscontent'] ?></p>
                                </div> 
                                <?php } ?>
                               </div>
@@ -2800,26 +2791,26 @@ table{ width: 80%;  margin-left: 21px;}
                               <div id="wg24themeoptionpanel_home_page3" class="tab-pane">  
                                 <table class="form">
                                 <tr>
-                                    <td colspan="2"><div><b>Home big slider with   mini banner</b></div></td>
+                                    <td colspan="2"><div><b><?php echo $lang['Homebigsliderwithminibanner'] ?></b></div></td>
                                 </tr>
                                    <tr>
-                                <td class="lable-control">首頁與迷你橫幅大滑塊</td>
+                                <td class="lable-control"><?php echo $lang['Homebigsliderwithminibanner'] ?></td>
                                 <td>
                                     <select class="form-control" name="wg24themeoptionpanel_homebigbanneronoff3">
-                                        <option value="enable" <?php if($wg24themeoptionpanel_homebigbanneronoff3 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigbanneronoff3 == '') echo ' selected="selected"';?>>Enable</option>
-                                        <option value="disable"  <?php if($wg24themeoptionpanel_homebigbanneronoff3 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigbanneronoff3 == '') echo ' selected="selected"';?>>Disable</option>
+                                        <option value="enable" <?php if($wg24themeoptionpanel_homebigbanneronoff3 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigbanneronoff3 == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                        <option value="disable"  <?php if($wg24themeoptionpanel_homebigbanneronoff3 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_homebigbanneronoff3 == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                     </select>
-                                    <p>If you want to show or hide Home big slider with   mini banner</p>
+                                    <p>If you want to show or hide <?php echo $lang['Homebigsliderwithminibanner'] ?></p>
                                 </td>
                             </tr>
                              <tr>
-                                    <td class="lable-control">首頁大滑塊底部迷你橫幅內容</td>
+                                    <td class="lable-control"><?php echo $lang['Homebigsliderbottomminibannercontent'] ?></td>
                                     <td>
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                         <textarea class="form-control summernote" name="wg24themeoptionpanel_homebigbanner3[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigbanner3-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigbanner3)){  echo $wg24themeoptionpanel_homebigbanner3[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigbanner3; } ?></textarea>
-                                        <p>Please put your  home banner content</p>
+                                         <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homebigbanner3[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigbanner3-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigbanner3)){  echo $wg24themeoptionpanel_homebigbanner3[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigbanner3; } ?></textarea>
+                                        <p><?php echo $lang['Pleaseputyourhomebannercontent'] ?></p>
                                </div> 
                                <?php } ?>
                               </div>
@@ -2839,27 +2830,27 @@ table{ width: 80%;  margin-left: 21px;}
                      <div id="wg24themeoptionpanel_theme_font"   class="tab-pane" >
                           <div class="tabbable tabs-left">
                             <ul class="nav nav-tabs"> 
-                            <li class="active"><a data-toggle="tab" href="#wg24themeoptionpanel_sub_body_font">Body font</a></li>
-                            <li><a data-toggle="tab" a href="#wg24themeoptionpanel_sub_category_header_font">Headers font</a></li>
+                            <li class="active"><a data-toggle="tab" href="#wg24themeoptionpanel_sub_body_font"><?php echo $lang['Bodyfont'] ?></a></li>
+                            <li><a data-toggle="tab" a href="#wg24themeoptionpanel_sub_category_header_font"><?php echo $lang['Headersfont'] ?></a></li>
                         </ul>
                      <div class="tab-content">  
                         <div id="wg24themeoptionpanel_sub_body_font" class="tab-pane active">      
                             <table class="form">
                                 <tr>
-                                    <td colspan="2"><div><b>Body Font</b></div></td>
+                                    <td colspan="2"><div><b><?php echo $lang['BodyFont'] ?></b></div></td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">選擇字體來源</td>
+                                    <td class="lable-control"><?php echo $lang['Selectfontsource'] ?></td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_body_font_source">
                                             <option value="google" <?php if($wg24themeoptionpanel_body_font_source == 'google') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_body_font_source == '') echo ' selected="selected"';?>>Google</option>
                                             <option value="system"  <?php if($wg24themeoptionpanel_body_font_source == 'system') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_body_font_source == '') echo ' selected="selected"';?>>System</option>
                                         </select>
-                                        <p>If you want to Select font source system/google.</p>
+                                        <p>If you want to <?php echo $lang['Selectfontsource'] ?> system/google.</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">正文字體到系統</td>
+                                    <td class="lable-control"><?php echo $lang['BodyFonttosystem'] ?></td>
                                     <td>
                                         <select class="form-control" id="wg24themeoptionpanel_body_fontto_system" name="wg24themeoptionpanel_body_fontto_system">
                                             <?php 
@@ -2873,11 +2864,11 @@ table{ width: 80%;  margin-left: 21px;}
 
                                         </select>   
                                         <span id="wg24themeoptionpanel_demo_body_to_system"> <h3>Quick brown fox jumps over the lazy dog </h3></span>
-                                        <p>You can change body  font style..</p>
+                                        <p><?php echo $lang['Youcanchangebodyfontstyle'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">身體字體谷歌</td>
+                                    <td class="lable-control"><?php echo $lang['BodyFonttogoogle'] ?></td>
                                     <td>			
                                         <select class="form-control" name="wg24themeoptionpanel_body_fontto_google" id="wg24themeoptionpanel_body_fontto_google">
                                             <?php foreach ($wg24show_all_googl_fonts  as  $google_font=>$key ) { 
@@ -2890,11 +2881,11 @@ table{ width: 80%;  margin-left: 21px;}
                                             
                                         </select>
                                         <span id="wg24themeoptionpanel_demo_body_to_google"><h3>Quick brown fox jumps over the lazy dog</h3></span>
-                                        <p>You can change body  font style.</p>
+                                        <p><?php echo $lang['Youcanchangebodyfontstyle'] ?>/p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">字體大小</td>
+                                    <td class="lable-control"><?php echo $lang['Fontsize'] ?></td>
                                     <td>			
                                         <select class="form-control" name="wg24themeoptionpanel_body_font_size">
                                             <?php  for($i=12;$i<=26;$i++){ 
@@ -2921,20 +2912,20 @@ table{ width: 80%;  margin-left: 21px;}
                         <div id="wg24themeoptionpanel_sub_category_header_font" class="tab-pane">      
                             <table class="form">
                                 <tr>
-                                    <td colspan="2"><div><b>Headers font</b></div></td>
+                                    <td colspan="2"><div><b><?php echo $lang['Headersfont'] ?></b></div></td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">選擇字體來源</td>
+                                    <td class="lable-control"><?php echo $lang['Selectfontsource'] ?></td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_header_font_source">
                                             <option value="google" <?php if($wg24themeoptionpanel_header_font_source == 'google') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_header_font_source == '') echo ' selected="selected"';?>>Google</option>
                                             <option value="system"  <?php if($wg24themeoptionpanel_header_font_source == 'system') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_header_font_source == '') echo ' selected="selected"';?>>System</option>
                                         </select>
-                                        <p>If you want to Select font source system/google.</p>
+                                        <p>If you want to <?php echo $lang['Selectfontsource'] ?> system/google.</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">標題字體到系統</td>
+                                    <td class="lable-control"><?php echo $lang['HeadingFonttosystem'] ?></td>
                                     <td>
                                         <select class="form-control" id="wg24themeoptionpanel_header_fontto_system" name="wg24themeoptionpanel_header_fontto_system">
                                             <?php 
@@ -2948,11 +2939,11 @@ table{ width: 80%;  margin-left: 21px;}
 
                                         </select>   
                                         <span id="wg24themeoptionpanel_demo_header_to_system"><h3>Quick brown fox jumps over the lazy dog</h3></span>
-                                        <p>You can change heading  font style..</p>
+                                        <p><?php echo $lang['Youcanchangeheadingfontstyle'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">標題字體谷歌</td>
+                                    <td class="lable-control"><?php echo $lang['HeadingFonttogoogle'] ?></td>
                                     <td>			
                                         <select class="form-control" name="wg24themeoptionpanel_header_fontto_google" id="wg24themeoptionpanel_header_fontto_google">
                                                <?php foreach ($wg24show_all_googl_fonts  as $google_font=>$key) { 
@@ -2963,11 +2954,11 @@ table{ width: 80%;  margin-left: 21px;}
                                             ?> 
                                         </select>
                                         <span id="wg24themeoptionpanel_demo_heading_to_google"><h3>Quick brown fox jumps over the lazy dog</h3></span>
-                                        <p>You can change heading  font style.</p>
+                                        <p><?php echo $lang['Youcanchangeheadingfontstyle'] ?>/p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">文本轉換</td>
+                                    <td class="lable-control"><?php echo $lang['Texttransform'] ?></td>
                                     <td>			
                                         <select class="form-control" name="wg24themeoptionpanel_heading_transfrom">
                                             <option value="uppercase"<?php if($wg24themeoptionpanel_heading_transfrom == 'uppercase') echo ' selected="selected"';?>>Uppercase</option>
@@ -2979,7 +2970,7 @@ table{ width: 80%;  margin-left: 21px;}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">產品標題字體大小</td>
+                                    <td class="lable-control">Product headers <?php echo $lang['Fontsize'] ?></td>
                                     <td>			
                                         <select class="form-control" name="wg24themeoptionpanel_produt_h_font_size">
                                             <?php  for($i=12;$i<=50;$i++){   
@@ -2996,7 +2987,7 @@ table{ width: 80%;  margin-left: 21px;}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">頁眉字體大小</td>
+                                    <td class="lable-control">Page headers <?php echo $lang['Fontsize'] ?></td>
                                     <td>			
                                         <select class="form-control" name="wg24themeoptionpanel_page_h_font_size">
                                             <?php  for($i=12;$i<=35;$i++){  
@@ -3012,7 +3003,7 @@ table{ width: 80%;  margin-left: 21px;}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">左/右邊欄塊標題字體大小</td>
+                                    <td class="lable-control">Left/Right sidebar block headers <?php echo $lang['Fontsize'] ?></td>
                                     <td>			
                                         <select class="form-control" name="wg24themeoptionpanel_left_rig_h_font_size">
                                             <?php  for($i=12;$i<=35;$i++){ 
@@ -3028,7 +3019,7 @@ table{ width: 80%;  margin-left: 21px;}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">頁腳標題字體大小</td>
+                                    <td class="lable-control">Footer headers <?php echo $lang['Fontsize'] ?></td>
                                     <td>			
                                         <select class="form-control" name="wg24themeoptionpanel_footer_h_font_size">
                                             <?php  for($i=12;$i<=35;$i++){  
@@ -3059,23 +3050,23 @@ table{ width: 80%;  margin-left: 21px;}
                                 <td colspan="2"><div><b><?php echo $wg24themeoptionpanel_tab_menu ?></b></div></td>
                             </tr>
                            <tr>
-                                    <td class="lable-control">標題自定義橫幅1</td>
+                                    <td class="lable-control"><?php echo $lang['Headercustombanner1'] ?> </td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_header_hotlinenumber">
-                                            <option value="enable" <?php if($wg24themeoptionpanel_header_hotlinenumber == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_header_hotlinenumber == '') echo ' selected="selected"';?>>Enable</option>
-                                            <option value="disable"  <?php if($wg24themeoptionpanel_header_hotlinenumber == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_header_hotlinenumber == '') echo ' selected="selected"';?>>Disable</option>
+                                            <option value="enable" <?php if($wg24themeoptionpanel_header_hotlinenumber == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_header_hotlinenumber == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                            <option value="disable"  <?php if($wg24themeoptionpanel_header_hotlinenumber == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_header_hotlinenumber == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                         </select>
-                                        <p>You can show or hide Home message box custom block</p>
+                                        <p><?php echo $lang['YoucanshoworhideHomemessageboxcustomblock'] ?></p>
                                     </td>
                                 </tr>
                                  <tr><!-----------------textareabox---------->
-                                    <td class="lable-control">標題自定義橫幅1</td>
+                                    <td class="lable-control"><?php echo $lang['Headercustombanner1'] ?></td>
                                     <td>
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                                <textarea class="form-control summernote" name="wg24themeoptionpanel_header_hot_linenumberboxe[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_header_hot_linenumberboxe-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_header_hot_linenumberboxe)){  echo $wg24themeoptionpanel_header_hot_linenumberboxe[$language['language_id']]; }else { echo $wg24themeoptionpanel_header_hot_linenumberboxe; } ?></textarea>
-                                        <p>Please put your  message box custom block content</p>
+                                                <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_header_hot_linenumberboxe[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_header_hot_linenumberboxe-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_header_hot_linenumberboxe)){  echo $wg24themeoptionpanel_header_hot_linenumberboxe[$language['language_id']]; }else { echo $wg24themeoptionpanel_header_hot_linenumberboxe; } ?></textarea>
+                                        <p><?php echo $lang['Pleaseputyourmessageboxcustomblockcontent'] ?></p>
                                </div> 
                                <?php } ?>
                               </div>
@@ -3085,23 +3076,23 @@ table{ width: 80%;  margin-left: 21px;}
                                 <td colspan="2"><div><b><?php echo $wg24themeoptionpanel_tab_menu ?></b></div></td>
                             </tr>
                            <tr>
-                                    <td class="lable-control">標題自定義橫幅2</td>
+                                    <td class="lable-control"><?php echo $lang['Headercustombanner2'] ?> </td>
                                     <td>
                                         <select class="form-control" name="wg24themeoptionpanel_header_hotlinenumber1">
-                                            <option value="enable" <?php if($wg24themeoptionpanel_header_hotlinenumber1 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_header_hotlinenumber1 == '') echo ' selected="selected"';?>>Enable</option>
-                                            <option value="disable"  <?php if($wg24themeoptionpanel_header_hotlinenumber1 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_header_hotlinenumber1 == '') echo ' selected="selected"';?>>Disable</option>
+                                            <option value="enable" <?php if($wg24themeoptionpanel_header_hotlinenumber1 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_header_hotlinenumber1 == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                            <option value="disable"  <?php if($wg24themeoptionpanel_header_hotlinenumber1 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_header_hotlinenumber1 == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                         </select>
-                                        <p>You can show or hide Home message box custom block</p>
+                                        <p><?php echo $lang['YoucanshoworhideHomemessageboxcustomblock'] ?></p>
                                     </td>
                                 </tr>
                                  <tr><!-----------------textareabox---------->
-                                    <td class="lable-control">標題自定義橫幅2</td>
+                                    <td class="lable-control"><?php echo $lang['Headercustombanner2'] ?></td>
                                     <td>
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                                <textarea class="form-control summernote" name="wg24themeoptionpanel_header_hot_linenumberboxe1[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_header_hot_linenumberboxe1-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_header_hot_linenumberboxe1)){  echo $wg24themeoptionpanel_header_hot_linenumberboxe1[$language['language_id']]; }else { echo $wg24themeoptionpanel_header_hot_linenumberboxe1; } ?></textarea>
-                                        <p>Please put your  message box custom block content</p>
+                                                <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_header_hot_linenumberboxe1[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_header_hot_linenumberboxe1-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_header_hot_linenumberboxe1)){  echo $wg24themeoptionpanel_header_hot_linenumberboxe1[$language['language_id']]; }else { echo $wg24themeoptionpanel_header_hot_linenumberboxe1; } ?></textarea>
+                                        <p><?php echo $lang['Pleaseputyourmessageboxcustomblockcontent'] ?></p>
                                </div> 
                                <?php } ?>
                               </div>
@@ -3123,12 +3114,11 @@ table{ width: 80%;  margin-left: 21px;}
               
                           <div class="tabbable tabs-left">
                             <ul class="nav nav-tabs"> 
-                             <li class="active">
-                           <a  data-toggle="tab" href="#wg24themeoptionpanel_sub_fot_twitter_box">Twitter Feed box.</a></li>
-                             <li><a data-toggle="tab" href="#wg24themeoptionpanel_sub_fot_contact"> Contact Information</a></li>
-                             <li><a data-toggle="tab" href="#wg24themeoptionpanel_sub_fot_social"> Social Icons</a></li>
-                             <li><a data-toggle="tab" href="#wg24themeoptionpanel_sub_fot_powered"> Powered by</a></li>
-                             <li><a data-toggle="tab" href="#wg24themeoptionpanel_sub_fot_paymenet"> Payment Icon</a></li> 
+                             <li class="active"><a  data-toggle="tab" href="#wg24themeoptionpanel_sub_fot_twitter_box"><?php echo $lang['TwitterFeedbox'] ?></a></li>
+                             <li><a data-toggle="tab" href="#wg24themeoptionpanel_sub_fot_contact"> <?php echo $lang['ContactInformation'] ?></a></li>
+                             <li><a data-toggle="tab" href="#wg24themeoptionpanel_sub_fot_social"> <?php echo $lang['SocialIcons'] ?></a></li>
+                             <li><a data-toggle="tab" href="#wg24themeoptionpanel_sub_fot_powered"> <?php echo $lang['Poweredby'] ?></a></li>
+                             <li><a data-toggle="tab" href="#wg24themeoptionpanel_sub_fot_paymenet"> <?php echo $lang['PaymentIcon'] ?></a></li> 
                        </ul>
                 <div class="tab-content"> 
                         <div id="wg24themeoptionpanel_sub_foter_likbox" class="tab-pane ">  
@@ -3141,7 +3131,7 @@ table{ width: 80%;  margin-left: 21px;}
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_facebook_purl?> </td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_facebook_like ?>" name="wg24themeoptionpanel_facebook_like"/>
-                                        <p>Put your facebook page url on this box.</p>
+                                        <p><?php echo $lang['Putyourfacebookpageurlonthisbox'] ?></p>
                                     </td>
                                 </tr>
                             </table>
@@ -3156,14 +3146,14 @@ table{ width: 80%;  margin-left: 21px;}
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_twitter_id?> </td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_twitter_id ?>" name="wg24themeoptionpanel_twitter_id"/>
-                                        <p>Put your Twitter username.</p>
+                                        <p><?php echo $lang['PutyourTwitterusername'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_tweets_tshow?> </td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_tweets_tshow ?>" name="wg24themeoptionpanel_tweets_tshow"/>
-                                        <p>Tweets counts</p>
+                                        <p><?php echo $lang['Tweetscounts'] ?></p>
                                     </td>
                                 </tr>
                             </table>
@@ -3175,7 +3165,7 @@ table{ width: 80%;  margin-left: 21px;}
 
                             <table class="form">
                                 <tr>
-                                    <td colspan="2"><div><b>Contact information</b></div></td>
+                                    <td colspan="2"><div><b><?php echo $lang['Contactinformation'] ?></b></div></td>
                                 </tr>
                                  <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_contact_info_page_of?></td>
@@ -3183,23 +3173,23 @@ table{ width: 80%;  margin-left: 21px;}
                                   <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                      <textarea class="form-control summernote"   name="wg24themeoptionpanel_contact_info_page_of[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_contact_info_page_of-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_contact_info_page_of)){  echo $wg24themeoptionpanel_contact_info_page_of[$language['language_id']]; }else { echo $wg24themeoptionpanel_contact_info_page_of; } ?></textarea>
+                                      <textarea class="form-control summernote" data-toggle="summernote"   name="wg24themeoptionpanel_contact_info_page_of[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_contact_info_page_of-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_contact_info_page_of)){  echo $wg24themeoptionpanel_contact_info_page_of[$language['language_id']]; }else { echo $wg24themeoptionpanel_contact_info_page_of; } ?></textarea>
                                </div> 
                                <?php } ?>
                               </div>
                                     </td>
                                 </tr> 
                                 <tr>
-                                <td class="lable-control">聯繫信息頁面</td>
+                                <td class="lable-control"><?php echo $lang['Contactinformationpage'] ?></td>
                                 <td>
                                     <select class="form-control" name="wg24themeoptionpanel_contact_info_pagenoff1">
-                                        <option value="enable" <?php if($wg24themeoptionpanel_contact_info_pagenoff1 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_contact_info_pagenoff1 == '') echo ' selected="selected"';?>>Enable</option>
-                                        <option value="disable"  <?php if($wg24themeoptionpanel_contact_info_pagenoff1 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_contact_info_pagenoff1 == '') echo ' selected="selected"';?>>Disable</option>
+                                        <option value="enable" <?php if($wg24themeoptionpanel_contact_info_pagenoff1 == 'enable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_contact_info_pagenoff1 == '') echo ' selected="selected"';?>><?php echo $lang['Enable'] ?></option>
+                                        <option value="disable"  <?php if($wg24themeoptionpanel_contact_info_pagenoff1 == 'disable') echo ' selected="selected"';?><?php if($wg24themeoptionpanel_contact_info_pagenoff1 == '') echo ' selected="selected"';?>><?php echo $lang['Disable'] ?></option>
                                     </select>
                                 </td>
                             </tr>
                                 <tr>
-                                    <td colspan="2"><div><b>Contact information page cpntent</b></div></td>
+                                    <td colspan="2"><div><b><?php echo $lang['Contactinformationpage'] ?> cpntent</b></div></td>
                                 </tr>
                                  <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_contact_info_page_of?></td>
@@ -3207,7 +3197,7 @@ table{ width: 80%;  margin-left: 21px;}
                                   <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                      <textarea class="form-control summernote"   name="wg24themeoptionpanel_contact_info_page[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_contact_info_page-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_contact_info_page)){  echo $wg24themeoptionpanel_contact_info_page[$language['language_id']]; }else { echo $wg24themeoptionpanel_contact_info_page; } ?></textarea>
+                                      <textarea class="form-control summernote" data-toggle="summernote"   name="wg24themeoptionpanel_contact_info_page[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_contact_info_page-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_contact_info_page)){  echo $wg24themeoptionpanel_contact_info_page[$language['language_id']]; }else { echo $wg24themeoptionpanel_contact_info_page; } ?></textarea>
                                </div> 
                                <?php } ?>
                               </div>
@@ -3226,37 +3216,37 @@ table{ width: 80%;  margin-left: 21px;}
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_facebook_url;?> </td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_facebook_url;?>" name="wg24themeoptionpanel_facebook_url"/>
-                                        <p>Put your Facebook Url</p>
+                                        <p><?php echo $lang['PutyourFacebookUrl'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_twitter_url;?> </td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_twitter_url;?>" name="wg24themeoptionpanel_twitter_url"/>
-                                        <p>Put your Twitter Url</p>
+                                        <p><?php echo $lang['PutyourTwitterUrl'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_google_url;?>  </td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_google_url;?>" name="wg24themeoptionpanel_google_url"/>
-                                        <p>Put your Google Url</p>
+                                        <p><?php echo $lang['PutyourGoogleUrl'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_rss_url?>  </td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_rss_url; ?>" name="wg24themeoptionpanel_rss_url"/>
-                                        <p>Put your Rss Url</p>
+                                        <p><?php echo $lang['PutyourRssUrl'] ?></p>
                                     </td>
                                 </tr>
                                
 
                                 <tr>
-                                    <td class="lable-control">Linkedin網址</td>
+                                    <td class="lable-control"> <?php echo $lang['Linkedinurl'] ?>  </td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_linking_url;?>" name="wg24themeoptionpanel_linking_url"/>
-                                        <p>Put your Skype Url</p>
+                                        <p><?php echo $lang['PutyourSkypeUrl'] ?></p>
                                     </td>
                                 </tr>
                               
@@ -3276,7 +3266,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                       <textarea class="form-control summernote"   name="wg24themeoptionpanel_copyr_text[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_copyr_text-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_copyr_text)){  echo $wg24themeoptionpanel_copyr_text[$language['language_id']]; }else { echo $wg24themeoptionpanel_copyr_text; } ?></textarea>                               </div> 
+                                       <textarea class="form-control summernote" data-toggle="summernote"   name="wg24themeoptionpanel_copyr_text[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_copyr_text-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_copyr_text)){  echo $wg24themeoptionpanel_copyr_text[$language['language_id']]; }else { echo $wg24themeoptionpanel_copyr_text; } ?></textarea>                               </div> 
                                <?php } ?>
                               </div>
                                     </td>
@@ -3292,49 +3282,49 @@ table{ width: 80%;  margin-left: 21px;}
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_paypal_url?></td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_paypal_url; ?>" name="wg24themeoptionpanel_paypal_url"/>
-                                        <p>Put your paypal url</p>
+                                        <p><?php echo $lang['Putyourpaypalurl'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_visa_ele_url?></td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_visaelectron_ur; ?>" name="wg24themeoptionpanel_visaelectron_ur"/>
-                                        <p>Put your visaelectron url</p>
+                                        <p><?php echo $lang['Putyourvisaelectronurl'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_discover_url?></td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_discover_url; ?>" name="wg24themeoptionpanel_discover_url"/>
-                                        <p>Put your Discover url</p>
+                                        <p><?php echo $lang['PutyourDiscoverurl'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_visa_url?> </td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_visa_url; ?>" name="wg24themeoptionpanel_visa_url"/>
-                                        <p>Put your Visa url</p>
+                                        <p><?php echo $lang['PutyourVisaurl'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="lable-control"><?php echo $wg24themeoptionpanel_l_mastercard_url?></td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_mastercard_url; ?>" name="wg24themeoptionpanel_mastercard_url"/>
-                                        <p>Put your mastercard url</p>
+                                        <p><?php echo $lang['Putyourmastercardurl'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">Maestro網址</td>
+                                    <td class="lable-control"><?php echo $lang['Maestrourl'] ?></td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_maestro_url; ?>" name="wg24themeoptionpanel_maestro_url"/>
-                                        <p>Put your Maestro url</p>
+                                        <p>Put your <?php echo $lang['Maestrourl'] ?></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lable-control">美國運通網址</td>
+                                    <td class="lable-control"><?php echo $lang['AmericanExpressurl'] ?></td>
                                     <td>
                                         <input class="form-control" type="text" value="<?php echo $wg24themeoptionpanel_americanexpress_url; ?>" name="wg24themeoptionpanel_americanexpress_url"/>
-                                        <p>Put your American Express url</p>
+                                        <p>Put your <?php echo $lang['AmericanExpressurl'] ?></p>
                                     </td>
                                 </tr>
                             </table>
@@ -3348,18 +3338,18 @@ table{ width: 80%;  margin-left: 21px;}
                             <div id="wg24themeoptionpanel_theme_texttranlat"   class="tab-pane" >
                             <table class="form">
                               <tr>
-                                  <td colspan="2"><div><b>Theme text translator</b></div></td>
+                                  <td colspan="2"><div><b><?php echo $lang['Themetexttranslator'] ?></b></div></td>
                               </tr>
                   
                      
                           <tr>
-                            <td class="lable-control">產品盒的新文本</td>
+                            <td class="lable-control"><?php echo $lang['Newtextforprodutbox'] ?> </td>
                             <td>
                                 <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?> tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_newtext)){  echo $wg24themeoptionpanel_newtext[$language['language_id']]; }else { echo $wg24themeoptionpanel_newtext; } ?>" name="wg24themeoptionpanel_newtext[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_newtext-<?php echo $language['language_id']; ?>">
-                                        <p>New text for new icon</p>
+                                        <p><?php echo $lang['Newtextfornewicon'] ?></p>
                        </div> 
                        <?php } ?>
                       </div>
@@ -3368,13 +3358,13 @@ table{ width: 80%;  margin-left: 21px;}
 
                     </tr>
                            <tr>
-                            <td class="lable-control">銷售文本為產品箱子</td>
+                            <td class="lable-control"><?php echo $lang['Saletextforprodutbox'] ?> </td>
                             <td>
                                 <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?> tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_saletext)){  echo $wg24themeoptionpanel_saletext[$language['language_id']]; }else { echo $wg24themeoptionpanel_saletext; } ?>" name="wg24themeoptionpanel_saletext[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_saletext-<?php echo $language['language_id']; ?>">
-                                        <p>custom html tab title design to show on product page</p>
+                                        <p><?php echo $lang['customhtmltabtitledesigntoshowonproductpage'] ?></p>
                        </div> 
                        <?php } ?>
                       </div>
@@ -3382,13 +3372,13 @@ table{ width: 80%;  margin-left: 21px;}
                     </tr>
 
                         <tr>
-                            <td class="lable-control">對比框的銷售文本</td>
+                            <td class="lable-control"><?php echo $lang['Saletextforcomparebox'] ?> </td>
                             <td>
                             <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?> tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_text_compare)){  echo $wg24themeoptionpanel_text_compare[$language['language_id']]; }else { echo $wg24themeoptionpanel_text_compare; } ?>" name="wg24themeoptionpanel_text_compare[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_text_compare-<?php echo $language['language_id']; ?>">
-                                        <p>custom html tab title design to show on compare page</p>
+                                        <p><?php echo $lang['customhtmltabtitledesigntoshowoncomparepage'] ?></p>
                        </div> 
                        <?php } ?>
                       </div>
@@ -3396,13 +3386,13 @@ table{ width: 80%;  margin-left: 21px;}
                         </tr>
 
                           <tr>
-                            <td class="lable-control">Twitter的腳本文本</td>
+                            <td class="lable-control"><?php echo $lang['Twittertextforfooter'] ?></td>
                             <td>
                                 <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?> tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_twittertitle)){  echo $wg24themeoptionpanel_twittertitle[$language['language_id']]; }else { echo $wg24themeoptionpanel_twittertitle; } ?>" name="wg24themeoptionpanel_twittertitle[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_twittertitle-<?php echo $language['language_id']; ?>">
-                                        <p>custom html tab title design to show on product page</p>
+                                        <p><?php echo $lang['customhtmltabtitledesigntoshowonproductpage'] ?></p>
                        </div> 
                        <?php } ?>
                       </div>
@@ -3412,13 +3402,13 @@ table{ width: 80%;  margin-left: 21px;}
                          
                   
                       <tr>
-                            <td class="lable-control">頁腳讓我們的文字</td>
+                            <td class="lable-control"><?php echo $lang['Footerfllowustext'] ?> </td>
                             <td>
                                 <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?> tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_twitterflowus)){  echo $wg24themeoptionpanel_twitterflowus[$language['language_id']]; }else { echo $wg24themeoptionpanel_twitterflowus; } ?>" name="wg24themeoptionpanel_twitterflowus[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_twitterflowus-<?php echo $language['language_id']; ?>">
-                                        <p>Footer fllow us text</p>
+                                        <p><?php echo $lang['Footerfllowustext'] ?></p>
                        </div> 
                        <?php } ?>
                       </div>
@@ -3426,117 +3416,117 @@ table{ width: 80%;  margin-left: 21px;}
                     </tr>
                     
                            <tr>
-                            <td class="lable-control">頂級品牌名稱</td>
+                            <td class="lable-control"><?php echo $lang['TopBrandsName'] ?> </td>
                             <td>
                                 <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_newarivaltitletext)){  echo $wg24themeoptionpanel_newarivaltitletext[$language['language_id']]; }else { echo $wg24themeoptionpanel_newarivaltitletext; } ?>" name="wg24themeoptionpanel_newarivaltitletext[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_newarivaltitletext-<?php echo $language['language_id']; ?>">
-                                        <p>Check out latest products text home page middle section</p>
+                                        <p><?php echo $lang['Checkoutlatestproductstexthomepagemiddlesection'] ?></p>
                        </div> 
                        <?php } ?>
                       </div>
                             </td>
                     </tr>
                         <tr>
-                            <td class="lable-control">最新類別選項卡所有文本</td>
+                            <td class="lable-control"><?php echo $lang['Latestcategorytaballtext'] ?> </td>
                             <td>
                                 <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?> tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_homecatalltext)){  echo $wg24themeoptionpanel_homecatalltext[$language['language_id']]; }else { echo $wg24themeoptionpanel_homecatalltext; } ?>" name="wg24themeoptionpanel_homecatalltext[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homecatalltext-<?php echo $language['language_id']; ?>">
-                                        <p>Latest category tab all text</p>
+                                        <p><?php echo $lang['Latestcategorytaballtext'] ?></p>
                        </div> 
                        <?php } ?>
                       </div>
                             </td>
                     </tr>
                     <tr>
-                            <td class="lable-control">特色產品標題主頁</td>
+                            <td class="lable-control"><?php echo $lang['FeaturedProductstitlehomepage'] ?>  </td>
                             <td>
                                 <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_featuredtitle)){  echo $wg24themeoptionpanel_featuredtitle[$language['language_id']]; }else { echo $wg24themeoptionpanel_featuredtitle; } ?>" name="wg24themeoptionpanel_featuredtitle[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_featuredtitle-<?php echo $language['language_id']; ?>">
-                                        <p>Featured Products title home page bottom mini products </p>
+                                        <p><?php echo $lang['FeaturedProductstitlehomepage'] ?> bottom mini products </p>
                        </div> 
                        <?php } ?>
                       </div>
                             </td>
                     </tr>
                     <tr>
-                            <td class="lable-control">最新產品標題主頁</td>
+                            <td class="lable-control"><?php echo $lang['LatestProductstitlehomepage'] ?>  </td>
                             <td>
                                 <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_toprateptitle)){  echo $wg24themeoptionpanel_toprateptitle[$language['language_id']]; }else { echo $wg24themeoptionpanel_toprateptitle; } ?>" name="wg24themeoptionpanel_toprateptitle[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_toprateptitle-<?php echo $language['language_id']; ?>">
-                                        <p>Latest Products title home page bottom mini products </p>
+                                        <p><?php echo $lang['LatestProductstitlehomepage'] ?> bottom mini products </p>
                        </div> 
                        <?php } ?>
                       </div>
                             </td>
                     </tr>
                             <tr>
-                            <td class="lable-control">Best Best Sales產品標題的最佳銷售文本</td>
+                            <td class="lable-control"><?php echo $lang['BestSalestextforminiBestSalesproducttitle'] ?> </td>
                             <td>
                                 <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?> tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_besttitle)){  echo $wg24themeoptionpanel_besttitle[$language['language_id']]; }else { echo $wg24themeoptionpanel_besttitle; } ?>" name="wg24themeoptionpanel_besttitle[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_besttitle-<?php echo $language['language_id']; ?>">
-                                        <p>Best Sales text for Best Sales product title</p>
+                                        <p><?php echo $lang['BestSalestextforBestSalesproducttitle'] ?></p>
                        </div> 
                        <?php } ?>
                       </div>
                             </td>
                     </tr>
                            <tr>
-                            <td class="lable-control">家庭迷你專用產品標題的特殊文本</td>
+                            <td class="lable-control"><?php echo $lang['SpecialtextforhomeminiSpecialproducttitle'] ?> </td>
                             <td>
                                 <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_specialtext)){  echo $wg24themeoptionpanel_specialtext[$language['language_id']]; }else { echo $wg24themeoptionpanel_specialtext; } ?>" name="wg24themeoptionpanel_specialtext[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_specialtext-<?php echo $language['language_id']; ?>">
-                                        <p>Special text for Special product title</p>
+                                        <p><?php echo $lang['SpecialtextforSpecialproducttitle'] ?></p>
                        </div> 
                        <?php } ?>
                       </div>
                             </td>
                     </tr>
                     <tr>
-                            <td class="lable-control">最高的產品標題</td>
+                            <td class="lable-control"><?php echo $lang['Toprateproducttitle'] ?></td>
                             <td>
                                 <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_catgorytext)){  echo $wg24themeoptionpanel_catgorytext[$language['language_id']]; }else { echo $wg24themeoptionpanel_catgorytext; } ?>" name="wg24themeoptionpanel_catgorytext[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_catgorytext-<?php echo $language['language_id']; ?>">
-                                        <p>Top rate product title</p>
+                                        <p><?php echo $lang['Toprateproducttitle'] ?></p>
                        </div> 
                        <?php } ?>
                       </div>
                             </td>
                     </tr>
                     <tr>
-                    <td class="lable-control">類別側邊欄標題</td>
+                    <td class="lable-control"><?php echo $lang['Categorysidebartitle'] ?></td>
                     <td>
                         <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_catgory_titletext)){  echo $wg24themeoptionpanel_catgory_titletext[$language['language_id']]; }else { echo $wg24themeoptionpanel_catgory_titletext; } ?>" name="wg24themeoptionpanel_catgory_titletext[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_catgory_titletext-<?php echo $language['language_id']; ?>">
-                                        <p>Category sidebar title</p>
+                                        <p><?php echo $lang['Categorysidebartitle'] ?></p>
                        </div> 
                        <?php } ?>
                       </div>
                     </td>
                     </tr>
                           <tr>
-                            <td class="lable-control">頁腳付款接受文本</td>
+                            <td class="lable-control"><?php echo $lang['footerpaymentaccepttext'] ?> </td>
                             <td>
                                 <div class="tab-content">       
                         <?php foreach ($languages as $language) { ?>
                        <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
                            <input class="form-control" type="text" value="<?php   if(is_array($wg24themeoptionpanel_footerpaymenttext)){  echo $wg24themeoptionpanel_footerpaymenttext[$language['language_id']]; }else { echo $wg24themeoptionpanel_footerpaymenttext; } ?>" name="wg24themeoptionpanel_footerpaymenttext[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_footerpaymenttext-<?php echo $language['language_id']; ?>">
-                                        <p>footer payment accept text </p>
+                                        <p><?php echo $lang['footerpaymentaccepttext'] ?> </p>
                        </div> 
                        <?php } ?>
                       </div>
@@ -3555,21 +3545,21 @@ table{ width: 80%;  margin-left: 21px;}
                                 <td class="lable-control"><?php echo $wg24themeoptionpanel_add_tcode ?></td>
                                 <td>
                                     <textarea class="form-control" name="wg24themeoptionpanel_l_add_tcode" id="wg24themeoptionpanel_l_add_tcode"><?php echo $wg24themeoptionpanel_l_add_tcode ?></textarea>
-                                    <p>You can add Google analytics code/another tracking code in this box</p>
+                                    <p><?php echo $lang['YoucanaddGoogleanalyticscodeanothertrackingcodeinthisbox'] ?></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="lable-control"><?php echo $wg24themeoptionpanel_add_custom_css ?></td>
                                 <td>
                                     <textarea class="form-control" name="wg24themeoptionpanel_l_add_custom_css" id="wg24themeoptionpanel_l_add_custom_css"><?php echo $wg24themeoptionpanel_l_add_custom_css?></textarea>
-                                    <p>Add custom css show in your theme</p>
+                                    <p><?php echo $lang['Addcustomcssshowinyourtheme'] ?></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="lable-control"><?php echo $wg24themeoptionpanel_add_custom_jss ?></td>
                                 <td>
                                     <textarea class="form-control" name="wg24themeoptionpanel_l_add_custom_jss" id="wg24themeoptionpanel_l_add_custom_jss"><?php echo $wg24themeoptionpanel_l_add_custom_jss ?></textarea>
-                                    <p>Add custom jss show in your theme</p>
+                                    <p><?php echo $lang['Addcustomjssshowinyourtheme'] ?></p>
                                 </td>
                             </tr>
                         </table>
@@ -3587,7 +3577,8 @@ table{ width: 80%;  margin-left: 21px;}
 
 <script type="text/javascript" src="view/javascript/jscolor/jscolor.js"></script>
 <script type="text/javascript" src="view/javascript/jscolor/demofont.js"></script>
-   <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
-  <link href="view/javascript/summernote/summernote.css" rel="stylesheet" />
-  <script type="text/javascript" src="view/javascript/summernote/opencart.js"></script> 
+<!-- 編輯模組 -->
+<script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+<link href="view/javascript/summernote/summernote.css" rel="stylesheet" />
+<script type="text/javascript" src="view/javascript/summernote/opencart.js"></script>
 <?php echo $footer; ?>
