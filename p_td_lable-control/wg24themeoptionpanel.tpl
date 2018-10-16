@@ -1208,9 +1208,7 @@ if(empty($wg24themeoptionpanel_linking_url)) $wg24themeoptionpanel_linking_url='
 if(empty($wg24themeoptionpanel_twitter_id)) $wg24themeoptionpanel_twitter_id='24webgroup'; 
 if(empty($wg24themeoptionpanel_tweets_tshow)) $wg24themeoptionpanel_tweets_tshow='6'; 
 /***  copyright   ***/
-if(empty($wg24themeoptionpanel_copyr_text)) $wg24themeoptionpanel_copyr_text='
-<P> © Copyright 2015 by <a href="#" class="blue-color"> baby&amp;kidsstore.com </a> -  Made with <span class="green-color"> 24webgroup. </span></P>
-';
+if(empty($wg24themeoptionpanel_copyr_text)) $wg24themeoptionpanel_copyr_text='<P> © Copyright 2015 by <a href="#" class="blue-color"> baby&amp;kidsstore.com </a> -  Made with <span class="green-color"> 24webgroup. </span></P>';
 /***** payment icon  ******/
 
 if(empty($wg24themeoptionpanel_paypal_url)) $wg24themeoptionpanel_paypal_url='http://www.paypal.com/'; 
@@ -1223,8 +1221,8 @@ if(empty($wg24themeoptionpanel_americanexpress_url)) $wg24themeoptionpanel_ameri
 
 ?>
 
-         <?php
-    $wg24show_all_googl_fonts = array("ABeeZee" => "ABeeZee",
+<?php
+$wg24show_all_googl_fonts = array("ABeeZee" => "ABeeZee",
 "Abel" => "Abel",
 "Abril Fatface" => "Abril Fatface",
 "Aclonica" => "Aclonica",
@@ -1872,15 +1870,13 @@ if(empty($wg24themeoptionpanel_americanexpress_url)) $wg24themeoptionpanel_ameri
 );
  $wg24localfonts= array('Arizonia'=>'Arizonia', 'Lato' => 'Lato','Open Sans' => 'Open Sans','Arial,Helvetica' => 'Arial, Helvetica','Geneva' => 'Geneva','Helvetica,sans-serif' => 'Helvetica, sans-serif','Times New Roman' => 'Times New Roman',  'Times,serif' => 'Times, serif','PT+Sans' => 'PT Sans','monospace' => 'monospace','Georgia,serif' => 'Georgia,Times, serif','Verdana' => 'Verdana','Oswald' => 'Oswald','Telex'=>'Telex','Iceberg' => 'Iceberg','Yanone Kaffeesatz' => 'Yanone Kaffeesatz ExtraLight','tahoma'=>'Tahoma, Geneva','Amethysta' => 'Amethysta','Courier New,Courier' => 'Courier New, Courier','Gudea'=> 'Gudea','Duru Sans' => 'Duru Sans','Germania One' => 'Germania One','Macondo Swash Caps'=>'Macondo Swash Caps');
     ?>
- <style type="text/css">
-    .tabs-left > .nav-tabs {
-    border-right: 1px solid #ddd;
-    float: left;
-    margin-right: 19px;
+<style type="text/css">
+.tabs-left > .nav-tabs {
+border-right: 1px solid #ddd;
+float: left;
+margin-right: 19px;
 }
-.tab-content img {
-    width: 100%;
-}
+
 .tabs-left > .nav-tabs > li, .tabs-right > .nav-tabs > li {
     float: none;
 }
@@ -1910,12 +1906,7 @@ table.form tr td div b{  color: #ff7cb0;
  }
 
 table{ width: 80%;  margin-left: 21px;}
-.tab-content {
-  overflow: hidden;
-  width: 100%;
-}
-
-    input.color{ width:88px  !important}
+input.color{width:88px  !important}
 </style>
  <?php echo $column_left;  ?>
 <div id="content">
@@ -2060,7 +2051,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                    <textarea class="form-control summernote" name="wg24themeoptionpanel_bigsliderbottom_shippin[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_bigsliderbottom_shippin-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_bigsliderbottom_shippin)){  echo $wg24themeoptionpanel_bigsliderbottom_shippin[$language['language_id']]; }else { echo $wg24themeoptionpanel_bigsliderbottom_shippin; } ?></textarea>
+                                    <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_bigsliderbottom_shippin[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_bigsliderbottom_shippin-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_bigsliderbottom_shippin)){  echo $wg24themeoptionpanel_bigsliderbottom_shippin[$language['language_id']]; }else { echo $wg24themeoptionpanel_bigsliderbottom_shippin; } ?></textarea>
                                         <p>Home middle free Money Back content</p>
                                </div> 
                                <?php } ?>
@@ -2083,7 +2074,7 @@ table{ width: 80%;  margin-left: 21px;}
                                 <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                     <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                        <textarea class="form-control summernote" name="wg24themeoptionpanel_homemiddlesessionsaletext[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homemiddlesessionsaletext-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homemiddlesessionsaletext)){  echo $wg24themeoptionpanel_homemiddlesessionsaletext[$language['language_id']]; }else { echo $wg24themeoptionpanel_homemiddlesessionsaletext; } ?></textarea>
+                                        <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homemiddlesessionsaletext[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homemiddlesessionsaletext-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homemiddlesessionsaletext)){  echo $wg24themeoptionpanel_homemiddlesessionsaletext[$language['language_id']]; }else { echo $wg24themeoptionpanel_homemiddlesessionsaletext; } ?></textarea>
                                             <p>Custom text  under home  News From Blogs </p>
                                    </div> 
                                <?php } ?>
@@ -2106,7 +2097,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                    <textarea class="form-control summernote" name="wg24themeoptionpanel_homemiddleshopinfobanners[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homemiddleshopinfobanners-<?php echo $language['language_id']; ?>">
+                                    <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homemiddleshopinfobanners[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homemiddleshopinfobanners-<?php echo $language['language_id']; ?>">
                                         <?php   if(is_array($wg24themeoptionpanel_homemiddleshopinfobanners)){  echo $wg24themeoptionpanel_homemiddleshopinfobanners[$language['language_id']]; }else { echo $wg24themeoptionpanel_homemiddleshopinfobanners; } ?></textarea>
                                         <p>Custom text  under home Testimonials Slider content </p>
                                </div> 
@@ -2190,7 +2181,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                <textarea class="form-control summernote" name="wg24themeoptionpanel_category_left_sidebar_banner[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_category_left_sidebar_banner-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_category_left_sidebar_banner)){  echo $wg24themeoptionpanel_category_left_sidebar_banner[$language['language_id']]; }else { echo $wg24themeoptionpanel_category_left_sidebar_banner; } ?></textarea>
+                                <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_category_left_sidebar_banner[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_category_left_sidebar_banner-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_category_left_sidebar_banner)){  echo $wg24themeoptionpanel_category_left_sidebar_banner[$language['language_id']]; }else { echo $wg24themeoptionpanel_category_left_sidebar_banner; } ?></textarea>
 
                                  <p>Please put your  Category left sidebar banner content</p>
                                </div> 
@@ -2249,7 +2240,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                    <textarea class="form-control summernote" name="wg24themeoptionpanel_l_tabc[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_l_tabc-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_l_tabc)){  echo $wg24themeoptionpanel_l_tabc[$language['language_id']]; }else { echo $wg24themeoptionpanel_l_tabc; } ?></textarea>
+                                    <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_l_tabc[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_l_tabc-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_l_tabc)){  echo $wg24themeoptionpanel_l_tabc[$language['language_id']]; }else { echo $wg24themeoptionpanel_l_tabc; } ?></textarea>
                                         <p>custom Html design to show on product page </p>
                                </div> 
                                <?php } ?>
@@ -2669,7 +2660,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                <textarea class="form-control summernote" name="wg24themeoptionpanel_homebigslider1[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigslider1-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigslider1)){  echo $wg24themeoptionpanel_homebigslider1[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigslider1; } ?></textarea>
+                                <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homebigslider1[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigslider1-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigslider1)){  echo $wg24themeoptionpanel_homebigslider1[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigslider1; } ?></textarea>
                                  <p>Please put your  home slider content</p>
                                </div> 
                                <?php } ?>
@@ -2693,7 +2684,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                        <textarea class="form-control summernote" name="wg24themeoptionpanel_homebigsliderbottombanner1[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigsliderbottombanner1-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigsliderbottombanner1)){  echo $wg24themeoptionpanel_homebigsliderbottombanner1[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigsliderbottombanner1; } ?></textarea>
+                                        <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homebigsliderbottombanner1[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigsliderbottombanner1-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigsliderbottombanner1)){  echo $wg24themeoptionpanel_homebigsliderbottombanner1[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigsliderbottombanner1; } ?></textarea>
                                         <p>Please put your  Home big slider bottom  promo banner
                                         </p>
                                </div> 
@@ -2717,7 +2708,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                        <textarea class="form-control summernote" name="wg24themeoptionpanel_homebigsliderbottombanner2[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigsliderbottombanner2-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigsliderbottombanner2)){  echo $wg24themeoptionpanel_homebigsliderbottombanner2[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigsliderbottombanner2; } ?></textarea>
+                                        <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homebigsliderbottombanner2[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigsliderbottombanner2-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigsliderbottombanner2)){  echo $wg24themeoptionpanel_homebigsliderbottombanner2[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigsliderbottombanner2; } ?></textarea>
                                         <p>Please put your  home slider bottom features content</p>
                                </div> 
                                <?php } ?>
@@ -2740,7 +2731,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                        <textarea class="form-control summernote" name="wg24themeoptionpanel_homemessagebox[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homemessagebox-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homemessagebox)){  echo $wg24themeoptionpanel_homemessagebox[$language['language_id']]; }else { echo $wg24themeoptionpanel_homemessagebox; } ?></textarea>
+                                        <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homemessagebox[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homemessagebox-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homemessagebox)){  echo $wg24themeoptionpanel_homemessagebox[$language['language_id']]; }else { echo $wg24themeoptionpanel_homemessagebox; } ?></textarea>
                                         <p>Please put your  Home  Kids Fashion 6-12 Years content</p>
                                </div> 
                                <?php } ?>
@@ -2763,7 +2754,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                        <textarea class="form-control summernote" name="wg24themeoptionpanel_latestdealhotproducts[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_latestdealhotproducts-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_latestdealhotproducts)){  echo $wg24themeoptionpanel_latestdealhotproducts[$language['language_id']]; }else { echo $wg24themeoptionpanel_latestdealhotproducts; } ?></textarea>
+                                        <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_latestdealhotproducts[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_latestdealhotproducts-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_latestdealhotproducts)){  echo $wg24themeoptionpanel_latestdealhotproducts[$language['language_id']]; }else { echo $wg24themeoptionpanel_latestdealhotproducts; } ?></textarea>
                                         <p>Please put your  Home  Kids Fashion (0-12 Years) banner</p>
                                </div> 
                                <?php } ?>
@@ -2786,7 +2777,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                        <textarea class="form-control summernote" name="wg24themeoptionpanel_homePromotionsslider[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homePromotionsslider-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homePromotionsslider)){  echo $wg24themeoptionpanel_homePromotionsslider[$language['language_id']]; }else { echo $wg24themeoptionpanel_homePromotionsslider; } ?></textarea>
+                                        <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homePromotionsslider[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homePromotionsslider-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homePromotionsslider)){  echo $wg24themeoptionpanel_homePromotionsslider[$language['language_id']]; }else { echo $wg24themeoptionpanel_homePromotionsslider; } ?></textarea>
                                         <p>Please put your  Home  Special Offers banners content</p>
                                </div> 
                                <?php } ?>
@@ -2818,7 +2809,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                         <textarea class="form-control summernote" name="wg24themeoptionpanel_homebigbanner3[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigbanner3-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigbanner3)){  echo $wg24themeoptionpanel_homebigbanner3[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigbanner3; } ?></textarea>
+                                         <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_homebigbanner3[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_homebigbanner3-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_homebigbanner3)){  echo $wg24themeoptionpanel_homebigbanner3[$language['language_id']]; }else { echo $wg24themeoptionpanel_homebigbanner3; } ?></textarea>
                                         <p>Please put your  home banner content</p>
                                </div> 
                                <?php } ?>
@@ -3074,7 +3065,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                                <textarea class="form-control summernote" name="wg24themeoptionpanel_header_hot_linenumberboxe[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_header_hot_linenumberboxe-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_header_hot_linenumberboxe)){  echo $wg24themeoptionpanel_header_hot_linenumberboxe[$language['language_id']]; }else { echo $wg24themeoptionpanel_header_hot_linenumberboxe; } ?></textarea>
+                                                <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_header_hot_linenumberboxe[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_header_hot_linenumberboxe-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_header_hot_linenumberboxe)){  echo $wg24themeoptionpanel_header_hot_linenumberboxe[$language['language_id']]; }else { echo $wg24themeoptionpanel_header_hot_linenumberboxe; } ?></textarea>
                                         <p>Please put your  message box custom block content</p>
                                </div> 
                                <?php } ?>
@@ -3100,7 +3091,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                                <textarea class="form-control summernote" name="wg24themeoptionpanel_header_hot_linenumberboxe1[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_header_hot_linenumberboxe1-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_header_hot_linenumberboxe1)){  echo $wg24themeoptionpanel_header_hot_linenumberboxe1[$language['language_id']]; }else { echo $wg24themeoptionpanel_header_hot_linenumberboxe1; } ?></textarea>
+                                                <textarea class="form-control summernote" data-toggle="summernote" name="wg24themeoptionpanel_header_hot_linenumberboxe1[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_header_hot_linenumberboxe1-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_header_hot_linenumberboxe1)){  echo $wg24themeoptionpanel_header_hot_linenumberboxe1[$language['language_id']]; }else { echo $wg24themeoptionpanel_header_hot_linenumberboxe1; } ?></textarea>
                                         <p>Please put your  message box custom block content</p>
                                </div> 
                                <?php } ?>
@@ -3182,7 +3173,7 @@ table{ width: 80%;  margin-left: 21px;}
                                   <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                      <textarea class="form-control summernote"   name="wg24themeoptionpanel_contact_info_page_of[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_contact_info_page_of-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_contact_info_page_of)){  echo $wg24themeoptionpanel_contact_info_page_of[$language['language_id']]; }else { echo $wg24themeoptionpanel_contact_info_page_of; } ?></textarea>
+                                      <textarea class="form-control summernote" data-toggle="summernote"   name="wg24themeoptionpanel_contact_info_page_of[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_contact_info_page_of-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_contact_info_page_of)){  echo $wg24themeoptionpanel_contact_info_page_of[$language['language_id']]; }else { echo $wg24themeoptionpanel_contact_info_page_of; } ?></textarea>
                                </div> 
                                <?php } ?>
                               </div>
@@ -3206,7 +3197,7 @@ table{ width: 80%;  margin-left: 21px;}
                                   <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                      <textarea class="form-control summernote"   name="wg24themeoptionpanel_contact_info_page[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_contact_info_page-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_contact_info_page)){  echo $wg24themeoptionpanel_contact_info_page[$language['language_id']]; }else { echo $wg24themeoptionpanel_contact_info_page; } ?></textarea>
+                                      <textarea class="form-control summernote" data-toggle="summernote"   name="wg24themeoptionpanel_contact_info_page[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_contact_info_page-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_contact_info_page)){  echo $wg24themeoptionpanel_contact_info_page[$language['language_id']]; }else { echo $wg24themeoptionpanel_contact_info_page; } ?></textarea>
                                </div> 
                                <?php } ?>
                               </div>
@@ -3275,7 +3266,7 @@ table{ width: 80%;  margin-left: 21px;}
                                         <div class="tab-content">       
                                 <?php foreach ($languages as $language) { ?>
                                <div  class="tab-pane <?php if($language['language_id']==1) echo 'active' ; ?>  tablanguage<?php echo $language['language_id']; ?>">
-                                       <textarea class="form-control summernote"   name="wg24themeoptionpanel_copyr_text[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_copyr_text-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_copyr_text)){  echo $wg24themeoptionpanel_copyr_text[$language['language_id']]; }else { echo $wg24themeoptionpanel_copyr_text; } ?></textarea>                               </div> 
+                                       <textarea class="form-control summernote" data-toggle="summernote"   name="wg24themeoptionpanel_copyr_text[<?php echo $language['language_id']; ?>]" id="wg24themeoptionpanel_copyr_text-<?php echo $language['language_id']; ?>"><?php   if(is_array($wg24themeoptionpanel_copyr_text)){  echo $wg24themeoptionpanel_copyr_text[$language['language_id']]; }else { echo $wg24themeoptionpanel_copyr_text; } ?></textarea>                               </div> 
                                <?php } ?>
                               </div>
                                     </td>
@@ -3586,7 +3577,8 @@ table{ width: 80%;  margin-left: 21px;}
 
 <script type="text/javascript" src="view/javascript/jscolor/jscolor.js"></script>
 <script type="text/javascript" src="view/javascript/jscolor/demofont.js"></script>
+<!-- 編輯模組 -->
 <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
 <link href="view/javascript/summernote/summernote.css" rel="stylesheet" />
-<script type="text/javascript" src="view/javascript/summernote/opencart.js"></script> 
+<script type="text/javascript" src="view/javascript/summernote/opencart.js"></script>
 <?php echo $footer; ?>

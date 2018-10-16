@@ -1,37 +1,7 @@
-Layout
-Home Page
-Category Page
-Product page
-Load color skin
-Main
-Header
-Main Menu
-Global Color
-Footer
-Home page 1
-Home page 3
-Body font
-Headers font
-Twitter Feed box.
-Contact Information
-Social Icons
-Powered by
-Payment Icon
-
-Global
-FOOTER
-Home  slider
-Home big slider with   mini banner
-Body Font
-Contact information
-Contact information page cpntent
-Theme text translator
-
 How much last produt show for as new icon in product box
 You can show or hide mini product slider   for home page 3
 You can Choose 4 type  header style for your shop
 Category module product show or hide
-Home middle free Money Back content
 Home middle free Money Back content
 Home   News From Blogs
 Home  News From Blogs content
@@ -39,8 +9,8 @@ Home bottom  Testimonials Slider
 Home bottom Testimonials Slider content
 You can choose 3 type home page
 Category Page Sidebar
-Category left sidebar banner
 Category left sidebar banner content
+Category left sidebar banner
 Product  page  3 types layout
 Header container Bg color
 Menu BG color
@@ -63,18 +33,18 @@ Choose a pattern number
 Baackground Attachment
 Baackground Repeat
 Backgorund Position
-Home big  slider
 Home big  slider content
-Home big slider bottom  promo banner
+Home big  slider
 Home big slider bottom  promo banner content
+Home big slider bottom  promo banner
 Home  Child Fashion (0-5 Years) banner
 Home  Child Fashion (0-5 Years) Banner Content
 Home   Kids Fashion (6-12 Years) Banner
 Home Kids Fashion (6-12 Years) content
 Home   Toys & Books (0-12 Years)  banner content
 Home  Toys & Books (0-12 Years)  banner content
-Home  Special Offers banners
 Home  Special Offers banners content
+Home  Special Offers banners
 Home big slider with   mini banner
 Home big slider bottom  mini banner content
 Select font source
@@ -111,3 +81,139 @@ Special text for home mini Special product title
 Top rate product title
 Category sidebar title
 footer payment accept text
+
+you can show new item limit for new icon
+You can show or hide show scroll to top button
+You can show or hide header style for your shop
+You can show or hide show scroll to top button
+You can show or hide  Category module product
+Home middle free Money Back content
+If you want to show or hide   News From Blogs
+Custom text  under home  News From Blogs
+If you want to show or hide   Home bottom Testimonials Slider
+Custom text  under home Testimonials Slider content
+You can select home page 1.....3
+You can show or hide category page subcategory
+if you want to changr catalog page  default  view style
+You can show sidebar or without sidebar
+You can show Category left sidebar banner
+Please put your  Category left sidebar banner content
+You can choose 3 type product page
+You can show  or hide custom tab page on product
+custom html tab title design to show on product page
+custom Html design to show on product page
+You can load color scheme
+Default color:#FFFFFF . if you want to change this color
+Default color:#666666 . if you want to change this color
+Default color:#666666 . if you want to change this color
+Default color:#000000 . if you want to change this color
+Default color:#FFFFFF . if you want to change this color
+Default color:#595959 . if you want to change this color
+Default color:#dcdcdc. if you want to change this color
+Default color:#FFFFFF . if you want to change this color
+Default color:#FFFFFF . if you want to change this color
+Default color:#eee. if you want to change this color
+Default color:#E7E7E7 . if you want to change this color
+Default color:#000000 . if you want to change this color
+Default color:#333333  . if you want to change this color
+Default color:#FBFBFB  . if you want to change this color
+Default color:#FCEFF1 . if you want to change this color
+Default color:#333333. if you want to change this color
+Default color:#333333 . if you want to change this color
+Default color:#6fc191 . if you want to change this color
+Default color:#f37d8a . if you want to change this color
+Default color:#77d0e4. if you want to change this color
+Default color:#e5b856. if you want to change this color
+Default color:#000000. if you want to change this color
+Default color:rgba(51, 51, 51, 0.98). if you want to change this color
+Default color:#FFFFFF     . if you want to change this color
+Default color:#8e8e8e. if you want to change this color
+Default color:#fff. if you want to change this color
+Default color:#rgba(44, 44, 44, 0.98). if you want to change this color
+Default color:#8e8e8e. if you want to change this color
+If you want to show or hide main body background imags
+First upload your pattern catalog/view/theme/babystore/image/theme_patterns/
+Please put your  home slider content
+If you want to show or hide Home big slider bottom  promo banner
+If you want to show or hide Child Fashion (0-5 Years) banner
+Please put your  home slider bottom features content
+If you want to show or hide Home Kids Fashion (6-12 Years) Banner
+Please put your  Home  Kids Fashion 6-12 Years content
+If you want to show or hide Home  Kids Fashion (0-12 Years) banner
+Please put your  Home  Kids Fashion (0-12 Years) banner
+If you want to show or hide Home  Special Offers banners
+Please put your  Home  Special Offers banners content
+If you want to show or hide Home big slider with   mini banner
+Please put your  home banner content
+If you want to Select font source system/google.
+You can change body  font style..
+You can change body  font style.
+You can change heading  font style..
+You can change heading  font style.
+Please put your  message box custom block content
+You can show or hide Home message box custom block
+Put your facebook page url on this box.
+Put your Twitter username.
+Tweets counts
+Put your Facebook Url
+Put your Twitter Url
+Put your Google Url
+Put your Rss Url
+Put your Skype Url
+Put your paypal url
+Put your visaelectron url
+Put your Discover url
+Put your Visa url
+Put your mastercard url
+Put your Maestro url
+Put your American Express url
+New text for new icon
+custom html tab title design to show on product page
+custom html tab title design to show on compare page
+Footer fllow us text
+Check out latest products text home page middle section
+Latest category tab all text
+Featured Products title home page bottom mini products
+Latest Products title home page bottom mini products
+Best Sales text for Best Sales product title
+Special text for Special product title
+Top rate product title
+Category sidebar title
+footer payment accept text
+You can add Google analytics code/another tracking code in this box
+Add custom css show in your theme
+Add custom jss show in your theme
+Home  slider
+Home big slider with   mini banner
+Body Font
+Headers font
+Category Page
+
+FOOTER
+Home  slider
+Home big slider with   mini banner
+Body Font
+Contact information
+Contact information page cpntent
+Theme text translator
+Layout
+Home Page
+Category Page
+Product page
+Load color skin
+Main
+Main Menu
+Global Color
+Home page 1
+Home page 2
+Home page 3
+Body font
+Headers font
+Twitter Feed box.
+Contact Information
+Social Icons
+Powered by
+Payment Icon
+
+Enable
+Disable

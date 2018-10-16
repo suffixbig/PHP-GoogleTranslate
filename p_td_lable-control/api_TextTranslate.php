@@ -27,9 +27,19 @@ class TextTranslate
         if ($s1 != $s2) {
             echo $s1, ",", $s2, "兩檔案行數不一致";
         }else{
-            $this->tw=$tw;
-            $this->en=$en;
-            //print_r($en);
+            //不要沒值的也不要空格
+            for($i=0;$i<count($tw);$i++){
+                $v=$tw[$i];
+                if(!empty($v)){
+                    $this->tw[]=trim($v);
+                }
+            }
+            for($i=0;$i<count($en);$i++){
+                $v=$en[$i];
+                if(!empty($v)){
+                    $this->en[]=trim($v);
+                }
+            }
         }
     }
     

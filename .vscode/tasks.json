@@ -4,5 +4,8 @@
     "windows": {
         "command": "explorer.exe"
     },
-    "args": ["http://h09.test.com/${relativeFile}"]
+    "args": [
+        "http://h09.test.com/${relativeFile}"
+    ],
+    "problemMatchers": []
 }
