@@ -186,6 +186,8 @@ function add_mysqltranslation($apend, $sourcelanguage, $targetlanguage, $CT_CONF
                 //新增資料紀錄
                 $sql = "INSERT INTO $db_name (`t_id`, `project_name`, `version`, `dirname`, `basename`, `var` ,`sourcelanguage`, `sourcetext`, `targetlanguage`, `targettext`, `priority`, `add_date`) VALUES (NULL, '$project_name', '$version','$dirname','$basename','$var','$sourcelanguage','$sourcetext','$targetlanguage','$targettext','$priority', NOW());";
                 $ok = mysql_insert_i($sql, $linkID);
+                //echo $sql;exit;
+
                 $oki = ($ok == 1) ? "成功" : "失敗!";
                 //$sms.="新增資料:".$oki;
                 $ss++;
@@ -290,9 +292,15 @@ function ai_translated($ap, $sourcelanguage, $targetlanguage, $CT_CONFIG, $sms)
                     $response = curl_post($iurl, $before_translation, 1000); //送翻譯
                     $data = json_decode($response, true); //接收;
 
-                    if ($data['error']['code'] == 400) {
-                        $sms .= "。 | 翻譯參數有問題" . json_encode($data['error']);
-                        $a['sms'] = $sms;
+                    if (isset($data['error'])) {
+                        if($data['error']['code'] == 400){
+                            $sms .= "。 | 翻譯參數有問題" . json_encode($data['error']);
+                            $a['sms'] = $sms;                            
+                        }else{
+                            $sms .= "。 | 翻譯錯誤" . json_encode($data['error']);
+                            $a['sms'] = $sms;    
+                        }
+
                         $a['error'] = 1;
                         return $a;
                     } else {

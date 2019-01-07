@@ -4,17 +4,7 @@
  * 試用PHP7.0
  */
 //開資料庫-預設開啟資料庫
-function omysql($table_db = 'h_show_view_sys') {
-    $dbhost = "localhost";
-    $dbuser = "sincethemachine";
-    $dbpass = "1234567890";
-    /*
-      if(preg_match("/test.com/",$_SERVER['HTTP_HOST'])){
-      $error_level = error_reporting(0); //修改錯誤訊息等級
-      $linkID = mysql_connect($myHost, $myUser, $myPWD)or die('不能連接mysql資料庫，帳號密碼有誤' . $myHost); //連接資料庫
-      error_reporting($error_level);
-     */
-    //Mysql_db;//預設連接到的資料表
+function omysql($table_db = 'sdabi_otc',$dbhost = DB_IP,$dbuser = DB_USER,$dbpass = DB_PASS) {
 	$error_level = error_reporting(0); //修改錯誤訊息等級
     $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $table_db);
 	error_reporting($error_level);
@@ -100,7 +90,10 @@ function row_sql($sql, $linkID = "") {
 
 //不連結資料庫-只取一個答案
 function row_sql1p($sql, $s = 0, $linkID = "") {
+    if ($linkID)
         $str = mysqli_query($linkID,$sql)or die("error 單行查詢錯誤: " . $sql); //帶入查詢語法;
+    else
+        $str = mysqli_query($sql)or die("error 單行查詢錯誤: " . $sql); //帶入查詢語法;
     $row = mysqli_fetch_row($str); //抄下符合名稱那一排的資料
     return $row[$s]; //結果參數存回主程式 若找無資料會返回""
 }
