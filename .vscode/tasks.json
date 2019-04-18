@@ -5,7 +5,7 @@
         "command": "explorer.exe"
     },
     "args": [
-        "http://h09.test.com/${relativeFile}"
+        "http://t.test.com/${relativeFile}"
     ],
     "problemMatchers": []
 }
